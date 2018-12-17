@@ -1,0 +1,1493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="54388433-1c2a-49b6-aae2-8a6e3a1f960c">
+   <signature appVersion="3.1.2" lastUpdatedOn="17/12/2018 15:02:04 +0530"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/INH_Target_Sentinel_1.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/INH_Target_Sentinel.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="1718024474" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1294077891" elementPath="/A2_1230_REC/A2_1230_REC_ATTR_17/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1230_REC\A2_1230_REC_ATTR_17, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1847877997" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_FREIGHT_TERMS/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_FREIGHT_TERMS, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1381682595" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\G1[%count_Parent]\G2[%count_SubParent]\DT_4000_REC_REFERENCE_TYPE then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-35656028" elementPath="/AD_1400_REC/AD_1400_REC_SOLD_TO_ADDR_1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_SOLD_TO_ADDR_1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-942402800" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_COMPONENT_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_COMPONENT_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-74294512" elementPath="/FB_1090_REC_FREIGHT_TERMS_CODE_EXT3/FB_1090_REC_FOB_POINT/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC_FREIGHT_TERMS_CODE_EXT3\FB_1090_REC_FOB_POINT, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1273504129" elementPath="/AD_1400_REC/AD_1400_REC_SOLD_TO_COUNTRY_INT/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_SOLD_TO_COUNTRY_INT, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="598504330" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_SHIP_TO_ADDR3/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_SHIP_TO_ADDR3, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1733921827" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_ORDERED_QTY_UOM/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_ORDERED_QTY_UOM, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="156070288" elementPath="/PO_1010_REC/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\PO_1010_REC then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1099081515" elementPath="/G1/G2/DT_4000_REC_DATES/DT_4000_REC_SPLT_FROM_SHIPMENT_REF/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_DATES\DT_4000_REC_SPLT_FROM_SHIPMENT_REF, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-25976432" elementPath="/G1/G2/DT_4000_REC_DATES/DT_4000_REC_SALESREP/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_DATES\DT_4000_REC_SALESREP, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2050979754" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="532992117" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_OPERATION_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_OPERATION_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1009169090" elementPath="/PY_1070_REC/PY_1070_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1070_REC\PY_1070_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1534411197" elementPath="/A2_1260_REC/A2_1260_REC_PO_ATTRIBUTE_11/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1260_REC\A2_1260_REC_PO_ATTRIBUTE_11, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2029282462" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_SHIPMENT_PRIORITY/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_SHIPMENT_PRIORITY, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="29369397" elementPath="/AD_1500_REC/AD_1500_REC_SHIP_TO_CITY/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_SHIP_TO_CITY, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-632276275" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_PRICING_QTY_UOM_Not_Used/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_PRICING_QTY_UOM_Not_Used, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="706347408" elementPath="/G1/G2/NT_4010_REC/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\G1[1]\G2[1]\NT_4010_REC then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-661414274" elementPath="/G1/G2/A2_4840_REC/A2_4840_REC_TP_ATTRIBUTE_7/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4840_REC\A2_4840_REC_TP_ATTRIBUTE_7, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-741915745" elementPath="/G1/G2/IT_2000_REC/IT_2000_REC_ITEM_REVISION/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\IT_2000_REC\IT_2000_REC_ITEM_REVISION, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="173840566" elementPath="/G1/G2/A2_4230_REC/A2_4230_REC_ATTR_16/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4230_REC\A2_4230_REC_ATTR_16, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1192068339" elementPath="/FB_1090_REC/FB_1090_REC_FREIGHT_CARRIER_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC\FB_1090_REC_FREIGHT_CARRIER_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1702438836" elementPath="/A2_1230_REC/A2_1230_REC_ATTR_15/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1230_REC\A2_1230_REC_ATTR_15, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="853849157" elementPath="/A1_1240_REC_PO_ATTRIBUTE_REC_1_Generic_STORE_FIELDS/A1_1240_REC_HDR_PO_CONTEXT_Not_Used/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A1_1240_REC_PO_ATTRIBUTE_REC_1_Generic_STORE_FIELDS\A1_1240_REC_HDR_PO_CONTEXT_Not_Used, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1014045876" elementPath="/G1/G2/DT_4000_REC_DATES/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\G1[%count_Parent]\G2[%count_SubParent]\DT_4000_REC_DATES then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="351635180" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_CUSTOMER_ITEM_NET_PRICE_Unit_Price/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[%count_Parent]\G2[%count_SubParent]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_CUSTOMER_ITEM_NET_PRICE_Unit_Price, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1507950114" elementPath="/A2_1260_REC/A2_1260_REC_PO_ATTRIBUTE_14/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1260_REC\A2_1260_REC_PO_ATTRIBUTE_14, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-684028257" elementPath="/PO_1010_REC/PO_1010_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO_1010_REC\PO_1010_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1248330661" elementPath="/G1/G2/A2_4840_REC/A2_4840_REC_TP_ATTRIBUTE_8/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4840_REC\A2_4840_REC_TP_ATTRIBUTE_8, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="38345096" elementPath="/PY_1070_REC/PY_1070_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1070_REC\PY_1070_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1422573096" elementPath="/G1/G2/A2_4850_REC/A2_4850_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4850_REC\A2_4850_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="432178663" elementPath="/G1/G2/A2_4230_REC_ATTRIBUTE_20_WORK/A2_4230_REC_ATTRIBUTE_20_WORK_4/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4230_REC_ATTRIBUTE_20_WORK\A2_4230_REC_ATTRIBUTE_20_WORK_4, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1116425707" elementPath="/G1/G2/IT_2000_REC/IT_2000_REC_CUSTOMER_ITEM_ID_TYPE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\IT_2000_REC\IT_2000_REC_CUSTOMER_ITEM_ID_TYPE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1996107196" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_SHIPPING_METHOD_CODE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_SHIPPING_METHOD_CODE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1249400939" elementPath="/PO1_1000_REC/PO1_1000_REC_ORDER_TYPE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_1000_REC_ORDER_TYPE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-729995580" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_LINK_TO_LINE_REF/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_LINK_TO_LINE_REF, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1274678146" elementPath="/A2_1270_REC/A2_1270_REC_KEY_1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1270_REC\A2_1270_REC_KEY_1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1232620478" elementPath="/A2_1260_REC/A2_1260_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1260_REC\A2_1260_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1806292543" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_CUSTOMER_DOCK/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_CUSTOMER_DOCK, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="720229718" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_SCHEDULE_SHIP_DATE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_SCHEDULE_SHIP_DATE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2086463063" elementPath="/G1/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2002655568" elementPath="/G1/G2/A1_4830_REC/A1_4830_REC_TP_ATTRIBUTE_1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A1_4830_REC\A1_4830_REC_TP_ATTRIBUTE_1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="264879597" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_LOAD_SEQ_NUMBER/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_LOAD_SEQ_NUMBER, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-678301588" elementPath="/PO_1020_REC/PO_1020_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO_1020_REC\PO_1020_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1503760060" elementPath="/AD_1500_REC/AD_1500_REC_SHIP_TO_EDI_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_SHIP_TO_EDI_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="678595910" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_ORDERED_QTY2/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_ORDERED_QTY2, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1398803492" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_SHIP_TO_CITY/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_SHIP_TO_CITY, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="472039262" elementPath="/PY_1070_REC/PY_1070_REC_PRICE_LIST/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1070_REC\PY_1070_REC_PRICE_LIST, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-853155001" elementPath="/A1_1240_REC_ID/A1_1240_REC_KEY_1A_MAILBOX_ID__Use_EBS_Partner_Ship_To_Code/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A1_1240_REC_ID\A1_1240_REC_KEY_1A_MAILBOX_ID__Use_EBS_Partner_Ship_To_Code, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="102894739" elementPath="/PY_1070_REC/PY_1070_REC_TAX_EXEMPT_REASON/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1070_REC\PY_1070_REC_TAX_EXEMPT_REASON, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="417353349" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_FREIGHT_TERMS_CODE_EXT3/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_FREIGHT_TERMS_CODE_EXT3, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1954321879" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_REF_HEADER/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_REF_HEADER, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1192250913" elementPath="/AD_1500_REC/AD_1500_REC_SHIP_TO_STATE_EXT_1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_SHIP_TO_STATE_EXT_1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="375174448" elementPath="/G1/G2/A2_4230_REC/A2_4230_REC_ATTR_15/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4230_REC\A2_4230_REC_ATTR_15, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1750963241" elementPath="/G1/G2/IT_2000_REC/IT_2000_REC_CHANGE_SEQUENCE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\IT_2000_REC\IT_2000_REC_CHANGE_SEQUENCE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="717370613" elementPath="/G1/G2/A2_4230_REC/A2_4230_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4230_REC\A2_4230_REC_KEY1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1729331299" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_MODEL_GROUP_NUMBER/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_MODEL_GROUP_NUMBER, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="21784729" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_SHIP_TO_ADDRESS_NAME/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_SHIP_TO_ADDRESS_NAME, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="870894292" elementPath="/AD_1400_REC/AD_1400_REC_SOLD_TO_ADDR_2/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_SOLD_TO_ADDR_2, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1549069749" elementPath="/G1/G2/A2_4840_REC/A2_4840_REC_TP_ATTRIBUTE_5/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4840_REC\A2_4840_REC_TP_ATTRIBUTE_5, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-753605447" elementPath="/G1/G2/A2_4840_REC/A2_4840_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4840_REC\A2_4840_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-697960461" elementPath="/G1/G2/A1_4830_REC/A1_4830_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A1_4830_REC\A1_4830_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1623098425" elementPath="/AD_1400_REC/AD_1400_REC_SOLD_TO_STATE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_SOLD_TO_STATE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1107177088" elementPath="/NT_1100_REC/NT_1100_REC_SHIPPING_TEXT_B/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\NT_1100_REC\NT_1100_REC_SHIPPING_TEXT_B, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1255202192" elementPath="/G1/G2/IT_2000_REC/IT_2000_REC_ORIG_SYS_LINE_REF/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\IT_2000_REC\IT_2000_REC_ORIG_SYS_LINE_REF, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1908247353" elementPath="/A2_1260_REC/A2_1260_REC_PO_ATTRIBUTE_12/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1260_REC\A2_1260_REC_PO_ATTRIBUTE_12, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="883833613" elementPath="/G1/G2/A2_4850_REC/A2_4850_REC_TP_ATTRIBUTE_12/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4850_REC\A2_4850_REC_TP_ATTRIBUTE_12, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1396812689" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_SOURCE_TYPE_CODE_Not_Used/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_SOURCE_TYPE_CODE_Not_Used, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="349855524" elementPath="/PY_1060_REC/PY_1060_REC_PAYMENT_AMT/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_PAYMENT_AMT, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1960715271" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_PRICING_QTY_UOM_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_PRICING_QTY_UOM_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-823936917" elementPath="/FB_1090_REC_FREIGHT_TERMS_CODE_EXT3/FB_1090_REC_FREIGHT_TERMS_CODE_EXT2/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC_FREIGHT_TERMS_CODE_EXT3\FB_1090_REC_FREIGHT_TERMS_CODE_EXT2, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="950367744" elementPath="/G1/G2/">
+         <dmlExpression><![CDATA[%count_SubParent:=%count_SubParent+1;
+%occurs := 0;
+if defined in:\G1 [%count_Parent]\G2 [ %count_SubParent] then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1354212678" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_KEY1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1609239829" elementPath="/PO1_1000_REC/PO1_1000_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_1000_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1570436985" elementPath="/AD_1400_REC/AD_1400_REC_SOLD_TO_ADDR_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_SOLD_TO_ADDR_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1500963359" elementPath="/FB_1090_REC_ID/FB_1090_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC_ID\FB_1090_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1862958401" elementPath="/PY_1060_REC/PY_1060_REC_CREDIT_CARD_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_CREDIT_CARD_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1282054214" elementPath="/PY_1060_REC/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\PY_1060_REC then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="54719901" elementPath="/AD_1400_REC/AD_1400_REC_SOLD_TO_COUNTY/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_SOLD_TO_COUNTY, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1105564284" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_SHIP_TO_COUNTY/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_SHIP_TO_COUNTY, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2072245116" elementPath="/FB_1090_REC/FB_1090_REC_SHIPPING_METHOD_CODE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC\FB_1090_REC_SHIPPING_METHOD_CODE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1852786898" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_PRICING_QTY_Not_Used/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_PRICING_QTY_Not_Used, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="855139690" elementPath="/PO1_1000_REC/PO1_1000_REC_ORIG_SYS_DOC_REF/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_1000_REC_ORIG_SYS_DOC_REF, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1186766019" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_SHIP_TO_PROVINCE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_SHIP_TO_PROVINCE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1741135412" elementPath="/G1/G2/A2_4230_REC/A2_4230_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4230_REC\A2_4230_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-66369821" elementPath="/PY_1060_REC/PY_1060_REC_TRANS_CURRENCY_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_TRANS_CURRENCY_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1831805081" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_ORDERED_QTY2_UOM_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_ORDERED_QTY2_UOM_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="731342184" elementPath="/PO_1010_REC/PO_1010_REC_CHANGE_REASON/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO_1010_REC\PO_1010_REC_CHANGE_REASON, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1371229256" elementPath="/AD_1500_REC/AD_1500_REC_KEY_1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_KEY_1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1645614086" elementPath="/G1/G2/A2_4850_REC/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\G1[1]\G2[1]\A2_4850_REC then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="319188276" elementPath="/G1/G2/IT_2000_REC/IT_2000_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\IT_2000_REC\IT_2000_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1165018138" elementPath="/FB_1090_REC/FB_1090_REC_SHIPMENT_PRIORITY_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC\FB_1090_REC_SHIPMENT_PRIORITY_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1799684365" elementPath="/PO1_1000_REC/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\PO1_1000_REC then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1472931534" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_CUSTOMER_DOCK_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_CUSTOMER_DOCK_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1199785845" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_ORIG_SYS_SHIPMENT_REF/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_ORIG_SYS_SHIPMENT_REF, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="91044870" elementPath="/PO_1010_REC/PO_1010_REC_CHANGE_SEQUENCE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO_1010_REC\PO_1010_REC_CHANGE_SEQUENCE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-836576803" elementPath="/G1/G2/A1_4830_REC/A1_4830_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A1_4830_REC\A1_4830_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1888279637" elementPath="/CTL_850_REC/CTL_REC_TEST_FLAG/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_TEST_FLAG, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1539004794" elementPath="/PO_1010_REC/PO_1010_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO_1010_REC\PO_1010_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="76514996" elementPath="/G1/G2/A1_4830_REC/A1_4830_REC_TP_ATTRIBUTE_2/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A1_4830_REC\A1_4830_REC_TP_ATTRIBUTE_2, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-139205984" elementPath="/PO1_1000_REC/PO1_1000_REC_DROP_SHIP_FLAG/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_1000_REC_DROP_SHIP_FLAG, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1177198751" elementPath="/NT_1100_REC/NT_1100_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\NT_1100_REC\NT_1100_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="679005031" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_SHIP_TO_ORG/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_SHIP_TO_ORG, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="150092591" elementPath="/AD_1400_REC/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\AD_1400_REC then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1111365925" elementPath="/A2_1250_REC_PO_ATTRIBUTE_REC2_Generic_STORE_FIELDS/A2_1250_REC_PO_HDR_ATTR_6_RN_MITI_NUM/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1250_REC_PO_ATTRIBUTE_REC2_Generic_STORE_FIELDS\A2_1250_REC_PO_HDR_ATTR_6_RN_MITI_NUM, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1584405631" elementPath="/PO_1010_REC/PO_1010_REC_CHANGE_REQUEST_CODE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO_1010_REC\PO_1010_REC_CHANGE_REQUEST_CODE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1078687692" elementPath="/PY_1070_REC/PY_1070_REC_PO_HDR_PAY_TERMS_EXT5/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1070_REC\PY_1070_REC_PO_HDR_PAY_TERMS_EXT5, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="611271049" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_KEY2_USE_AT_LINE_LEVEL_Line_Num/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_KEY2_USE_AT_LINE_LEVEL_Line_Num, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-646700154" elementPath="/G1/G2/DT_4000_REC_DATES/DT_4000_REC_OPERATION_CODE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_DATES\DT_4000_REC_OPERATION_CODE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1809938370" elementPath="/G1/G2/A2_4860_REC/A2_4860_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4860_REC\A2_4860_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-838879170" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_KEY_1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_KEY_1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1232578307" elementPath="/FB_1090_REC_ID/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\FB_1090_REC_ID then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="638463661" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1953339167" elementPath="/G1/G2/NT_4010_REC/NT_4010_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\NT_4010_REC\NT_4010_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1624228523" elementPath="/PO1_1000_REC/PO1_1000_REC_ORDER_TYPE_CD_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_1000_REC_ORDER_TYPE_CD_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1621184522" elementPath="/PY_1070_REC/PY_1070_REC_TAX_POINT_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1070_REC\PY_1070_REC_TAX_POINT_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="208385473" elementPath="/G1/G2/NT_4010_REC/NT_4010_REC_SHIPPING_INSTRUCTIONS_B/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\NT_4010_REC\NT_4010_REC_SHIPPING_INSTRUCTIONS_B, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-127538217" elementPath="/FB_1090_REC_FREIGHT_TERMS_CODE_EXT3/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\FB_1090_REC_FREIGHT_TERMS_CODE_EXT3 then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-479609128" elementPath="/G1/G2/A2_4860_REC/A2_4860_REC_TP_ATTRIBUTE_15/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4860_REC\A2_4860_REC_TP_ATTRIBUTE_15, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1864087124" elementPath="/CTL_850_REC/CTL_REC_DOC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_DOC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="291390912" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_UNIT_LIST_PERCENT_Not_Used/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_UNIT_LIST_PERCENT_Not_Used, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-200400217" elementPath="/G1/G2/A2_4230_REC_ATTRIBUTE_20_WORK/A2_4230_REC_ATTRIBUTE_20_WORK_2/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4230_REC_ATTRIBUTE_20_WORK\A2_4230_REC_ATTRIBUTE_20_WORK_2, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="448078211" elementPath="/G1/G2/A2_4850_REC/A2_4850_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4850_REC\A2_4850_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="326362585" elementPath="/FB_1090_REC/FB_1090_REC_SHIPPING_METHOD_CODE_EXT2/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC\FB_1090_REC_SHIPPING_METHOD_CODE_EXT2, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1332245660" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_SHIP_TO_PROVINCE_INT/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_SHIP_TO_PROVINCE_INT, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-110791580" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_CUSTOMER_PRODUCTION_SEQ_NUM/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_CUSTOMER_PRODUCTION_SEQ_NUM, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-573873177" elementPath="/A2_1260_REC/A2_1260_REC_PO_ATTRIBUTE_13/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1260_REC\A2_1260_REC_PO_ATTRIBUTE_13, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1060801979" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_FOB_POINT_CODE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_FOB_POINT_CODE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1882792434" elementPath="/A2_1270_REC/A2_1270_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1270_REC\A2_1270_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1689163184" elementPath="/CTL_850_REC/CTL_REC_TRANSACTION_DT/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_TRANSACTION_DT, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="435660803" elementPath="/PO1_1000_REC/PO1_1000_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_1000_REC_KEY1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1500485119" elementPath="/CTL_850_REC/CTL_REC_TP_REF_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_TP_REF_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-264268458" elementPath="/G1/G2/A2_4840_REC/A2_4840_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4840_REC\A2_4840_REC_KEY1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1718768786" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_AGREEMENT_Not_Used/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_AGREEMENT_Not_Used, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-507593973" elementPath="/AD_1400_REC/AD_1400_REC_SOLD_TO_ADDR_NAME/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_SOLD_TO_ADDR_NAME, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-327235474" elementPath="/G1/G2/NT_4010_REC/NT_4010_REC_KEY_1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\NT_4010_REC\NT_4010_REC_KEY_1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="941970477" elementPath="/FB_1090_REC/FB_1090_REC_SHIPPING_METHOD_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC\FB_1090_REC_SHIPPING_METHOD_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1365186344" elementPath="/G1/G2/A2_4860_REC/A2_4860_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4860_REC\A2_4860_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1696945686" elementPath="/A2_1230_REC/A2_1230_REC_ATTR_19/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1230_REC\A2_1230_REC_ATTR_19, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="679169827" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_CUSTOMER_SHIPMENT_NUMBER/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_CUSTOMER_SHIPMENT_NUMBER, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1502350913" elementPath="/FB_1090_REC/FB_1090_REC_FREIGHT_CARRIER_CODE_EXT2/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC\FB_1090_REC_FREIGHT_CARRIER_CODE_EXT2, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="447061579" elementPath="/G1/G2/NT_4010_REC/NT_4010_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\NT_4010_REC\NT_4010_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-336888086" elementPath="/AD_1500_REC/AD_1500_REC_SHIP_TO_ORG/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_SHIP_TO_ORG, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2088089735" elementPath="/PO1_1000_REC/PO1_1000_REC_ORDERS_TYPE_DT_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_1000_REC_ORDERS_TYPE_DT_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-455971496" elementPath="/CTL_850_REC/CTL_REC_TRANS_METHOD/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_TRANS_METHOD, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-988714794" elementPath="/AD_1400_REC/AD_1400_REC_SOLD_TO_EDI_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_SOLD_TO_EDI_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1602860539" elementPath="/G1/G2/NT_4010_REC/NT_4010_REC_SHIPPING_INSTRUCTIONS_A/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\NT_4010_REC\NT_4010_REC_SHIPPING_INSTRUCTIONS_A, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="208038554" elementPath="/PY_1060_REC/PY_1060_REC_PAYMENT_TYPE_CODE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_PAYMENT_TYPE_CODE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1811316617" elementPath="/G1/G2/A2_4850_REC/A2_4850_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4850_REC\A2_4850_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="235091598" elementPath="/NT_1100_REC/NT_1100_REC_SHIPPING_TEXT_A/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\NT_1100_REC\NT_1100_REC_SHIPPING_TEXT_A, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1454208481" elementPath="/FB_1090_REC/FB_1090_REC_FREIGHT_TERMS_CODE_EXT5/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC\FB_1090_REC_FREIGHT_TERMS_CODE_EXT5, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1124650786" elementPath="/PY_1060_REC/PY_1060_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1957436702" elementPath="/PO_1010_REC/PO_1010_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO_1010_REC\PO_1010_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-664144673" elementPath="/PO1_1000_REC/PO1_1000_REC_ORDER_CATAGORY/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_1000_REC_ORDER_CATAGORY, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1602231626" elementPath="/PO_1020_REC/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\PO_1020_REC then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-771460473" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_UNIT_PERCENT_BASE_PRICE_Not_Use/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_UNIT_PERCENT_BASE_PRICE_Not_Use, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-337123206" elementPath="/PY_1060_REC/PY_1060_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1068705101" elementPath="/FB_1090_REC_ID/FB_1090_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC_ID\FB_1090_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-125319217" elementPath="/PY_1070_REC/PY_1070_REC_PO_HDR_PAY_TERMS/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1070_REC\PY_1070_REC_PO_HDR_PAY_TERMS, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1102208418" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1038699290" elementPath="/PY_1060_REC/PY_1060_REC_CHECK_NUMBER/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_CHECK_NUMBER, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1035437041" elementPath="/PY_1060_REC/PY_1060_REC_CONVERSION_TYPE_CD/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_CONVERSION_TYPE_CD, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1488898340" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_FREIGHT_TERMS_CODE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_FREIGHT_TERMS_CODE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1070210010" elementPath="/AD_1500_REC/AD_1500_REC_SHIP_TO_STATE_INT/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_SHIP_TO_STATE_INT, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2013608226" elementPath="/FB_1090_REC/FB_1090_REC_FREIGHT_CARRIER_CODE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC\FB_1090_REC_FREIGHT_CARRIER_CODE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1824829647" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_SHIP_TO_COUNTRY_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_SHIP_TO_COUNTRY_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1880156695" elementPath="/PO1_1000_REC/PO1_1000_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_1000_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1637447427" elementPath="/CTL_850_REC/CTL_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1357846284" elementPath="/CTL_850_REC/CTL_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="216723582" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\G1[%count_Parent]\G2[%count_SubParent]\LN_3000_REC_PRICING_Line_Pricing_Record then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1466106548" elementPath="/PO_1010_REC/PO_1010_REC_CANCELLED_FLAG/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO_1010_REC\PO_1010_REC_CANCELLED_FLAG, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1587228209" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-272562199" elementPath="/G1/G2/A2_4840_REC/A2_4840_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4840_REC\A2_4840_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1166986802" elementPath="/G1/G2/A1_4830_REC/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\G1[1]\G2[1]\A1_4830_REC then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="56856641" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_SHIP_TO_ADDR1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_SHIP_TO_ADDR1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1930948952" elementPath="/A2_1230_REC/A2_1230_REC_ATTR_20/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1230_REC\A2_1230_REC_ATTR_20, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-85283820" elementPath="/G1/G2/A2_4230_REC/A2_4230_REC_ATTR_17/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4230_REC\A2_4230_REC_ATTR_17, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1902996601" elementPath="/G1/G2/A2_4230_REC/A2_4230_REC_ATTR_20/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4230_REC\A2_4230_REC_ATTR_20, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="755988232" elementPath="/G1/G2/IT_2000_REC/IT_2000_REC_SALES_AGREEMENT_NUM/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\IT_2000_REC\IT_2000_REC_SALES_AGREEMENT_NUM, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="149066567" elementPath="/FB_1090_REC/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\FB_1090_REC then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1855442820" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_FREIGHT_CARRIER_CODE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_FREIGHT_CARRIER_CODE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1585818454" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/ELN_3000_REC_END_ITEM_UNIT_NUMBER_Not_Used/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\ELN_3000_REC_END_ITEM_UNIT_NUMBER_Not_Used, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-335313268" elementPath="/PO_1010_REC/PO_1010_REC_RETURN_REASON_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO_1010_REC\PO_1010_REC_RETURN_REASON_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1068993851" elementPath="/PO_1010_REC/PO_1010_REC_CHANGE_REASON_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO_1010_REC\PO_1010_REC_CHANGE_REASON_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1235904752" elementPath="/A2_1230_REC/A2_1230_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1230_REC\A2_1230_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-785622226" elementPath="/PY_1070_REC/PY_1070_REC_KEY_1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1070_REC\PY_1070_REC_KEY_1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2016654599" elementPath="/G1/G2/A2_4230_REC_ATTRIBUTE_20_WORK/A2_4230_REC_ATTRIBUTE_20_WORK_3/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4230_REC_ATTRIBUTE_20_WORK\A2_4230_REC_ATTRIBUTE_20_WORK_3, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2078261801" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1665650443" elementPath="/PY_1070_REC/PY_1070_REC_TAX_EXEMPT_FLAG/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1070_REC\PY_1070_REC_TAX_EXEMPT_FLAG, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-784848566" elementPath="/AD_1500_REC/AD_1500_REC_SHIP_TO_ADDR_4/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_SHIP_TO_ADDR_4, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1522803265" elementPath="/A2_1250_REC_PO_ATTRIBUTE_REC2_Generic_STORE_FIELDS/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\A2_1250_REC_PO_ATTRIBUTE_REC2_Generic_STORE_FIELDS then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1917795273" elementPath="/PO1_1000_REC/PO1_1000_REC_VERSION_NUM/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_1000_REC_VERSION_NUM, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="538032705" elementPath="/PO_1020_REC/PO_1020_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO_1020_REC\PO_1020_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="611931861" elementPath="/A2_1270_REC/A2_1270_REC_KEY_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1270_REC\A2_1270_REC_KEY_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2070918315" elementPath="/PY_1060_REC/PY_1060_REC_CONVERSION_RATE_DT/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_CONVERSION_RATE_DT, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-103469777" elementPath="/A2_1260_REC/A2_1260_REC_KEY_1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1260_REC\A2_1260_REC_KEY_1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="284867557" elementPath="/AD_1400_REC/AD_1400_REC_SOLD_TO_COUNTRY_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_SOLD_TO_COUNTRY_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1505542285" elementPath="/G1/G2/A1_4830_REC/A1_4830_REC_TP_CONTEXT/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A1_4830_REC\A1_4830_REC_TP_CONTEXT, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-983198890" elementPath="/G1/G2/DT_4000_REC_DATES/DT_4000_REC_CUST_MODEL_SERIAL_NUM/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_DATES\DT_4000_REC_CUST_MODEL_SERIAL_NUM, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1403280119" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_SHIPMENT_PRIORITY_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_SHIPMENT_PRIORITY_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1668666292" elementPath="/G1/G2/DT_4000_REC_DATES/DT_4000_REC_OPERATION_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_DATES\DT_4000_REC_OPERATION_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="266200535" elementPath="/AD_1500_REC/AD_1500_REC_SHIP_TO_ADDR_2/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_SHIP_TO_ADDR_2, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-385067741" elementPath="/CTL_850_REC/CTL_REC_TP_DESCRIPTION/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_TP_DESCRIPTION, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-373991745" elementPath="/NT_1100_REC/NT_1100_REC_KEY_1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\NT_1100_REC\NT_1100_REC_KEY_1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-769072514" elementPath="/CTL_850_REC/CTL_REC_DOC_PURPOSE_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_DOC_PURPOSE_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="215254979" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_ORDERED_QTY2_UOM/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_ORDERED_QTY2_UOM, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2123388980" elementPath="/PO1_1000_REC/PO1_1000_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_1000_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1946004935" elementPath="/AD_1500_REC/AD_1500_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2135440728" elementPath="/A2_1260_REC/A2_1260_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1260_REC\A2_1260_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="117005827" elementPath="/G1/G2/A2_4230_REC/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\G1[1]\G2[1]\A2_4230_REC then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1171616917" elementPath="/FB_1090_REC/FB_1090_REC_FREIGHT_TERMS_CODE_EXT4/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC\FB_1090_REC_FREIGHT_TERMS_CODE_EXT4, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1712343929" elementPath="/PO1_1000_REC/PO1_1000_REC_ORDERED_DATE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_1000_REC_ORDERED_DATE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1832813008" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_CUSTOMER_DOCK_INT/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_CUSTOMER_DOCK_INT, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1155528258" elementPath="/AD_1500_REC/AD_1500_REC_SHIP_TO_ADDR_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_SHIP_TO_ADDR_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-756549942" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_UNIT_SELLING_PRICE__Not_Used/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_UNIT_SELLING_PRICE__Not_Used, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="228767644" elementPath="/G1/G2/A2_4230_REC/A2_4230_REC_ATTR_19/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4230_REC\A2_4230_REC_ATTR_19, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1421836746" elementPath="/A2_1250_REC_PO_ATTRIBUTE_REC2_Generic_STORE_FIELDS/A2_1250_REC_PO_HDR_ATTR_8_RN_PIP_INSTANCE_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1250_REC_PO_ATTRIBUTE_REC2_Generic_STORE_FIELDS\A2_1250_REC_PO_HDR_ATTR_8_RN_PIP_INSTANCE_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-241000630" elementPath="/A1_1240_REC_ID/A1_1240_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A1_1240_REC_ID\A1_1240_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1909513096" elementPath="/PY_1070_REC/PY_1070_REC_TAX_EXEMPT_REASON_CODE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1070_REC\PY_1070_REC_TAX_EXEMPT_REASON_CODE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1839051682" elementPath="/FB_1090_REC/FB_1090_REC_SHIPMENT_PRIORITY/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC\FB_1090_REC_SHIPMENT_PRIORITY, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1454528629" elementPath="/PY_1060_REC/PY_1060_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1138475130" elementPath="/A2_1230_REC/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\A2_1230_REC then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-546917170" elementPath="/PO1_1000_REC/PO1_1000_REC_SALES_AGREEMENT_NUM/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_1000_REC_SALES_AGREEMENT_NUM, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="259041965" elementPath="/G1/G2/A1_4830_REC/A1_4830_REC_TP_ATTRIBUTE_3/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A1_4830_REC\A1_4830_REC_TP_ATTRIBUTE_3, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="217514727" elementPath="/PO_1010_REC/PO_1010_REC_PO_REVISION_DATE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO_1010_REC\PO_1010_REC_PO_REVISION_DATE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1614869776" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1249961406" elementPath="/G1/G2/IT_2000_REC/IT_2000_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\IT_2000_REC\IT_2000_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1128085675" elementPath="/PO_1020_REC/PO_1020_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO_1020_REC\PO_1020_REC_KEY1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1103755860" elementPath="/G1/G2/A2_4860_REC/A2_4860_REC_KEY_1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4860_REC\A2_4860_REC_KEY_1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1398228959" elementPath="/AD_1400_REC/AD_1400_REC_SOLD_TO_ADDR_4/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_SOLD_TO_ADDR_4, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="910701484" elementPath="/AD_1500_REC/AD_1500_REC_SHIP_TO_ADDR_1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_SHIP_TO_ADDR_1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-625373540" elementPath="/G1/G2/A2_4230_REC/A2_4230_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4230_REC\A2_4230_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="491879306" elementPath="/A2_1250_REC_PO_ATTRIBUTE_REC2_Generic_STORE_FIELDS/A2_1250_REC_PO_HDR_ATTR_9_PRICE_QUOTE_NUM/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1250_REC_PO_ATTRIBUTE_REC2_Generic_STORE_FIELDS\A2_1250_REC_PO_HDR_ATTR_9_PRICE_QUOTE_NUM, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1031126310" elementPath="/A1_1240_REC_ID/A1_1240_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A1_1240_REC_ID\A1_1240_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1033485287" elementPath="/CTL_850_REC/CTL_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_KEY1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1876661465" elementPath="/G1/G2/IT_2000_REC/IT_2000_REC_LINE_TYPE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\IT_2000_REC\IT_2000_REC_LINE_TYPE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-946363094" elementPath="/PY_1060_REC/PY_1060_REC_CREDIT_CARD_CODE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_CREDIT_CARD_CODE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1201389197" elementPath="/PO1_1000_REC/PO1_1000_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_1000_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="987660699" elementPath="/AD_1500_REC/AD_1500_REC_SHIP_TO_COUNTRY_INT/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_SHIP_TO_COUNTRY_INT, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2053627107" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_OPERATION_CODE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_OPERATION_CODE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1197753760" elementPath="/A2_1250_REC_ID/A2_1250_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1250_REC_ID\A2_1250_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="942316334" elementPath="/G1/G2/IT_2000_REC/IT_2000_REC_INVENTORY_ITEM/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[%count_Parent]\G2[%count_SubParent]\IT_2000_REC\IT_2000_REC_INVENTORY_ITEM, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="672526410" elementPath="/A2_1260_REC/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\A2_1260_REC then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1109414537" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_FREIGHT_TERMS_CODE_EXT5/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_FREIGHT_TERMS_CODE_EXT5, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-475680025" elementPath="/G1/G2/A2_4850_REC/A2_4850_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4850_REC\A2_4850_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1805893855" elementPath="/G1/G2/A2_4850_REC/A2_4850_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4850_REC\A2_4850_REC_KEY1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2112693102" elementPath="/AD_1400_REC/AD_1400_REC_SOLD_TO_ORG/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_SOLD_TO_ORG, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1573338083" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_SCHEDULE_DATE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_SCHEDULE_DATE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1158045098" elementPath="/CTL_850_REC/CTL_REC_TRANSACTION_RUN_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_TRANSACTION_RUN_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1437588463" elementPath="/AD_1400_REC/AD_1400_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1894634683" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1904107265" elementPath="/G1/G2/IT_2000_REC/IT_2000_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\IT_2000_REC\IT_2000_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1514440971" elementPath="/G1/G2/A2_4860_REC/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\G1[1]\G2[1]\A2_4860_REC then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1401908968" elementPath="/CTL_850_REC/CTL_REC_DOC_TYPE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_DOC_TYPE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="670580049" elementPath="/A2_1270_REC/A2_1270_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1270_REC\A2_1270_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1543384065" elementPath="/A2_1230_REC/A2_1230_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1230_REC\A2_1230_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-273012537" elementPath="/AD_1500_REC/AD_1500_REC_SHIP_TO_PROVINCE_INT/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_SHIP_TO_PROVINCE_INT, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1014680482" elementPath="/AD_1400_REC/AD_1400_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1925523354" elementPath="/CTL_850_REC/CTL_REC_TP_LOCATION_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_TP_LOCATION_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1621827343" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1880052198" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_PRICING_DATE_Not_Used/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_PRICING_DATE_Not_Used, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1887115721" elementPath="/G1/G2/A2_4850_REC/A2_4850_REC_TP_ATTRIBUTE_14/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4850_REC\A2_4850_REC_TP_ATTRIBUTE_14, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1877830009" elementPath="/CTL_850_REC/CTL_REC_DOC_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_DOC_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="595014727" elementPath="/A2_1260_REC/A2_1260_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1260_REC\A2_1260_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1475730605" elementPath="/G1/G2/A2_4850_REC/A2_4850_REC_TP_ATTRIBUTE_11/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4850_REC\A2_4850_REC_TP_ATTRIBUTE_11, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-949996712" elementPath="/PO1_1000_REC/PO1_1000_REC_PO_Number/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_1000_REC_PO_Number, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="783994910" elementPath="/PO_1020_REC/PO_1020_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO_1020_REC\PO_1020_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1938797108" elementPath="/G1/G2/A2_4840_REC/A2_4840_REC_TP_ATTRIBUTE_6/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4840_REC\A2_4840_REC_TP_ATTRIBUTE_6, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="5509595" elementPath="/PO1_1000_REC/PO1_1000_REC_AGREEMENT/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_1000_REC_AGREEMENT, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1160784477" elementPath="/A2_1230_REC/A2_1230_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1230_REC\A2_1230_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1126701835" elementPath="/PY_1060_REC/PY_1060_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="993169998" elementPath="/PO1_1000_REC/PO1_REC_1000_OPERATIONS_CODE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_REC_1000_OPERATIONS_CODE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="96632893" elementPath="/AD_1400_REC/AD_1400_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2063617135" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_FREIGHT_TERMS_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_FREIGHT_TERMS_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1318284476" elementPath="/G1/G2/IT_2000_REC/IT_2000_REC_CUSTOMER_LINE_NUM/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[%count_Parent]\G2[%count_SubParent]\IT_2000_REC\IT_2000_REC_CUSTOMER_LINE_NUM, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1963351424" elementPath="/G1/G2/IT_2000_REC/IT_2000_REC_CUSTOMER_ITEM_REVISION/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\IT_2000_REC\IT_2000_REC_CUSTOMER_ITEM_REVISION, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="413682245" elementPath="/G1/G2/IT_2000_REC/IT_2000_REC_EBS_LINE_NUM/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\IT_2000_REC\IT_2000_REC_EBS_LINE_NUM, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="821797827" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_ORDERED_QTY/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[%count_Parent]\G2[%count_SubParent]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_ORDERED_QTY, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-981507196" elementPath="/PY_1070_REC/PY_1070_REC_PRICE_LIST_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1070_REC\PY_1070_REC_PRICE_LIST_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1060672053" elementPath="/PY_1060_REC/PY_1060_REC_TRANS_CURRENCY_CODE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_TRANS_CURRENCY_CODE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="459674248" elementPath="/G1/G2/A2_4840_REC/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\G1[1]\G2[1]\A2_4840_REC then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="392226976" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_PROMISE_DATE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_PROMISE_DATE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1745763649" elementPath="/PO_1010_REC/PO_1010_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO_1010_REC\PO_1010_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="305100910" elementPath="/FB_1090_REC_FREIGHT_TERMS_CODE_EXT3/FB_1090_REC_FREIGHT_TERMS_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC_FREIGHT_TERMS_CODE_EXT3\FB_1090_REC_FREIGHT_TERMS_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-971921584" elementPath="/AD_1500_REC/AD_1500_REC_SHIP_TO_COUNTY/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_SHIP_TO_COUNTY, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1536616585" elementPath="/AD_1400_REC/AD_1400_REC_SOLD_TO_CITY/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_SOLD_TO_CITY, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1326176036" elementPath="/G1/G2/A2_4230_REC/A2_4230_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4230_REC\A2_4230_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-577660810" elementPath="/AD_1400_REC/AD_1400_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_KEY1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="199642544" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_FOB_POINT_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_FOB_POINT_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-901604138" elementPath="/G1/G2/A2_4860_REC/A2_4860_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4860_REC\A2_4860_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-46146847" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-311918414" elementPath="/CTL_850_REC/CTL_REC_CONTROL3/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_CONTROL3, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-951266924" elementPath="/CTL_850_REC/CTL_REC_TP_TRANSLATOR_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_TP_TRANSLATOR_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="158305610" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_SPLT_FROM_SHIPMENT_REF/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_SPLT_FROM_SHIPMENT_REF, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="931550874" elementPath="/G1/G2/A1_4830_REC/A1_4830_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A1_4830_REC\A1_4830_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="374148197" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_FOB_POINT/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_FOB_POINT, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1443383483" elementPath="/PO1_1000_REC/PO1_REC_1000_OPERATION_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_REC_1000_OPERATION_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="99286908" elementPath="/PO_1010_REC/PO_1010_REC_CHANGE_REQUEST_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO_1010_REC\PO_1010_REC_CHANGE_REQUEST_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-984603697" elementPath="/CTL_850_REC/CTL_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-84902089" elementPath="/CTL_850_REC/CTL_REC_CONTROL2/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_CONTROL2, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-338800700" elementPath="/AD_1500_REC/AD_1500_REC_SHIP_TO_POSTAL_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_SHIP_TO_POSTAL_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2075171453" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_AUTH_TO_SHIP_FLAG/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_AUTH_TO_SHIP_FLAG, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1826568293" elementPath="/PO1_1000_REC/PO1_1000_REC_PARTIAL_SHIP_ALLOWED/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_1000_REC_PARTIAL_SHIP_ALLOWED, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-682438000" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_FREIGHT_TERMS_CODE_EXT4/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_FREIGHT_TERMS_CODE_EXT4, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="41377840" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1703251255" elementPath="/CTL_850_REC/CTL_REC_ORD_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_ORD_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1108970342" elementPath="/FB_1090_REC/FB_1090_REC_SHIP_TOLERANCE_ABOVE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC\FB_1090_REC_SHIP_TOLERANCE_ABOVE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="914888222" elementPath="/G1/G2/IT_2000_REC/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\G1[%count_Parent]\G2[%count_SubParent]\IT_2000_REC then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1748164073" elementPath="/G1/G2/NT_4010_REC/NT_4010_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\NT_4010_REC\NT_4010_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1814785219" elementPath="/NT_1100_REC/NT_1100_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\NT_1100_REC\NT_1100_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1425231161" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_OPTION_NUMBER/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_OPTION_NUMBER, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1467841561" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_FREIGHT_CARRIER_CODE_EXT2/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_FREIGHT_CARRIER_CODE_EXT2, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="631759689" elementPath="/G1/G2/A2_4840_REC/A2_4840_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4840_REC\A2_4840_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="427115984" elementPath="/PY_1070_REC/PY_1070_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1070_REC\PY_1070_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="244468314" elementPath="/FB_1090_REC_ID/FB_1090_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC_ID\FB_1090_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1263435893" elementPath="/G1/G2/A1_4830_REC/A1_4830_REC_TP_ATTRIBUTE_4/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A1_4830_REC\A1_4830_REC_TP_ATTRIBUTE_4, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="653216617" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_SHIP_TO_STATE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_SHIP_TO_STATE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="49988413" elementPath="/G1/G2/NT_4010_REC/NT_4010_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\NT_4010_REC\NT_4010_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1778612829" elementPath="/PY_1070_REC/PY_1070_REC_TAX_POINT/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1070_REC\PY_1070_REC_TAX_POINT, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="488525545" elementPath="/FB_1090_REC_FREIGHT_TERMS_CODE_EXT3/FB_1090_REC_FOB_POINT_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC_FREIGHT_TERMS_CODE_EXT3\FB_1090_REC_FOB_POINT_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1507600943" elementPath="/G1/G2/IT_2000_REC/IT_2000_REC_CUSTOMER_ITEM_NAME/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\IT_2000_REC\IT_2000_REC_CUSTOMER_ITEM_NAME, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1613398911" elementPath="/NT_1100_REC/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\NT_1100_REC then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-624489894" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_SHIP_TO_EDI_LOCATION_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_SHIP_TO_EDI_LOCATION_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1566773402" elementPath="/G1/G2/A2_4230_REC/A2_4230_REC_ATTR_18/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4230_REC\A2_4230_REC_ATTR_18, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1785572317" elementPath="/G1/G2/DT_4000_REC_DATES/DT_4000_REC_SALES_AGREEMENT_LINE_NUMBER/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_DATES\DT_4000_REC_SALES_AGREEMENT_LINE_NUMBER, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1818090597" elementPath="/PY_1060_REC/PY_1060_REC_CREDIT_CARD_NUM/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_CREDIT_CARD_NUM, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1123966116" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_UNIT_SELLING_PERCENT_Not_Used/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_UNIT_SELLING_PERCENT_Not_Used, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="552770837" elementPath="/CTL_850_REC/CTL_REC_TP_REF_EXT2/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_TP_REF_EXT2, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1846967108" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_SHIPMENT_NUMBER/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_SHIPMENT_NUMBER, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1311097319" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_SALESREP/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_SALESREP, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1797726489" elementPath="/PY_1070_REC/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\PY_1070_REC then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1909440229" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_CUSTOMER_PRODUCTION_LINE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_CUSTOMER_PRODUCTION_LINE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1795372546" elementPath="/PY_1060_REC/PY_1060_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_KEY1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1905479435" elementPath="/PO1_1000_REC/PO1_1000_REC_AGREEMENT_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_1000_REC_AGREEMENT_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1524093151" elementPath="/PO_1010_REC/PO_1010_REC_RETURN_REASON_CODE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO_1010_REC\PO_1010_REC_RETURN_REASON_CODE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="729121193" elementPath="/AD_1400_REC/AD_1400_REC_SOLD_TO_ADDR_3/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_SOLD_TO_ADDR_3, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="894580575" elementPath="/PY_1060_REC/PY_1060_REC_CREDIT_CARD_EXP_DATE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_CREDIT_CARD_EXP_DATE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="67293494" elementPath="/CTL_850_REC/CTL_REC_DOCUMENT_STANDARD/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_DOCUMENT_STANDARD, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1040257939" elementPath="/A2_1230_REC/A2_1230_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1230_REC\A2_1230_REC_KEY1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2081589838" elementPath="/A2_1250_REC_ID/A2_1250_REC_KEY_1A_MAILBOX_ID__Use_EBS_Partner_Ship_To_Code/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1250_REC_ID\A2_1250_REC_KEY_1A_MAILBOX_ID__Use_EBS_Partner_Ship_To_Code, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1755124552" elementPath="/NT_1100_REC/NT_1100_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\NT_1100_REC\NT_1100_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-489585299" elementPath="/PO_1020_REC/PO_1020_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO_1020_REC\PO_1020_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1198976007" elementPath="/G1/G2/IT_2000_REC/IT_2000_REC_ORIG_SYS_DOC_REF/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\IT_2000_REC\IT_2000_REC_ORIG_SYS_DOC_REF, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1052061600" elementPath="/G1/G2/IT_2000_REC/IT_2000_REC_ITEM_TYPE_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\IT_2000_REC\IT_2000_REC_ITEM_TYPE_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-448389410" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_SHIPPING_METHOD_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_SHIPPING_METHOD_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1260001632" elementPath="/AD_1500_REC/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\AD_1500_REC then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="694178116" elementPath="/A2_1270_REC/A2_1270_REC_ATTRIBUTE_15/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1270_REC\A2_1270_REC_ATTRIBUTE_15, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2016642316" elementPath="/G1/G2/A2_4840_REC/A2_4840_REC_TP_ATTRIBUTE_9/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4840_REC\A2_4840_REC_TP_ATTRIBUTE_9, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1459500217" elementPath="/A1_1240_REC_PO_ATTRIBUTE_REC_1_Generic_STORE_FIELDS/A1_1240_REC_PO_HDR_ATTR_4_HDR_STORE_FIELD_4/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A1_1240_REC_PO_ATTRIBUTE_REC_1_Generic_STORE_FIELDS\A1_1240_REC_PO_HDR_ATTR_4_HDR_STORE_FIELD_4, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1602153813" elementPath="/A1_1240_REC_PO_ATTRIBUTE_REC_1_Generic_STORE_FIELDS/A1_1240_REC_PO_HDR_ATTR_3_HDR_Store_Field_3/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A1_1240_REC_PO_ATTRIBUTE_REC_1_Generic_STORE_FIELDS\A1_1240_REC_PO_HDR_ATTR_3_HDR_Store_Field_3, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="759628380" elementPath="/A2_1270_REC/A2_1270_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1270_REC\A2_1270_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1580563611" elementPath="/PY_1060_REC/PY_1060_REC_PAYMENT_TYPE_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_PAYMENT_TYPE_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="276278852" elementPath="/PY_1070_REC/PY_1070_REC_PO_HDR_PAY_TERMS_EXT2/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1070_REC\PY_1070_REC_PO_HDR_PAY_TERMS_EXT2, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1503944082" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1220520552" elementPath="/A2_1250_REC_PO_ATTRIBUTE_REC2_Generic_STORE_FIELDS/A2_1250_REC_PO_HDR_ATTR_7_RosettaNet_Only_3A4/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1250_REC_PO_ATTRIBUTE_REC2_Generic_STORE_FIELDS\A2_1250_REC_PO_HDR_ATTR_7_RosettaNet_Only_3A4, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-551047790" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_CALC_PRICE_FLAG_Not_Used/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_CALC_PRICE_FLAG_Not_Used, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-666430331" elementPath="/PY_1070_REC/PY_1070_REC_PO_HDR_PAY_TERMS_EXT4/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1070_REC\PY_1070_REC_PO_HDR_PAY_TERMS_EXT4, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1482569900" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_SHIP_TO_ADDR2/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_SHIP_TO_ADDR2, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="393987775" elementPath="/A1_1240_REC_PO_ATTRIBUTE_REC_1_Generic_STORE_FIELDS/A1_1240_REC_PO_HDR_ATTR_1_HDR_Store_Field_1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A1_1240_REC_PO_ATTRIBUTE_REC_1_Generic_STORE_FIELDS\A1_1240_REC_PO_HDR_ATTR_1_HDR_Store_Field_1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1104376633" elementPath="/NT_1100_REC/NT_1100_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\NT_1100_REC\NT_1100_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1161608671" elementPath="/AD_1400_REC/AD_1400_REC_SOLD_TO_PROVINCE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_SOLD_TO_PROVINCE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2058873124" elementPath="/PY_1070_REC/PY_1070_REC_PO_HDR_PAY_TERMS_EXT3/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1070_REC\PY_1070_REC_PO_HDR_PAY_TERMS_EXT3, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-39137362" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_TOP_MODEL_LINE_REF/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_TOP_MODEL_LINE_REF, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1713903236" elementPath="/A2_1260_REC/A2_1260_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1260_REC\A2_1260_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1357144211" elementPath="/G1/G2/A2_4860_REC/A2_4860_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4860_REC\A2_4860_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1596693868" elementPath="/PY_1070_REC/PY_1070_REC_TAX_EXEMPT_NUMBER/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1070_REC\PY_1070_REC_TAX_EXEMPT_NUMBER, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1202853416" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_SHIP_TO_STATE_INT/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_SHIP_TO_STATE_INT, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1570994217" elementPath="/G1/G2/A2_4840_REC/A2_4840_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4840_REC\A2_4840_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="425907861" elementPath="/A2_1250_REC_ID/A2_1250_REC_KEY1B_DOCUMENT_ID_PO_Number/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1250_REC_ID\A2_1250_REC_KEY1B_DOCUMENT_ID_PO_Number, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2084784939" elementPath="/AD_1400_REC/AD_1400_REC_SOLD_TO_PROVINCE_INT/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_SOLD_TO_PROVINCE_INT, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1074863518" elementPath="/G1/G2/A2_4850_REC/A2_4850_REC_TP_ATTRIBUTE_13/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4850_REC\A2_4850_REC_TP_ATTRIBUTE_13, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1042810837" elementPath="/G1/G2/IT_2000_REC/IT_2000_REC_CUSTOMER_ITEM_ID_TYPE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\IT_2000_REC\IT_2000_REC_CUSTOMER_ITEM_ID_TYPE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1265371366" elementPath="/AD_1500_REC/AD_1500_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1836727194" elementPath="/PY_1060_REC/PY_1060_REC_CREDIT_CARD_HOLDER_NAME/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_CREDIT_CARD_HOLDER_NAME, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-864865057" elementPath="/AD_1500_REC/AD_1500_REC_SHIP_TO_ADDR_NAME/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_SHIP_TO_ADDR_NAME, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1250006402" elementPath="/FB_1090_REC/FB_1090_REC_SHIPMENT_PRIORITY_CODE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC\FB_1090_REC_SHIPMENT_PRIORITY_CODE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="583060672" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_SALES_AGREEMENT_LINE_NUMBER/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_SALES_AGREEMENT_LINE_NUMBER, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-678690649" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_SHIP_MODLE_COMPLTE_FLG/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_SHIP_MODLE_COMPLTE_FLG, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1768935216" elementPath="/A2_1230_REC/A2_1230_REC_ATTR_16/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1230_REC\A2_1230_REC_ATTR_16, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-301915012" elementPath="/G1/G2/A2_4230_REC_ATTRIBUTE_20_WORK/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\G1[1]\G2[1]\A2_4230_REC_ATTRIBUTE_20_WORK then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2028822833" elementPath="/PY_1070_REC/PY_1070_REC_TAX_EXEMPT_REASON_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1070_REC\PY_1070_REC_TAX_EXEMPT_REASON_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1476736111" elementPath="/CTL_850_REC/CTL_REC_CONTROL1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_CONTROL1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1509050913" elementPath="/PY_1060_REC/PY_1060_REC_TRANS_CURRENCY/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_TRANS_CURRENCY, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="612283942" elementPath="/A2_1270_REC/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\A2_1270_REC then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-533834474" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1396009505" elementPath="/FB_1090_REC_FREIGHT_TERMS_CODE_EXT3/FB_1090_REC_FOB_POINT_CODE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC_FREIGHT_TERMS_CODE_EXT3\FB_1090_REC_FOB_POINT_CODE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-57176261" elementPath="/A1_1240_REC_ID/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\A1_1240_REC_ID then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1103778072" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_SHIPMENT_PRIORITY_CODE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_SHIPMENT_PRIORITY_CODE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1982812146" elementPath="/A2_1230_REC/A2_1230_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1230_REC\A2_1230_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1472364693" elementPath="/PY_1060_REC/PY_1060_REC_CREDIT_CARD_APPRV_DT/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_CREDIT_CARD_APPRV_DT, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1180087104" elementPath="/A2_1250_REC_PO_ATTRIBUTE_REC2_Generic_STORE_FIELDS/A2_1250_REC_PO_HDR_ATTR_5_HDR_CONTRACT_NUMBER/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1250_REC_PO_ATTRIBUTE_REC2_Generic_STORE_FIELDS\A2_1250_REC_PO_HDR_ATTR_5_HDR_CONTRACT_NUMBER, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1783473955" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_SHIP_TO_ADDR_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_SHIP_TO_ADDR_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-14505105" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-528216312" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_REQUEST_DATE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_REQUEST_DATE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1384103686" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_SHIP_TO_POSTAL_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_SHIP_TO_POSTAL_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1971769922" elementPath="/CTL_850_REC/CTL_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_850_REC\CTL_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-290916313" elementPath="/AD_1500_REC/AD_1500_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-425641254" elementPath="/G1/G2/IT_2000_REC/IT_2000_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\IT_2000_REC\IT_2000_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1084892162" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_KEY_1A_MAILBOX_ID_Use_EBS_Partners/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_KEY_1A_MAILBOX_ID_Use_EBS_Partners, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="55725162" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_CUST_MODEL_SERIAL_NUM/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_CUST_MODEL_SERIAL_NUM, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="85388450" elementPath="/AD_1400_REC/AD_1400_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2083512695" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1711640656" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_OPTION_FLAG/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_OPTION_FLAG, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1240311019" elementPath="/PY_1060_REC/PY_1060_REC_CONVERSION_RATE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_CONVERSION_RATE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1286708072" elementPath="/CTL_850_REC/">
+         <dmlExpression><![CDATA[if  count(in:\G1[%count_Parent]\G2) = %count_SubParent
+ then
+ {
+ %count_Parent:=%count_Parent+1;
+ %count_SubParent:=0
+ };
+ %occurs := 0;
+if defined in:\CTL_850_REC then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1337994063" elementPath="/G1/G2/A2_4230_REC_ATTRIBUTE_20_WORK/A2_4230_REC_ATTRIBUTE_20_WORK_1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4230_REC_ATTRIBUTE_20_WORK\A2_4230_REC_ATTRIBUTE_20_WORK_1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="307176409" elementPath="/G1/G2/A1_4830_REC/A1_4830_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A1_4830_REC\A1_4830_REC_KEY_1A_MAILBOX_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1448799362" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_SHIPPED_QTY/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_SHIPPED_QTY, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1042939751" elementPath="/FB_1090_REC_FREIGHT_TERMS_CODE_EXT3/FB_1090_REC_FREIGHT_TERMS/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC_FREIGHT_TERMS_CODE_EXT3\FB_1090_REC_FREIGHT_TERMS, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="122687933" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_UNIT_LIST_PRICE_Not_Used/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_UNIT_LIST_PRICE_Not_Used, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1634629242" elementPath="/PO1_1000_REC/PO1_1000_REC_ORDER_CATEGORY_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_1000_REC_ORDER_CATEGORY_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-288686875" elementPath="/A2_1250_REC_ID/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\A2_1250_REC_ID then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1664212508" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_SHIPPED_QTY_2/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_SHIPPED_QTY_2, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1051464645" elementPath="/G1/G2/IT_2000_REC/IT_2000_REC_KEY_1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\IT_2000_REC\IT_2000_REC_KEY_1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1945974812" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_REFERENCE_TYPE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_REFERENCE_TYPE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2121838627" elementPath="/G1/G2/A2_4230_REC/A2_4230_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4230_REC\A2_4230_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="792214800" elementPath="/PY_1070_REC/PY_1070_REC_PO_HDR_PAY_TERMS_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1070_REC\PY_1070_REC_PO_HDR_PAY_TERMS_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1657238673" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_PRICE_LIST__Not_Used/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_PRICE_LIST__Not_Used, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1596171433" elementPath="/FB_1090_REC/FB_1090_REC_SHIP_TOLERANCE_BELOW/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC\FB_1090_REC_SHIP_TOLERANCE_BELOW, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1547732525" elementPath="/AD_1500_REC/AD_1500_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1893840925" elementPath="/AD_1500_REC/AD_1500_REC_SHIP_TO_COUNTRY_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_SHIP_TO_COUNTRY_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1163191432" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_REFERENCE_LINE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_REFERENCE_LINE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1293040454" elementPath="/PO_1020_REC/PO_1020_REC_CHANGE_COMMENTS_1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO_1020_REC\PO_1020_REC_CHANGE_COMMENTS_1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="289305537" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_SHIP_TO_ADDR4/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_SHIP_TO_ADDR4, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2076733684" elementPath="/PO_1010_REC/PO_1010_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO_1010_REC\PO_1010_REC_KEY1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="311908609" elementPath="/G1/G2/IT_2000_REC/IT_2000_REC_SPLIT_FROM_LINE_REF/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\IT_2000_REC\IT_2000_REC_SPLIT_FROM_LINE_REF, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1381035530" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_FREIGHT_TERMS_CODE_EXT2/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_FREIGHT_TERMS_CODE_EXT2, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1692128511" elementPath="/A2_1250_REC_ID/A2_1250_REC_KEY3_FUTURE_USE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1250_REC_ID\A2_1250_REC_KEY3_FUTURE_USE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-855040783" elementPath="/A2_1260_REC/A2_1260_REC_PO_ATTRIBUTE_10/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1260_REC\A2_1260_REC_PO_ATTRIBUTE_10, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2031999676" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_SORT_ORDER/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_SORT_ORDER, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2042861891" elementPath="/G1/G2/A2_4850_REC/A2_4850_REC_TP_ATTRIBUTE_10/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A2_4850_REC\A2_4850_REC_TP_ATTRIBUTE_10, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1962488741" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_SHIP_TO_COUNTRY_INT/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_SHIP_TO_COUNTRY_INT, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-40435734" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_SHIPPING_METHOD_CODE_EXT2/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_SHIPPING_METHOD_CODE_EXT2, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-958358130" elementPath="/FB_1090_REC_ID/FB_1090_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC_ID\FB_1090_REC_KEY1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1408997332" elementPath="/A1_1240_REC_ID/A1_1240_REC_KEY1B_DOCUMENT_IDPO_Number/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A1_1240_REC_ID\A1_1240_REC_KEY1B_DOCUMENT_IDPO_Number, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1790035777" elementPath="/PY_1060_REC/PY_1060_REC_CONVERSION_TYPE_CD_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1060_REC\PY_1060_REC_CONVERSION_TYPE_CD_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-635704542" elementPath="/A1_1240_REC_PO_ATTRIBUTE_REC_1_Generic_STORE_FIELDS/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\A1_1240_REC_PO_ATTRIBUTE_REC_1_Generic_STORE_FIELDS then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-115391811" elementPath="/AD_1500_REC/AD_1500_REC_SHIP_TO_ADDR_3/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_SHIP_TO_ADDR_3, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="404312308" elementPath="/G1/G2/DT_4000_REC_REFERENCE_TYPE/DT_4000_REC_ORDERED_QTY_UOM_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\DT_4000_REC_REFERENCE_TYPE\DT_4000_REC_ORDERED_QTY_UOM_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-299694319" elementPath="/FB_1090_REC_FREIGHT_TERMS_CODE_EXT3/FB_1090_REC_FREIGHT_TERMS_CODE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\FB_1090_REC_FREIGHT_TERMS_CODE_EXT3\FB_1090_REC_FREIGHT_TERMS_CODE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="267510902" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_SHIPPING_METHOD/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_SHIPPING_METHOD, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2076501752" elementPath="/PY_1070_REC/PY_1070_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1070_REC\PY_1070_REC_KEY2_USE_AT_LINE_LEVEL, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1232657122" elementPath="/G1/G2/AD_4800_REC_SCH_SHIP_TO_ADDR/AD_4800_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\AD_4800_REC_SCH_SHIP_TO_ADDR\AD_4800_REC_KEY1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="913658695" elementPath="/G1/G2/FB_3080_REC_SHIP_VIA/FB_3080_REC_FREIGHT_CARRIER_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\FB_3080_REC_SHIP_VIA\FB_3080_REC_FREIGHT_CARRIER_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1479527374" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_PRICE_LIST_EXT1_Not_Used/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_PRICE_LIST_EXT1_Not_Used, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-948864294" elementPath="/PO1_1000_REC/PO1_1000_REC_ORDER_TYPE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PO1_1000_REC\PO1_1000_REC_ORDER_TYPE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="493022440" elementPath="/G1/G2/A1_4830_REC/A1_4830_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\A1_4830_REC\A1_4830_REC_KEY1B_DOCUMENT_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1732930120" elementPath="/AD_1400_REC/AD_1400_REC_SOLD_TO_POSTAL_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_SOLD_TO_POSTAL_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1235489674" elementPath="/A1_1240_REC_PO_ATTRIBUTE_REC_1_Generic_STORE_FIELDS/A1_1240_REC_PO_HDR_ATTR_2_HDR_Store_Field_1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A1_1240_REC_PO_ATTRIBUTE_REC_1_Generic_STORE_FIELDS\A1_1240_REC_PO_HDR_ATTR_2_HDR_Store_Field_1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1408760851" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_KEY1B_DOCUMENT_ID_PO_Number/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_KEY1B_DOCUMENT_ID_PO_Number, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-473215404" elementPath="/G1/G2/IT_2000_REC/IT_2000_REC_ITEM_TYPE_CODE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\IT_2000_REC\IT_2000_REC_ITEM_TYPE_CODE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-321706822" elementPath="/PY_1070_REC/PY_1070_REC_TAX_POINT_CODE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\PY_1070_REC\PY_1070_REC_TAX_POINT_CODE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="166648727" elementPath="/G1/G2/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_ID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\G1[1]\G2[1]\LN_3000_REC_PRICING_Line_Pricing_Record\LN_3000_REC_ID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-373431609" elementPath="/A2_1230_REC/A2_1230_REC_ATTR_18/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\A2_1230_REC\A2_1230_REC_ATTR_18, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1357977767" elementPath="/AD_1400_REC/AD_1400_REC_SOLD_TO_STATE_INT/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1400_REC\AD_1400_REC_SOLD_TO_STATE_INT, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-99079686" elementPath="/AD_1500_REC/AD_1500_REC_SHIP_TO_PROVINCE_EXT1/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\AD_1500_REC\AD_1500_REC_SHIP_TO_PROVINCE_EXT1, absent )]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

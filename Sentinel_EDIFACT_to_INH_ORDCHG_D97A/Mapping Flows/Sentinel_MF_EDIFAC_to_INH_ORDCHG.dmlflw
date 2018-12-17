@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<flow xmlns="http://www.axway.com/mappingServices/flow" id="de15f6f8-b5d8-41f8-b77d-28efe09b5100">
+   <signature appVersion="3.1.2" lastUpdatedOn="17/12/2018 16:36:29 +0530"/>
+   <configurationParameters>
+      <configurationParameter name="checkInputFacet" value="true"/>
+      <configurationParameter name="stopOnFirstInputFacetCheckError" value="true"/>
+      <configurationParameter name="checkInputCheckConstraints" value="false"/>
+      <configurationParameter name="stopOnFirstInputCheckConstraintsError" value="true"/>
+      <configurationParameter name="checkOutputFacet" value="false"/>
+      <configurationParameter name="stopOnFirstOutputFacetCheckError" value="true"/>
+      <configurationParameter name="checkOutputCheckConstraints" value="false"/>
+      <configurationParameter name="stopOnFirstOutputCheckConstraintsError" value="true"/>
+      <configurationParameter name="continueMessageProcessingOnError" value="false"/>
+      <configurationParameter name="groupAllResultingInstances" value="false"/>
+      <configurationParameter name="keepExactValue" value="true"/>
+      <configurationParameter name="copyAllAttributes" value="true"/>
+   </configurationParameters>
+   <graphLinks>
+      <graphLink factoryType="FlowMainLink" name="FlowLink1" type="TYPE_INPUT" connectedObjectAlias="in" hash="8f7a0b2b-fc6c-45ee-bb6c-92b83f7c56cf">
+         <source ref="72877cf8-9d26-44ee-97dd-dedff02edeaf"/>
+         <target ref="666da047-cb2c-4e0f-a027-9c3f7843d7cb"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink2" type="TYPE_OUTPUT" connectedObjectAlias="out" hash="7b99f53d-f3aa-42b9-98d5-ee77d2a4394b">
+         <source ref="21b57e1f-b0ff-40ea-8a77-e8bb37386e1b"/>
+         <target ref="f48a9d98-05a9-423f-b049-26938e01506b"/>
+      </graphLink>
+      <graphLink name="Link1" hash="aa580c0e-c92d-4654-b65a-994acbce44a5">
+         <source ref="686516b4-31fc-48ca-beee-d55ec2111d1c"/>
+         <target ref="72877cf8-9d26-44ee-97dd-dedff02edeaf"/>
+      </graphLink>
+      <graphLink name="Link2" hash="845e10fd-1c25-4e8e-842c-2b9ea3e49562">
+         <source ref="57a4c289-c25d-4356-aa34-cf527c7bc53e"/>
+         <target ref="a8b137b4-abf5-41ba-972a-73d0de2946cc"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink4" type="TYPE_OUTPUT" connectedObjectAlias="out" hash="b0a13640-9153-4ba7-b720-a73db64a1fc9">
+         <source ref="e137a777-8227-484d-893d-f33b1ee7b6f0"/>
+         <target ref="31b41ca8-e986-4a5b-862b-3f11d63583af"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink3" type="TYPE_INPUT" connectedObjectAlias="in" hash="32c4a82d-10ef-4b71-a287-e8210b9d4565">
+         <source ref="f48a9d98-05a9-423f-b049-26938e01506b"/>
+         <target ref="d27460f8-08fd-4872-9dc9-163f9111a597"/>
+      </graphLink>
+   </graphLinks>
+   <graphNodes>
+      <graphNode factoryType="InputEntity" name="input1" hash="686516b4-31fc-48ca-beee-d55ec2111d1c">
+         <bounds height="40" width="90" y="13"/>
+      </graphNode>
+      <graphNode factoryType="GraphicalInstructionBlock" name="Main_Block_MF_EDIFACT_to_INH_ORDCHG_D97A1" nameDisplayed="true" hash="666da047-cb2c-4e0f-a027-9c3f7843d7cb">
+         <bounds x="203" height="255" width="309" y="26"/>
+         <intructions>
+            <instruction factoryType="GraphicalInstructionSet" name="Set1" hash="57a4c289-c25d-4356-aa34-cf527c7bc53e">
+               <dmlExpression><![CDATA[%count_Parent :=count( in:\G1 );
+%count_SubParent:=0;
+%count_Parent:=1;
+%count_SubParent :=count( in:\G1\G2)
+]]></dmlExpression>
+               <bounds x="10" height="40" width="80" y="175"/>
+            </instruction>
+            <instruction factoryType="GraphicalInstructionLoop" name="Loop1" nameDisplayed="true" hash="a8b137b4-abf5-41ba-972a-73d0de2946cc">
+               <dmlExpression><![CDATA[count( in:\G1\G2 )]]></dmlExpression>
+               <bounds x="13" height="112" width="230" y="31"/>
+               <intructions>
+                  <instruction factoryType="GraphicalInstructionMap" name="M_DML_INH_TO_INH_ORDCHG" nameDisplayed="true" mapName="~/Maps/M_DML_INH_TO_INH_ORDCHG.mdm" hash="21b57e1f-b0ff-40ea-8a77-e8bb37386e1b">
+                     <bounds x="112" height="40" width="90" y="32"/>
+                  </instruction>
+               </intructions>
+            </instruction>
+         </intructions>
+      </graphNode>
+      <graphNode factoryType="GraphicalBusinessDocumentEntity" name="INH_Target_Sentinel" hash="72877cf8-9d26-44ee-97dd-dedff02edeaf">
+         <bounds x="105" height="40" width="90" y="37"/>
+         <documentName>~/Business Documents/INH_Target_Sentinel.bdoc</documentName>
+      </graphNode>
+      <graphNode factoryType="GraphicalBusinessDocumentEntity" name="INH_Target_Sentinel_1" hash="f48a9d98-05a9-423f-b049-26938e01506b">
+         <bounds x="515" height="40" width="90" y="215"/>
+         <documentName>~/Business Documents/INH_Target_Sentinel_1.bdoc</documentName>
+      </graphNode>
+      <graphNode factoryType="GraphicalInstructionBlock" name="Main_Block_Sentinel_MF_EDIFAC_to_INH_ORDCHG1" nameDisplayed="true" hash="d27460f8-08fd-4872-9dc9-163f9111a597">
+         <bounds x="210" height="100" width="142" y="358"/>
+         <intructions>
+            <instruction factoryType="GraphicalInstructionMap" name="Sentinel_record_entry" nameDisplayed="true" mapName="~/Maps/Sentinel_record_entry.mdm" hash="e137a777-8227-484d-893d-f33b1ee7b6f0">
+               <bounds x="24" height="40" width="90" y="20"/>
+            </instruction>
+         </intructions>
+      </graphNode>
+      <graphNode factoryType="GraphicalBusinessDocumentEntity" name="TO_Lattice_Trans" hash="31b41ca8-e986-4a5b-862b-3f11d63583af">
+         <bounds x="402" height="40" width="90" y="378"/>
+         <documentName>~/Business Documents/TO_Lattice_Trans.bdoc</documentName>
+      </graphNode>
+   </graphNodes>
+</flow>
