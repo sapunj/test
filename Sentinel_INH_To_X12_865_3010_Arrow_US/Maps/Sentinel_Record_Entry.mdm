@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="82795b61-bbbe-49a6-a3b4-8acbc85a5e7b">
+   <signature appVersion="3.1.2" lastUpdatedOn="10/12/2018 14:34:39 +0530"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/TO_Lattice_Trans.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/IH_Source_Sentinel.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="-3252874" elementPath="/DPAClaimNumber/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent (in:\PO_865_1000_REC_Header_865_Record\PO_REC_ORDER_NUMBER, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1896612244" elementPath="/DistiCost/">
+         <dmlExpression><![CDATA[convertToR (   replaceIfNullOrAbsent (in:\Root\DT_865_3000_REC\DT_REC_CUSTOMER_ITEM_NET_PRICE, absent ))]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="930272647" elementPath="/DPANumber/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent (in:\CTL_865_REC_Outbound_POCAO_ECE_Control_Rec\CTL_REC_KEY1B_DOCUMENT_ID_PO_Number , absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1471061140" elementPath="/BusinessDocumentUserValue1/">
+         <dmlExpression><![CDATA[formatString ( convertToD (  replaceStringAll (  in:\Root\DT_865_3000_REC\DT_REC_REQUEST_DATE , " ", "") ,"YYYYMMDDhhmmss") ,"YYYYMMDDhhmmss")
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1255040353" elementPath="/InvoiceLineSublineNumer/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent (in:\Root\IT_865_2000_REC_PO_Line_855_Record\IT_REC_CUSTOMER_LINE_NUMBER, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="303201710" elementPath="/DocumentDate/">
+         <dmlExpression><![CDATA[%str_value:= "";
+if trimString (in:\Root\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT01_AK01_Line_Sch_level_code )= "ID" or trimString ( in:\Root\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT01_AK01_Line_Sch_level_code ) = "IR" then
+	{
+		%str_value:= ""
+	}
+else if in:\Root\!A1_865_4100_REC-Line_Sch_Level_EDI_Store_Fields!\!A1_OE_TP_LINE_ATTRIBUTE_1-Dock-or-Ship-Date-Qualifier-DA_SA! = "DA" then
+	{
+		%str_value:= getSubString ( in:\Root\DT_865_3000_REC\DT_REC_SCHEDULE_ARRIVAL_DATE, 3, 6 ) 
+	}
+else
+{
+	%str_value:= getSubString ( in:\Root\DT_865_3000_REC\DT_REC_SCHEDULE_SHIP_DATE, 3, 6 )
+};
+formatString (convertToD ( %str_value, "YYMMDDhhmmss" ) ,"YYMMDDhhmmss")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1826947234" elementPath="/PartNumber/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent (in:\Root\IT_865_2010_REC__Device_Item\IT_REC_INVENTORY_ITEM_LSCC_db_id, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1272929499" elementPath="/B2BiRootCoreID/">
+         <dmlExpression><![CDATA[getAttribute ( "B2BXGIReceive_B2BiRootCoreId" ) ]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="436251945" elementPath="/Distributor/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_865_REC_Outbound_POCAO_ECE_Control_Rec\CTL_REC_KEY_1A_MAILBOX_ID__Use_EBS_Partner_Ship_To_CI, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1396624770" elementPath="/Quantity/">
+         <dmlExpression><![CDATA[convertToI ( replaceIfNullOrAbsent (in:\Root\DT_865_3000_REC\DT_REC_ORDERED_QTY, absent ))]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-382814024" elementPath="/Backend/">
+         <dmlExpression><![CDATA["ORACLE"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1616395620" elementPath="/BusinessDocumentUserName1/">
+         <dmlExpression><![CDATA["Request Date"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1966457381" elementPath="/DistiInvoiceNumber/">
+         <dmlExpression><![CDATA[""]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1521285927" elementPath="/EndCustomer/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent (in:\CTL_865_REC_Outbound_POCAO_ECE_Control_Rec\CTL_REC_TP_LOCATION_CODE_Ship_to_CODE, absent )]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>
