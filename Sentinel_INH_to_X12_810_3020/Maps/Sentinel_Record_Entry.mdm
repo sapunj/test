@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="90d8549f-7d68-439f-9e60-9782cfb5034c">
+   <signature appVersion="3.1.2" lastUpdatedOn="13/12/2018 12:28:24 +0530"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/TO_Lattice_Trans.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/INH_810_Source_sentinel.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="1896612244" elementPath="/DistiCost/">
+         <dmlExpression><![CDATA[convertToR (   replaceIfNullOrAbsent (in:\G1\I1_810_4000_REC_Invoice_Line_Item\IT_REC_UNIT_SELLING_PRICE_unit_price, absent ))]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="930272647" elementPath="/DPANumber/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_810_REC\CTL_REC_KEY1B_DOCUMENT_ID_PO_Number, absent )
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1255040353" elementPath="/InvoiceLineSublineNumer/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent (in:\G1\I1_810_4000_REC_Invoice_Line_Item\IT_REC_CUSTOMER_ITEM_NUMBER_Customer_Partid, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1471061140" elementPath="/BusinessDocumentUserValue1/">
+         <dmlExpression><![CDATA[formatString ( convertToD (  replaceStringAll (in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_SHIPMENT_DATE, " ", "") ,"YYYYMMDDhhmmss") ,"YYYYMMDDhhmmss")
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="303201710" elementPath="/DocumentDate/">
+         <dmlExpression><![CDATA[formatString (  convertToD ( in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_INV_TRANSACTION_DATE , "YYMMDDhhmmss" ),"YYMMDDhhmmss")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1272929499" elementPath="/B2BiRootCoreID/">
+         <dmlExpression><![CDATA[getAttribute ( "B2BXGIReceive_B2BiRootCoreId" ) ]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="436251945" elementPath="/Distributor/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_810_REC\CTL_REC_KEY_1A_MAILBOX_ID_Use_EBS_Partner_Ship_To_Code, absent )
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1396624770" elementPath="/Quantity/">
+         <dmlExpression><![CDATA[convertToI ( replaceIfNullOrAbsent (in:\G1\I1_810_4000_REC_Invoice_Line_Item\IT_REC_ORDERED_QTY, absent ))]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-382814024" elementPath="/Backend/">
+         <dmlExpression><![CDATA["ORACLE"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1616395620" elementPath="/BusinessDocumentUserName1/">
+         <dmlExpression><![CDATA["Request Date"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1521285927" elementPath="/EndCustomer/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\CTL_810_REC\CTL_REC_TP_LOCATION_CODE_Ship_to_CODE, absent )
+]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>
