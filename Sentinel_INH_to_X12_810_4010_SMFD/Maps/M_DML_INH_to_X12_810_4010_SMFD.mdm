@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="4eeea6fe-cf7a-4698-a5b1-25de7600c1c6">
+   <signature appVersion="3.1.2" lastUpdatedOn="04/12/2018 15:58:15 +0530"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/004010_810.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/INH_810_Source.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="569496306" elementPath="/TRANSACTION/G1_Copy1/N3/e01_0166/">
+         <dmlExpression><![CDATA[in:\AD_810_1100_REC_Header_810_ST_ADDR_Record\AD_REC_SHIP_TO_ADDR1]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-646315086" elementPath="/TRANSACTION/ITD/e07_0386/">
+         <dmlExpression><![CDATA[convertToI ( in:\IV_810_2050_REC_Header_Pay_Terms_Info\IV_810_TERM_DUE_DAYS ) ]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1608986252" elementPath="/TRANSACTION/BIG/e07_0640/">
+         <dmlExpression><![CDATA[if  %Alt_Edi_id = "MOUSERUS" then
+{
+	"PR"
+}
+else
+{
+	"DI"
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="490324698" elementPath="/TRANSACTION/CUR/e03_0280/">
+         <dmlExpression><![CDATA[if convertToR ( in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_AMOUNT_TAX_DUE ) > 0 then
+{
+	round (convertToR ( getSubString (  in:\EX_810_2500_REC_Header_Tax_Info\IV_REC_RATE_OF_EXCH_INV_to_TAX_CUR_Exch_Rate , 1 , 17 )  ) , 4 )
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1184621013" elementPath="/TRANSACTION/G6/G7/PID/e05_0352/">
+         <dmlExpression><![CDATA[{#if %Alt_Edi_id = "SANMINAUS" then
+{
+	this\I1_810_4000_REC_Invoice_Line_Item\IT_REC_LINE_ITEM_NUMBER_LSCO_Databook_Name
+}
+else
+{
+	this\I1_810_4000_REC_Invoice_Line_Item\IT_REC_ORDERED_ITEM
+} #}
+
+this\I1_810_4000_REC_Invoice_Line_Item\IT_REC_LINE_ITEM_NUMBER_LSCO_Databook_Name]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1705580752" elementPath="/TRANSACTION/G1_Copy2/N3/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1888576799" elementPath="/TRANSACTION/REF/e01_0128/">
+         <dmlExpression><![CDATA["PK"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="15708348" elementPath="/TRANSACTION/G1/N3/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="166208563" elementPath="/TRANSACTION/G1/N1/e02_0093/">
+         <dmlExpression><![CDATA[if in:\AD_810_1300_REC_Header_810_REMIT_ADDRESS_Record\AD_REC_REMIT_TO_CUSTOMER_NAME <> null then 
+{
+	in:\AD_810_1300_REC_Header_810_REMIT_ADDRESS_Record\AD_REC_REMIT_TO_CUSTOMER_NAME
+}
+else
+{
+	"LATTICE SEMICONDUCTOR"
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-790748767" elementPath="/TRANSACTION/G1_Copy1/N1/e01_0098/">
+         <dmlExpression><![CDATA["ST"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-893888920" elementPath="/TRANSACTION/G6/DTM/e02_0373/">
+         <dmlExpression><![CDATA[convertToD ( getSubString (  in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_SHIPMENT_DATE , 1 , 8 ) , "YYYYMMDD" )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="485202978" elementPath="/TRANSACTION/G1_Copy2/N3/e02_0166/">
+         <dmlExpression><![CDATA[in:\AD_810_1000_REC_Header_810_BT_ADDR_Record\AD_REC_BILL_TO_ADDR2]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1720142550" elementPath="/TRANSACTION/G1/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1953607877" elementPath="/TRANSACTION/G1/N3/e01_0166/">
+         <dmlExpression><![CDATA[in:\AD_810_1300_REC_Header_810_REMIT_ADDRESS_Record\AD_REC_REMIT_TO_ADDR1]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="820570978" elementPath="/TRANSACTION/TXI/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1049302853" elementPath="/TRANSACTION/G1_Copy2/N4/e01_0019/">
+         <dmlExpression><![CDATA[in:\AD_810_1000_REC_Header_810_BT_ADDR_Record\AD_REC_BILL_TO_CITY]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1078682875" elementPath="/TRANSACTION/G1/N1/e04_0067/">
+         <dmlExpression><![CDATA[if %Alt_Edi_id = "SANMINAUS" then
+{
+	"74826"
+}
+else
+{
+	"02"
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="421644318" elementPath="/TRANSACTION/G1_Copy1/N4/e01_0019/">
+         <dmlExpression><![CDATA[in:\AD_810_1100_REC_Header_810_ST_ADDR_Record\AD_REC_SHIP_TO_CITY]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1417276136" elementPath="/TRANSACTION/G6/IT1/e02_0358/">
+         <dmlExpression><![CDATA[%RN_IT_REC_QTY:=0;
+%RN_IT_REC_QTY:=convertToR (  this\I1_810_4000_REC_Invoice_Line_Item\IT_REC_QUANTITY );
+%RN_IT_REC_QTY
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1525241504" elementPath="/TRANSACTION/ST/e02_0329/">
+         <dmlExpression><![CDATA["0001"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1411874976" elementPath="/TRANSACTION/G1_Copy1/N1/e04_0067/">
+         <dmlExpression><![CDATA[%SubStr1_ORDER_HDR_TP_ATTRIBUTE11:= getSubString (in:\G1[where item\A2_810_5160_REC_Header_Level_EDI_Store_Fields\A2_ORDER_HEADER_TP_ATTRIBUTE_11 <> null]\A2_810_5160_REC_Header_Level_EDI_Store_Fields\A2_ORDER_HEADER_TP_ATTRIBUTE_11[1], 1, index(  in:\G1[where item\A2_810_5160_REC_Header_Level_EDI_Store_Fields\A2_ORDER_HEADER_TP_ATTRIBUTE_11 <> null]\A2_810_5160_REC_Header_Level_EDI_Store_Fields\A2_ORDER_HEADER_TP_ATTRIBUTE_11[1], "~" ) -1 );
+%SubStr2_SHIP_TO_CSTMR_CODE_EXT:=getSubString (in:\AD_810_1100_REC_Header_810_ST_ADDR_Record\AD_REC_SHIP_TO_CUSTOMER_CODE_EXT  , index( in:\AD_810_1100_REC_Header_810_ST_ADDR_Record\AD_REC_SHIP_TO_CUSTOMER_CODE_EXT , "-" ) +1,  length ( in:\AD_810_1100_REC_Header_810_ST_ADDR_Record\AD_REC_SHIP_TO_CUSTOMER_CODE_EXT) ); 
+
+if %SubStr1_ORDER_HDR_TP_ATTRIBUTE11 <> null then
+{
+	%Str_N104_2:=%SubStr1_ORDER_HDR_TP_ATTRIBUTE11
+}
+else if %SubStr2_SHIP_TO_CSTMR_CODE_EXT <> null then
+{
+	%Str_N104_2:=%SubStr2_SHIP_TO_CSTMR_CODE_EXT
+}
+else
+{
+	%Str_N104_2:=Get_Value("Oracle_ShipTo_ST_DP","/Cloud/data/b2bi/shared/local/db_location","xref_out" ,"alt_edi_id,"+ %Alt_Edi_id );
+	if  ( %Str_N104_2 = "NONE" ) then
+	{
+		%Str_N104_2 := null
+	}
+};
+%Str_N104_2
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="458526499" elementPath="/TRANSACTION/G6/IT1/e01_0350/">
+         <dmlExpression><![CDATA[if this\A2_810_5170_REC_Line_Level_EDI_Store_Fields\A2_LINE_TP_ATTRIBUTE3_Customer_PO_Line_Item_Number <> null then
+{
+	this\A2_810_5170_REC_Line_Level_EDI_Store_Fields\A2_LINE_TP_ATTRIBUTE3_Customer_PO_Line_Item_Number
+}
+else if this\I1_810_4000_REC_Invoice_Line_Item\IT_REC_PURCHASE_ORDER_LINE_NUMBER <> null then
+{
+	this\I1_810_4000_REC_Invoice_Line_Item\IT_REC_PURCHASE_ORDER_LINE_NUMBER
+}
+else
+{
+	this\I1_810_4000_REC_Invoice_Line_Item\IT_REC_LINE_NUMBER
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1926556964" elementPath="/TRANSACTION/BIG/e01_0373/">
+         <dmlExpression><![CDATA[convertToD ( getSubString (  in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_INV_TRANSACTION_DATE , 1 , 8 ) , "YYYYMMDD" ) 
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1770897780" elementPath="/TRANSACTION/DTM/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-181831445" elementPath="/TRANSACTION/G6/DTM/e01_0374/">
+         <dmlExpression><![CDATA["011"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-596961649" elementPath="/TRANSACTION/DTM/e02_0373/">
+         <dmlExpression><![CDATA[if in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_SHIPMENT_DATE  <> null then
+{
+	convertToD ( getSubString (  in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_SHIPMENT_DATE , 1 , 8 ) , "YYYYMMDD" )
+} 
+else
+{
+	convertToD ( getSubString (  in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_INV_TRANSACTION_DATE , 1 , 8 ) , "YYYYMMDD" ) 
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1613336542" elementPath="/TRANSACTION/G1_Copy2/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2097759344" elementPath="/TRANSACTION/TDS/e01_0610/">
+         <dmlExpression><![CDATA[if in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_TOTAL_AMOUNT_DUE <> null then
+{
+	convertToR ( in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_TOTAL_AMOUNT_DUE )
+}
+else
+{
+	convertToR ( "0" )
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1268428538" elementPath="/TRANSACTION/TXI/e02_0782/">
+         <dmlExpression><![CDATA[if convertToR ( in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_AMOUNT_TAX_DUE ) <> 0 then
+{
+	convertToR ( in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_AMOUNT_TAX_DUE )
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2032626408" elementPath="/TRANSACTION/ITD/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-759197699" elementPath="/TRANSACTION/G1_Copy2/N1/e03_0066/">
+         <dmlExpression><![CDATA["92"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2139568050" elementPath="/TRANSACTION/ST/e01_0143/">
+         <dmlExpression><![CDATA["810"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1907617361" elementPath="/TRANSACTION/G1/N4/e02_0156/">
+         <dmlExpression><![CDATA[in:\AD_810_1300_REC_Header_810_REMIT_ADDRESS_Record\AD_REC_REMIT_TO_STATE_EXT]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1334095981" elementPath="/TRANSACTION/G6/IT1/e04_0212/">
+         <dmlExpression><![CDATA[convertToR ( this\I1_810_4000_REC_Invoice_Line_Item\IT_REC_UNIT_SELLING_PRICE_unit_price )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-441068820" elementPath="/TRANSACTION/BIG/e05_0328/">
+         <dmlExpression><![CDATA[null]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="987446356" elementPath="/TRANSACTION/G6/REF/e02_0127/">
+         <dmlExpression><![CDATA[this\..\IV_810_3075_REC\IV_REC_PACKING_SLIP_NUMBER_Do_not_use_me_]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1400534260" elementPath="/TRANSACTION/BIG/e03_0373/">
+         <dmlExpression><![CDATA[if in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_PURCHASE_ORDER_DATE <> null then 
+{
+	convertToD ( getSubString (  in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_PURCHASE_ORDER_DATE , 1 , 8 ) , "YYYYMMDD" ) 
+}
+else if defined in:\G1[ where item\IT_810_4010_REC_Sales_Order_Record\IT_REC_SALES_ORDER_DATE <> null ] then 
+{
+	convertToD ( getSubString (  in:\G1[ where item\IT_810_4010_REC_Sales_Order_Record\IT_REC_SALES_ORDER_DATE <> null ]\IT_810_4010_REC_Sales_Order_Record\IT_REC_SALES_ORDER_DATE[ 1 ] , 1 , 8 ) , "YYYYMMDD" ) 
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="590895514" elementPath="/TRANSACTION/G14/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-824804865" elementPath="/TRANSACTION/G6/IT1/e06_0235/">
+         <dmlExpression><![CDATA[if this\I1_810_4000_REC_Invoice_Line_Item\IT_REC_CUSTOMER_ITEM_NUMBER_Customer_Partid <> null then
+{
+	"BP"
+}
+else
+{
+	"VP"
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1913048397" elementPath="/TRANSACTION/G1/N4/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-291931539" elementPath="/TRANSACTION/SE/e02_0329/">
+         <dmlExpression><![CDATA["1234"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1819460354" elementPath="/TRANSACTION/G1_Copy2/N4/e02_0156/">
+         <dmlExpression><![CDATA[in:\AD_810_1000_REC_Header_810_BT_ADDR_Record\AD_REC_BILL_TO_STATE_EXT]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1243598236" elementPath="/TRANSACTION/DTM/e01_0374/">
+         <dmlExpression><![CDATA["011"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="991519071" elementPath="/TRANSACTION/CUR/e02_0100/">
+         <dmlExpression><![CDATA[in:\IV_810_2040_RFC_Header_Currency_Info\IV_810_2040_BASE_CURRENCY_CODE_EXT1]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-654715679" elementPath="/TRANSACTION/G14/SAC/e12_0331/">
+         <dmlExpression><![CDATA[if in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_AMOUNT_FREIGHT_DUE <> "0" then
+{
+	"6"
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1426216064" elementPath="/TRANSACTION/G1_Copy2/N1/e02_0093/">
+         <dmlExpression><![CDATA[in:\AD_810_1000_REC_Header_810_BT_ADDR_Record\AD_REC_BILL_TO_CUSTOMER_NAME]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="162275010" elementPath="/TRANSACTION/G1_Copy1/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-235117429" elementPath="/TRANSACTION/CUR/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-723778486" elementPath="/TRANSACTION/REF_1/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="690309897" elementPath="/TRANSACTION/G6/IT1/e14_0235/">
+         <dmlExpression><![CDATA["PL"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2098521438" elementPath="/TRANSACTION/SE/e01_0096/">
+         <dmlExpression><![CDATA[-999]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-267104199" elementPath="/TRANSACTION/G6/DTM/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-158478148" elementPath="/TRANSACTION/G1_Copy1/N4/e04_0026/">
+         <dmlExpression><![CDATA[in:\AD_810_1100_REC_Header_810_ST_ADDR_Record\AD_REC_SHIP_TO_COUNTRY_EXT1]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1842335949" elementPath="/TRANSACTION/CUR/e01_0098/">
+         <dmlExpression><![CDATA["SE"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="178488590" elementPath="/TRANSACTION/ITD/e12_0352/">
+         <dmlExpression><![CDATA[in:\IV_810_2050_REC_Header_Pay_Terms_Info\IV_810_PAYMENT_TERM_NAME]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1713100652" elementPath="/TRANSACTION/G1_Copy2/N4/e03_0116/">
+         <dmlExpression><![CDATA[getSubString ( in:\AD_810_1000_REC_Header_810_BT_ADDR_Record\AD_REC_BILL_TO_POSTAL_CODE, 1, 5 ) ]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1009575631" elementPath="/TRANSACTION/BIG/e04_0324/">
+         <dmlExpression><![CDATA[in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_PURCHASE_ORDER_NUMBER]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-824680014" elementPath="/TRANSACTION/ITD/e02_0333/">
+         <dmlExpression><![CDATA["3"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1884425553" elementPath="/TRANSACTION/REF/e02_0127/">
+         <dmlExpression><![CDATA[in:\IV_810_3075_REC\IV_REC_PACKING_SLIP_NUMBER_Do_not_use_me_]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1174918964" elementPath="/TRANSACTION/G1/N3/e02_0166/">
+         <dmlExpression><![CDATA[in:\AD_810_1300_REC_Header_810_REMIT_ADDRESS_Record\AD_REC_REMIT_TO_ADDR2]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-42936361" elementPath="/TRANSACTION/G6/IT1/e15_0234/">
+         <dmlExpression><![CDATA[this\I1_810_4000_REC_Invoice_Line_Item\IT_REC_LINE_NUMBER]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2002255968" elementPath="/TRANSACTION/G6/REF/e01_0128/">
+         <dmlExpression><![CDATA["PK"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="815950692" elementPath="/TRANSACTION/G6/G7/PID/e01_0349/">
+         <dmlExpression><![CDATA["F"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="763831070" elementPath="/TRANSACTION/G1_Copy2/N4/e04_0026/">
+         <dmlExpression><![CDATA[in:\AD_810_1000_REC_Header_810_BT_ADDR_Record\AD_REC_BILL_TO_COUNTRY_EXT1]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="555851358" elementPath="/TRANSACTION/ITD/e01_0336/">
+         <dmlExpression><![CDATA["01"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2008739792" elementPath="/TRANSACTION/G1/N4/e03_0116/">
+         <dmlExpression><![CDATA[if in:\AD_810_1300_REC_Header_810_REMIT_ADDRESS_Record\AD_REC_REMIT_TO_COUNTRY_EXT1 = "US" then
+{
+	%Str1_N403:= getSubString ( in:\AD_810_1300_REC_Header_810_REMIT_ADDRESS_Record\AD_REC_REMIT_TO_POSTAL_CODE, 1, index(  in:\AD_810_1300_REC_Header_810_REMIT_ADDRESS_Record\AD_REC_REMIT_TO_POSTAL_CODE , "-" ) -1 );
+	%Str2_N403:=getSubString ( in:\AD_810_1300_REC_Header_810_REMIT_ADDRESS_Record\AD_REC_REMIT_TO_POSTAL_CODE , index(  in:\AD_810_1300_REC_Header_810_REMIT_ADDRESS_Record\AD_REC_REMIT_TO_POSTAL_CODE , "-" ) +1,  index(  in:\AD_810_1300_REC_Header_810_REMIT_ADDRESS_Record\AD_REC_REMIT_TO_POSTAL_CODE , "-" ) -1 ); 
+	
+	%Str1_N403 + %Str2_N403
+}
+else
+{
+	in:\AD_810_1300_REC_Header_810_REMIT_ADDRESS_Record\AD_REC_REMIT_TO_POSTAL_CODE
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-564598121" elementPath="/TRANSACTION/BIG/e02_0076/">
+         <dmlExpression><![CDATA[in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_TRANSACTION_NUMBER]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-79680423" elementPath="/TRANSACTION/G1/N4/e04_0026/">
+         <dmlExpression><![CDATA[in:\AD_810_1300_REC_Header_810_REMIT_ADDRESS_Record\AD_REC_REMIT_TO_COUNTRY_EXT1]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1248412717" elementPath="/TRANSACTION/G1/N1/e03_0066/">
+         <dmlExpression><![CDATA["91"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-126635322" elementPath="/TRANSACTION/G14/SAC/e05_0610/">
+         <dmlExpression><![CDATA[if in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_AMOUNT_FREIGHT_DUE <> "0" then
+{
+	convertToR ( in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_AMOUNT_FREIGHT_DUE ) 
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1336178139" elementPath="/TRANSACTION/G1_Copy2/N1/e04_0067/">
+         <dmlExpression><![CDATA["02"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="242597037" elementPath="/TRANSACTION/G1/N4/e01_0019/">
+         <dmlExpression><![CDATA[in:\AD_810_1300_REC_Header_810_REMIT_ADDRESS_Record\AD_REC_REMIT_TO_CITY]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="621846946" elementPath="/TRANSACTION/G6/IT1/e03_0355/">
+         <dmlExpression><![CDATA["EA"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1965655142" elementPath="/TRANSACTION/G6/REF/">
+         <dmlExpression><![CDATA[%REF_PK_occ times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1771697687" elementPath="/TRANSACTION/G6/">
+         <dmlExpression><![CDATA[for each in:\G1]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1432142755" elementPath="/TRANSACTION/G6/IT1/e05_0639/">
+         <dmlExpression><![CDATA["PE"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="681415342" elementPath="/TRANSACTION/G6/IT1/e07_0234/">
+         <dmlExpression><![CDATA[if this\I1_810_4000_REC_Invoice_Line_Item\IT_REC_CUSTOMER_ITEM_NUMBER_Customer_Partid <> null then
+{
+	this\I1_810_4000_REC_Invoice_Line_Item\IT_REC_CUSTOMER_ITEM_NUMBER_Customer_Partid
+}
+else
+{
+	this\I1_810_4000_REC_Invoice_Line_Item\IT_REC_LINE_ITEM_NUMBER_LSCO_Databook_Name
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1198612539" elementPath="/TRANSACTION/G14/SAC/e01_0248/">
+         <dmlExpression><![CDATA[if in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_AMOUNT_FREIGHT_DUE <> "0" then
+{
+	"C"
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1515580446" elementPath="/TRANSACTION/CTT/e01_0354/">
+         <dmlExpression><![CDATA[%Int_Count_IT_REC_LINE_NUMBER:=0;
+loop on in:\G1\I1_810_4000_REC_Invoice_Line_Item\IT_REC_LINE_NUMBER {
+	%Int_Count_IT_REC_LINE_NUMBER:= %Int_Count_IT_REC_LINE_NUMBER +1
+};
+%Int_Count_IT_REC_LINE_NUMBER]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="422686734" elementPath="/TRANSACTION/G1_Copy2/N3/e01_0166/">
+         <dmlExpression><![CDATA[in:\AD_810_1000_REC_Header_810_BT_ADDR_Record\AD_REC_BILL_TO_ADDR1]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1059501405" elementPath="/TRANSACTION/G1_Copy1/N4/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1824692056" elementPath="/TRANSACTION/TXI/e01_0963/">
+         <dmlExpression><![CDATA[if %Alt_Edi_id = "DIGIKEYUS" or %Alt_Edi_id = "SANMINAUS" then
+{
+	if convertToR ( in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_AMOUNT_TAX_DUE ) > 0 then
+	{
+		"ZZ"
+	}
+}
+else if convertToR ( in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_AMOUNT_TAX_DUE ) > 0 then
+{
+	"GS"
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1427857380" elementPath="/TRANSACTION/G14/SAC/e02_1300/">
+         <dmlExpression><![CDATA[if in:\IV_810_2000_REC_Invoice_Header_Level\IV_REC_AMOUNT_FREIGHT_DUE <> "0" then
+{
+	"D240"
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-115627273" elementPath="/TRANSACTION/G1_Copy2/N4/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1907249204" elementPath="/TRANSACTION/G1_Copy1/N1/e03_0066/">
+         <dmlExpression><![CDATA["92"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2097083040" elementPath="/TRANSACTION/REF_1/e01_0128/">
+         <dmlExpression><![CDATA[if %Alt_Edi_id = "MOUSERUS" then
+{
+	if in:\IV_810_2030_REC_Inv_HDR_Ship_Via_Rec\IV_REC_SHIPMENT_WAYBILL_NUMBER <> null then
+	{
+		"BM"
+	}
+}
+else
+{
+	"VN"
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1580177619" elementPath="/TRANSACTION/G1_Copy1/N3/e02_0166/">
+         <dmlExpression><![CDATA[in:\AD_810_1100_REC_Header_810_ST_ADDR_Record\AD_REC_SHIP_TO_ADDR2]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2061084672" elementPath="/TRANSACTION/REF_1/e02_0127/">
+         <dmlExpression><![CDATA[if %Alt_Edi_id = "MOUSERUS" then
+{
+	if in:\IV_810_2030_REC_Inv_HDR_Ship_Via_Rec\IV_REC_SHIPMENT_WAYBILL_NUMBER <> null then
+	{
+		in:\IV_810_2030_REC_Inv_HDR_Ship_Via_Rec\IV_REC_SHIPMENT_WAYBILL_NUMBER
+	}
+}
+else
+{
+	in:\G1[ where item\IT_810_4010_REC_Sales_Order_Record\IT_REC_SALES_ORDER_NUMBER <> null ]\IT_810_4010_REC_Sales_Order_Record\IT_REC_SALES_ORDER_NUMBER[ 1 ]
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1964072779" elementPath="/TRANSACTION/G1_Copy1/N4/e03_0116/">
+         <dmlExpression><![CDATA[in:\AD_810_1100_REC_Header_810_ST_ADDR_Record\AD_REC_SHIP_TO_POSTAL_CODE]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="631223148" elementPath="/TRANSACTION/G1_Copy2/N1/e01_0098/">
+         <dmlExpression><![CDATA["BT"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1711972507" elementPath="/TRANSACTION/G1_Copy1/N3/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="232778336" elementPath="/TRANSACTION/G1/N1/e01_0098/">
+         <dmlExpression><![CDATA["RE"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1898585371" elementPath="/TRANSACTION/CTT/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1291654726" elementPath="/TRANSACTION/BIG/e06_0327/">
+         <dmlExpression><![CDATA[null]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2082495190" elementPath="/TRANSACTION/G1_Copy1/N4/e02_0156/">
+         <dmlExpression><![CDATA[if in:\AD_810_1100_REC_Header_810_ST_ADDR_Record\AD_REC_SHIP_TO_COUNTRY_EXT1 = "US" or in:\AD_810_1100_REC_Header_810_ST_ADDR_Record\AD_REC_SHIP_TO_COUNTRY_EXT1 = "CA" then
+{
+	 in:\AD_810_1100_REC_Header_810_ST_ADDR_Record\AD_REC_SHIP_TO_STATE_EXT
+} ]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-541990856" elementPath="/TRANSACTION/">
+         <dmlExpression><![CDATA[%Alt_Edi_id:=Get_Value("alt_edi_id","/Cloud/data/b2bi/shared/local/db_location","partner_xref" ,"Oracle_BT_Number,"+ trimString ( in:\CTL_810_REC\CTL_REC_KEY_1A_MAILBOX_ID_Use_EBS_Partner_Ship_To_Code ) );
+%REF_PK_occ:=0
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-304035722" elementPath="/TRANSACTION/G6/G7/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1929744118" elementPath="/TRANSACTION/G1_Copy1/N1/e02_0093/">
+         <dmlExpression><![CDATA[in:\AD_810_1100_REC_Header_810_ST_ADDR_Record\AD_REC_SHIP_TO_CUSTOMER_NAME]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1760934170" elementPath="/TRANSACTION/REF/">
+         <dmlExpression><![CDATA[if in:\IV_810_3075_REC\IV_REC_PACKING_SLIP_NUMBER_Do_not_use_me_ <> null then
+{
+	%REF_PK_occ := 1
+};
+%REF_PK_occ times]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>
