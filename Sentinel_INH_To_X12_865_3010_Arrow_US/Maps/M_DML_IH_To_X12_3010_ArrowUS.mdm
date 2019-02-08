@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <map xmlns="http://www.axway.com/mappingServices/map" id="8e81f867-e624-40f6-a8b1-0d7e837f5b06">
-   <signature appVersion="3.1.2" lastUpdatedOn="12/12/2018 16:03:34 +0530"/>
+   <signature appVersion="3.1.2" lastUpdatedOn="08/02/2019 13:08:44 +0530"/>
    <outputBusinessDocument businessDocument="~/Business Documents/X12_3010_865.bdoc" alias="out"/>
    <inputBusinessDocuments>
       <inputBusinessDocument businessDocument="~/Business Documents/IH_Source.bdoc" alias="in"/>
@@ -38,9 +38,13 @@ convertToD ( %str_value, "YYMMDD" ) ]]></dmlExpression>
          <dmlExpression><![CDATA["VP"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-1227347909" elementPath="/TRANSACTION/G3/POC/e04_0671/">
-         <dmlExpression><![CDATA[if this\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT01_AK01_Line_Sch_level_code = "ID"  then 
+         <dmlExpression><![CDATA[if this\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT01_AK01_Line_Sch_level_code = "ID" then
 convertToR ( 0 )
-else convertToR ( this\DT_865_3000_REC\DT_REC_ORDERED_QTY)]]></dmlExpression>
+else if  this\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT03_PO_LINE_QTY_total="0" then
+convertToR ( 0 )
+else {
+convertToR ( this\DT_865_3000_REC\DT_REC_ORDERED_QTY ) 
+}]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-1615787839" elementPath="/TRANSACTION/G3/POC/e06_0212/">
          <dmlExpression><![CDATA[convertToR ( this\DT_865_3000_REC\DT_REC_UNIT_SELLING_PRICE)]]></dmlExpression>
@@ -78,9 +82,13 @@ else if this\IT_865_2000_REC_PO_Line_855_Record\IT_REC_FIRST_ACK_CODE_EXT1 <> nu
          <dmlExpression><![CDATA[1 times]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-1794119039" elementPath="/TRANSACTION/G3/G5/ACK/e02_0380/">
-         <dmlExpression><![CDATA[if this\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT01_AK01_Line_Sch_level_code = "ID"  then 
+         <dmlExpression><![CDATA[if this\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT01_AK01_Line_Sch_level_code = "ID" then
 convertToR ( 0 )
-else convertToR ( this\DT_865_3000_REC\DT_REC_ORDERED_QTY)]]></dmlExpression>
+else if  this\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT03_PO_LINE_QTY_total="0" then
+convertToR ( 0 )
+else {
+convertToR ( this\DT_865_3000_REC\DT_REC_ORDERED_QTY ) 
+}]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-769502459" elementPath="/TRANSACTION/G3/G5/ACK/e04_0374/">
          <dmlExpression><![CDATA[if %s_ACK01 <> "ID" or %s_ACK01 <> "SP" or %s_ACK01 <> "RJ" then "067"]]></dmlExpression>
@@ -138,9 +146,13 @@ else if this\IT_865_2000_REC_PO_Line_855_Record\IT_REC_LINE_NUMBER <> null then
          <dmlExpression><![CDATA[in:\PO_865_1000_REC_Header_865_Record\PO_REC_ORDER_NUMBER]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-616543123" elementPath="/TRANSACTION/G3/POC/e03_0330/">
-         <dmlExpression><![CDATA[if this\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT01_AK01_Line_Sch_level_code = "ID"  then 
+         <dmlExpression><![CDATA[if this\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT01_AK01_Line_Sch_level_code = "ID" then
 convertToR ( 0 )
-else convertToR ( this\DT_865_3000_REC\DT_REC_ORDERED_QTY)]]></dmlExpression>
+else if  this\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT03_PO_LINE_QTY_total="0" then
+convertToR ( 0 )
+else {
+convertToR ( this\DT_865_3000_REC\DT_REC_ORDERED_QTY ) 
+}]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-1296661116" elementPath="/TRANSACTION/G3/G5/DTM/e02_0373/">
          <dmlExpression><![CDATA[convertToD ( getSubString ( this\DT_865_3000_REC\DT_REC_REQUEST_DATE, 3, 6 ) , "YYMMDD" )]]></dmlExpression>

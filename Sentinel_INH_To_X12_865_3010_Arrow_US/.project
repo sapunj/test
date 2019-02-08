@@ -17,5 +17,6 @@
 		<nature>com.axway.ms.core.natures.MSProjectNature</nature>
 		<nature>com.axway.ms.core.natures.MSProjectNature</nature>
 		<nature>com.axway.ms.core.natures.MSProjectNature</nature>
+		<nature>com.axway.ms.core.natures.MSProjectNature</nature>
 	</natures>
 </projectDescription>

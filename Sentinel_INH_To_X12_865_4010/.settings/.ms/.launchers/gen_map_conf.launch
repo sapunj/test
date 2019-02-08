@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.axway.ms.dml.simulation.ui.MDSimulationLaunchConfigurationType">
+<booleanAttribute key=".noDeploy" value="false"/>
+<booleanAttribute key=".noRepositoryContent" value="false"/>
+<booleanAttribute key=".openOutputCheckbox" value="true"/>
+<booleanAttribute key=".useDebugMode" value="true"/>
+<booleanAttribute key="checkInputCheckConstraints" value="false"/>
+<booleanAttribute key="checkInputFacet" value="true"/>
+<booleanAttribute key="checkOutputCheckConstraints" value="false"/>
+<booleanAttribute key="checkOutputFacet" value="false"/>
+<mapAttribute key="com.axway.ms.dml.simulation.ui.attributeVariables">
+<mapEntry key="0#ACCEPT_INPUT_DOCUMENTS_WITH_ERRORS#" value="0"/>
+<mapEntry key="1#ACCEPT_OUTPUT_DOCUMENTS_WITH_ERRORS#" value="0"/>
+</mapAttribute>
+<stringAttribute key="com.axway.ms.dml.simulation.ui.bdocInputFilePath" value="C:\Users\ptiwari\Downloads\POCAO_20180909_143126.txt"/>
+<mapAttribute key="com.axway.ms.dml.simulation.ui.bdocOutputFilePath">
+<mapEntry key="error" value="/Sentinel_INH_To_X12_865_4010/Testdata/error"/>
+<mapEntry key="out" value="C:\Users\ptiwari\Documents\865_docs\Output_target\output"/>
+</mapAttribute>
+<mapAttribute key="com.axway.ms.dml.simulation.ui.channels"/>
+<mapAttribute key="com.axway.ms.dml.simulation.ui.communications"/>
+<stringAttribute key="com.axway.ms.dml.simulation.ui.errorMapWorkspacePath" value=""/>
+<booleanAttribute key="com.axway.ms.dml.simulation.ui.handleErrorMap" value="true"/>
+<stringAttribute key="com.axway.ms.dml.simulation.ui.objectWorkspacePath" value="/Sentinel_INH_To_X12_865_4010/Maps/M_DML_INH_To_X12_865.mdm"/>
+<stringAttribute key="com.axway.ms.dml.simulation.ui.simulationTimeout" value="240000"/>
+<booleanAttribute key="com.axway.ms.dml.simulation.ui.useDefaultErrorMapWorkspacePath" value="true"/>
+<booleanAttribute key="continueMessageProcessingOnError" value="false"/>
+<booleanAttribute key="groupAllResultingInstances" value="true"/>
+<booleanAttribute key="keepExactValue" value="true"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Sentinel_INH_To_X12_865_4010/Maps/M_DML_INH_To_X12_865.mdm"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="stopOnFirstInputCheckConstraintsError" value="true"/>
+<booleanAttribute key="stopOnFirstInputFacetCheckError" value="true"/>
+<booleanAttribute key="stopOnFirstOutputCheckConstraintsError" value="true"/>
+<booleanAttribute key="stopOnFirstOutputFacetCheckError" value="true"/>
+</launchConfiguration>
