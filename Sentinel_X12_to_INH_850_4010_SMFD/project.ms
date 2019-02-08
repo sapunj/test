@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project xmlns="http://www.axway.com/mappingServices/project" createdBy="schoudhary" lastModifiedBy="ptiwari" checksumTest="true" creationDate="16/08/2018 13:55:17 +0530" engineType="DML" lastModifiedDate="23/11/2018 11:27:43 +0530" engineVersion="2.1">
+<project xmlns="http://www.axway.com/mappingServices/project" createdBy="schoudhary" lastModifiedBy="ptiwari" checksumTest="true" creationDate="16/08/2018 13:55:17 +0530" engineType="DML" lastModifiedDate="08/02/2019 20:22:30 +0530" engineVersion="2.1">
    <deploymentInformation>
       <deployment name="X12_to_INH_850_4010_SMFD_MF_X12_" id="be7e8628-8e49-4c50-bdbd-1d697e87acec" port="6443" date="23/08/2018 15:26:52 +0530" user="schoudhary (schoudhary)" projectType="DML-2.1" version="1" from="ITEM-S56321" host="127.220.20.165">
          <content>
@@ -222,6 +222,11 @@
          </content>
       </deployment>
       <deployment name="X12_to_INH_850_4010_SMFD_MF_X12_" id="1c120ef4-6f75-4650-8169-7e97803e1c5e" port="443" date="23/11/2018 11:27:43 +0530" user="ptiwari (dipbhatnagar)" projectType="DML-2.1" version="45" from="ITEM-70720" host="dev-lattice-app.axwaycloud.com">
+         <content>
+            <mapping>Mapping Flows/Sentinel_MF_850_4010_SMFD.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="Sentinel_X12_to_INH_850_4010_SMF" id="85a4bbfd-0958-43ea-9862-c5f3154a4d66" port="443" date="08/02/2019 20:22:30 +0530" user="ptiwari (Prakhar)" projectType="DML-2.1" version="1" from="ITEM-70720" host="dev-lattice-app.axwaycloud.com">
          <content>
             <mapping>Mapping Flows/Sentinel_MF_850_4010_SMFD.dmlflw</mapping>
          </content>

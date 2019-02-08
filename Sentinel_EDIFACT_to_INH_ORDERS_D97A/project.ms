@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project xmlns="http://www.axway.com/mappingServices/project" createdBy="schoudhary" lastModifiedBy="ptiwari" checksumTest="true" creationDate="29/08/2018 15:09:49 +0530" engineType="DML" lastModifiedDate="23/11/2018 11:25:49 +0530" engineVersion="2.1">
+<project xmlns="http://www.axway.com/mappingServices/project" createdBy="schoudhary" lastModifiedBy="ptiwari" checksumTest="true" creationDate="29/08/2018 15:09:49 +0530" engineType="DML" lastModifiedDate="08/02/2019 20:30:11 +0530" engineVersion="2.1">
    <deploymentInformation>
       <deployment name="EDIFACT_to_INH_ORDERS_D97A_MF_ED" id="2e5dc4b0-574c-470d-919e-f472307e2485" port="443" date="10/09/2018 19:08:53 +0530" user="schoudhary (schoudhary)" projectType="DML-2.1" version="1" from="ITEM-S56321" host="dev-lattice-app.axwaycloud.com">
          <content>
@@ -597,6 +597,56 @@
          </content>
       </deployment>
       <deployment name="EDIFACT_to_INH_ORDERS_D97A_MF_ED" id="7f20934d-889e-4914-9039-02eef9fcf91e" port="443" date="23/11/2018 11:25:49 +0530" user="ptiwari (dipbhatnagar)" projectType="DML-2.1" version="135" from="ITEM-70720" host="dev-lattice-app.axwaycloud.com">
+         <content>
+            <mapping>Mapping Flows/Sentinel_MF_EDIFAC_to_INH_ORDERS.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="Sentinel_EDIFACT_to_INH_ORDERS_D" id="1dec96e7-f0f3-4a9b-889a-a50f1f137157" port="443" date="17/12/2018 21:44:21 +0530" user="abjain (abjain)" projectType="DML-2.1" version="1" from="ITEM-70428" host="ediuat.latticesemi.com">
+         <content>
+            <mapping>Mapping Flows/Sentinel_MF_EDIFAC_to_INH_ORDERS.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="Sentinel_EDIFACT_to_INH_ORDERS_D" id="1112fd8a-f7af-42a2-8bc4-df5a7f833ab5" port="443" date="18/12/2018 17:16:54 +0530" user="abjain (abjain)" projectType="DML-2.1" version="2" from="ITEM-70428" host="ediuat.latticesemi.com">
+         <content>
+            <mapping>Mapping Flows/Sentinel_MF_EDIFAC_to_INH_ORDERS.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="Sentinel_EDIFACT_to_INH_ORDERS_D" id="1c624131-8f8d-4674-9bed-c52f1b05a779" port="443" date="18/12/2018 17:47:58 +0530" user="abjain (abjain)" projectType="DML-2.1" version="3" from="ITEM-70428" host="ediuat.latticesemi.com">
+         <content>
+            <mapping>Mapping Flows/Sentinel_MF_EDIFAC_to_INH_ORDERS.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="Sentinel_EDIFACT_to_INH_ORDERS_D" id="8590424c-460d-440e-a955-35d34ec4c7a1" port="443" date="18/12/2018 18:33:17 +0530" user="abjain (abjain)" projectType="DML-2.1" version="4" from="ITEM-70428" host="ediuat.latticesemi.com">
+         <content>
+            <mapping>Mapping Flows/Sentinel_MF_EDIFAC_to_INH_ORDERS.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="Sentinel_EDIFACT_to_INH_ORDERS_D" id="6b90870f-0cd8-42c5-9e0e-f6a9d59f09dc" port="443" date="18/12/2018 18:52:06 +0530" user="abjain (abjain)" projectType="DML-2.1" version="5" from="ITEM-70428" host="ediuat.latticesemi.com">
+         <content>
+            <mapping>Mapping Flows/Sentinel_MF_EDIFAC_to_INH_ORDERS.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="Sentinel_EDIFACT_to_INH_ORDERS_D" id="f70d07e2-d99b-4ad6-aeb9-fe8bc8248a96" port="443" date="18/12/2018 18:57:54 +0530" user="abjain (abjain)" projectType="DML-2.1" version="6" from="ITEM-70428" host="ediuat.latticesemi.com">
+         <content>
+            <mapping>Mapping Flows/Sentinel_MF_EDIFAC_to_INH_ORDERS.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="Sentinel_EDIFACT_to_INH_ORDERS_D" id="57b7f632-e9dd-4f01-b626-4c466befdece" port="443" date="18/12/2018 21:07:26 +0530" user="abjain (abjain)" projectType="DML-2.1" version="7" from="ITEM-70428" host="ediuat.latticesemi.com">
+         <content>
+            <mapping>Mapping Flows/Sentinel_MF_EDIFAC_to_INH_ORDERS.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="Sentinel_EDIFACT_to_INH_ORDERS_D" id="4c860654-1d7f-45b5-844d-1e36b6ec7543" port="443" date="18/12/2018 21:09:50 +0530" user="abjain (abjain)" projectType="DML-2.1" version="8" from="ITEM-70428" host="ediuat.latticesemi.com">
+         <content>
+            <mapping>Mapping Flows/Sentinel_MF_EDIFAC_to_INH_ORDERS.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="Sentinel_EDIFACT_to_INH_ORDERS_D" id="0d52562b-2915-4115-9255-9bab9b588ca1" port="443" date="08/02/2019 20:28:34 +0530" user="ptiwari (Prakhar)" projectType="DML-2.1" version="9" from="ITEM-70720" host="dev-lattice-app.axwaycloud.com">
+         <content>
+            <mapping>Mapping Flows/Sentinel_MF_EDIFAC_to_INH_ORDERS.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="Sentinel_EDIFACT_to_INH_ORDERS_D" id="308d33b3-3650-44c9-9aca-929d5bccb296" port="443" date="08/02/2019 20:30:11 +0530" user="ptiwari (Prakhar)" projectType="DML-2.1" version="10" from="ITEM-70720" host="dev-lattice-app.axwaycloud.com">
          <content>
             <mapping>Mapping Flows/Sentinel_MF_EDIFAC_to_INH_ORDERS.dmlflw</mapping>
          </content>

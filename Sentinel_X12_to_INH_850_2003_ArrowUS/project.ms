@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project xmlns="http://www.axway.com/mappingServices/project" createdBy="schoudhary" lastModifiedBy="ptiwari" checksumTest="true" creationDate="24/08/2018 17:07:04 +0530" engineType="DML" lastModifiedDate="23/11/2018 11:27:13 +0530" engineVersion="2.1">
+<project xmlns="http://www.axway.com/mappingServices/project" createdBy="schoudhary" lastModifiedBy="ptiwari" checksumTest="true" creationDate="24/08/2018 17:07:04 +0530" engineType="DML" lastModifiedDate="08/02/2019 20:19:46 +0530" engineVersion="2.1">
    <deploymentInformation>
       <deployment name="X12_to_INH_850_2030_ArrowUS_MF_X" id="9fc951c4-cc0e-4246-b426-ea7cd926ff02" port="443" date="05/09/2018 19:06:30 +0530" user="schoudhary (schoudhary)" projectType="DML-2.1" version="1" from="ITEM-S56321" host="dev-lattice-app.axwaycloud.com">
          <content>
@@ -92,6 +92,11 @@
          </content>
       </deployment>
       <deployment name="X12_to_INH_850_2003_ArrowUS_MF_X" id="eb4428b1-fc13-4634-bfd4-698ebb4922f3" port="443" date="23/11/2018 11:27:13 +0530" user="ptiwari (dipbhatnagar)" projectType="DML-2.1" version="17" from="ITEM-70720" host="dev-lattice-app.axwaycloud.com">
+         <content>
+            <mapping>Mapping Flows/Sentinel_MF_850_2003_ArrowUS.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="Sentinel_X12_to_INH_850_2003_Arr" id="eeff75d0-dd41-4ecc-a158-6f4918835338" port="443" date="08/02/2019 20:19:46 +0530" user="ptiwari (Prakhar)" projectType="DML-2.1" version="1" from="ITEM-70720" host="dev-lattice-app.axwaycloud.com">
          <content>
             <mapping>Mapping Flows/Sentinel_MF_850_2003_ArrowUS.dmlflw</mapping>
          </content>

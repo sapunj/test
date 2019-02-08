@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <flow xmlns="http://www.axway.com/mappingServices/flow" id="7024f758-61bd-4d60-bb2f-ebc262b09280">
-   <signature appVersion="3.1.2" lastUpdatedOn="17/12/2018 16:41:49 +0530"/>
+   <signature appVersion="3.1.2" lastUpdatedOn="18/12/2018 18:25:45 +0530"/>
    <configurationParameters>
       <configurationParameter name="checkInputFacet" value="true"/>
       <configurationParameter name="stopOnFirstInputFacetCheckError" value="true"/>
@@ -18,7 +18,7 @@
    <graphLinks>
       <graphLink factoryType="FlowMainLink" name="FlowLink1" type="TYPE_INPUT" connectedObjectAlias="in" hash="25ba2b02-8084-4f20-bda5-5f3e8c3f86a8">
          <source ref="89746a59-b8ec-4a47-92c7-cfe09163f026"/>
-         <target ref="f983a33e-dfe0-48eb-93b1-bcb42182205a"/>
+         <target ref="9a23be4b-abc7-4390-99c9-7751220e1d1c"/>
       </graphLink>
       <graphLink name="Link1" hash="5bba9580-2771-4087-b587-655fe3261a13">
          <source ref="2dee90e8-b502-43f4-ba6e-24de15e81a5b"/>
@@ -40,52 +40,96 @@
          <source ref="20cdb831-1e9d-476f-a35d-d366c15b6a89"/>
          <target ref="be77277e-6bda-4480-8f50-4057c8e20f17"/>
       </graphLink>
+      <graphLink name="Link3" hash="8a7fd174-9923-4716-996e-e458bc49bc7f">
+         <source ref="c51c6523-a107-44ac-9c7a-5372018883ad"/>
+         <target ref="d0af47cf-d954-4645-bc25-c8c684569e1e"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink6" type="TYPE_OUTPUT" connectedObjectAlias="out" hash="ce0e0144-4fff-45c3-a2e8-a5092205a368">
+         <source ref="c51c6523-a107-44ac-9c7a-5372018883ad"/>
+         <target ref="d4038a57-1a0a-4a60-a5fa-43ebef997fe5"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink3" type="TYPE_OUTPUT" connectedObjectAlias="out1" hash="0c1a1fc0-04de-4f20-9e33-874b38aa6f52">
+         <source ref="d0af47cf-d954-4645-bc25-c8c684569e1e"/>
+         <target ref="9979c4a0-7af2-43da-95ea-47a5938935cf"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink7" type="TYPE_INPUT" connectedObjectAlias="in" hash="4ac4a750-29d7-47ae-acec-ff3741665743">
+         <source ref="d4038a57-1a0a-4a60-a5fa-43ebef997fe5"/>
+         <target ref="f983a33e-dfe0-48eb-93b1-bcb42182205a"/>
+      </graphLink>
+      <graphLink name="Link4" hash="e1366a86-6263-431b-aaeb-f3ca5e293532">
+         <source ref="9979c4a0-7af2-43da-95ea-47a5938935cf"/>
+         <target ref="a68d2ecb-5f25-4283-960c-24e2d7a556c2"/>
+      </graphLink>
    </graphLinks>
    <graphNodes>
       <graphNode factoryType="InputEntity" name="input1" hash="2dee90e8-b502-43f4-ba6e-24de15e81a5b">
-         <bounds height="40" width="90" y="30"/>
+         <bounds height="40" width="90" y="61"/>
       </graphNode>
       <graphNode factoryType="GraphicalInstructionBlock" name="Main_Block_MF_EDIFACT_to_INH_ORDERS_D97A1" nameDisplayed="true" hash="f983a33e-dfe0-48eb-93b1-bcb42182205a">
-         <bounds x="186" height="227" width="319" y="151"/>
+         <bounds x="469" height="220" width="204" y="3"/>
          <intructions>
             <instruction factoryType="GraphicalInstructionSet" name="Set1" hash="7601400b-d01a-4b3d-a8ce-10a040a463c0">
                <dmlExpression><![CDATA[%count_Parent :=count( in:\G0 );
-%count_SubParent:=0;
-%count_Parent:=1;
+%counter_SubParent:=0;
+%counter_Parent:=1;
 %count_SubParent :=count( in:\G0\G1)
 ]]></dmlExpression>
-               <bounds x="124" height="40" width="80" y="20"/>
+               <bounds x="46" height="40" width="80" y="20"/>
             </instruction>
             <instruction factoryType="GraphicalInstructionLoop" name="Loop1" nameDisplayed="true" hash="607a6690-7c56-4d82-ada6-c504766a64fc">
                <dmlExpression><![CDATA[count( in:\G0\G1 )]]></dmlExpression>
-               <bounds x="22" height="104" width="184" y="83"/>
+               <bounds x="3" height="100" width="173" y="80"/>
                <intructions>
                   <instruction factoryType="GraphicalInstructionMap" name="M_DML_INH_To_Sentinel_Orders" nameDisplayed="true" mapName="~/Maps/M_DML_INH_TO_INH.mdm" hash="90f3293d-5f32-4f50-a684-bbbdb66e650c">
-                     <bounds x="66" height="40" width="90" y="24"/>
+                     <bounds height="40" width="90" y="20"/>
                   </instruction>
                </intructions>
             </instruction>
          </intructions>
       </graphNode>
       <graphNode factoryType="GraphicalBusinessDocumentEntity" name="INH_Source" hash="89746a59-b8ec-4a47-92c7-cfe09163f026">
-         <bounds x="46" height="40" width="90" y="201"/>
+         <bounds x="105" height="40" width="90" y="61"/>
          <documentName>~/Business Documents/INH_Source.bdoc</documentName>
       </graphNode>
       <graphNode factoryType="GraphicalBusinessDocumentEntity" name="INH_Source_Sentinel" hash="20cdb831-1e9d-476f-a35d-d366c15b6a89">
-         <bounds x="222" height="40" width="90" y="410"/>
+         <bounds x="688" height="40" width="90" y="108"/>
          <documentName>~/Business Documents/INH_Source_Sentinel.bdoc</documentName>
       </graphNode>
       <graphNode factoryType="GraphicalInstructionBlock" name="Main_Block_Sentinel_MF_EDIFAC_to_INH_ORDERS1" nameDisplayed="true" hash="be77277e-6bda-4480-8f50-4057c8e20f17">
-         <bounds x="425" height="100" width="142" y="514"/>
+         <bounds x="793" height="100" width="139" y="60"/>
          <intructions>
             <instruction factoryType="GraphicalInstructionMap" name="Sentinel_Record_Entry" nameDisplayed="true" mapName="~/Maps/Sentinel_Record_Entry.mdm" hash="4fd86402-3506-4076-92b3-02ab0b7d6805">
-               <bounds x="24" height="40" width="90" y="20"/>
+               <bounds height="40" width="90" y="20"/>
             </instruction>
          </intructions>
       </graphNode>
       <graphNode factoryType="GraphicalBusinessDocumentEntity" name="TO_Lattice_Trans" hash="47393526-2ae4-46cc-837c-2c31b99c148d">
-         <bounds x="617" height="40" width="90" y="534"/>
+         <bounds x="947" height="40" width="90" y="82"/>
          <documentName>~/Business Documents/TO_Lattice_Trans.bdoc</documentName>
+      </graphNode>
+      <graphNode factoryType="GraphicalInstructionBlock" name="Main_Block_Sentinel_MF_EDIFAC_to_INH_ORDERS2" nameDisplayed="true" hash="9a23be4b-abc7-4390-99c9-7751220e1d1c">
+         <bounds x="210" height="160" width="139" y="3"/>
+         <intructions>
+            <instruction factoryType="GraphicalInstructionOutput" name="Out1" hash="c51c6523-a107-44ac-9c7a-5372018883ad">
+               <bounds height="40" width="90" y="20"/>
+               <inputDocumentAlias businessDocument="~/Business Documents/INH_Source.bdoc" alias="in"/>
+            </instruction>
+            <instruction factoryType="GraphicalInstructionOutput" name="Out2" hash="d0af47cf-d954-4645-bc25-c8c684569e1e">
+               <bounds height="40" width="90" y="80"/>
+               <inputDocumentAlias businessDocument="~/Business Documents/INH_Source.bdoc" alias="in"/>
+            </instruction>
+         </intructions>
+      </graphNode>
+      <graphNode factoryType="GraphicalBusinessDocumentEntity" name="INH_Source" hash="9979c4a0-7af2-43da-95ea-47a5938935cf">
+         <bounds x="364" height="40" width="90" y="85"/>
+         <documentName>~/Business Documents/INH_Source.bdoc</documentName>
+      </graphNode>
+      <graphNode factoryType="GraphicalBusinessDocumentEntity" name="INH_Source" hash="d4038a57-1a0a-4a60-a5fa-43ebef997fe5">
+         <bounds x="364" height="40" width="90" y="25"/>
+         <documentName>~/Business Documents/INH_Source.bdoc</documentName>
+      </graphNode>
+      <graphNode factoryType="OutputEntity" name="out2" hash="a68d2ecb-5f25-4283-960c-24e2d7a556c2">
+         <bounds x="380" height="40" width="90" y="300"/>
       </graphNode>
    </graphNodes>
 </flow>
