@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project xmlns="http://www.axway.com/mappingServices/project" createdBy="ptiwari" lastModifiedBy="ptiwari" checksumTest="true" creationDate="06/11/2018 12:38:35 +0530" engineType="DML" lastModifiedDate="06/02/2019 18:30:48 +0530" engineVersion="2.1">
+<project xmlns="http://www.axway.com/mappingServices/project" createdBy="ptiwari" lastModifiedBy="ptiwari" checksumTest="true" creationDate="06/11/2018 12:38:35 +0530" engineType="DML" lastModifiedDate="14/02/2019 14:45:19 +0530" engineVersion="2.1">
    <deploymentInformation>
       <deployment name="outbound_Inhouse_to_865_MF_M_IH_" id="34acb97c-2489-48a9-99f3-3b125c1bdc90" port="443" date="20/11/2018 16:14:07 +0530" user="ptiwari (dipbhatnagar)" projectType="DML-2.1" version="1" from="ITEM-70720" host="dev-lattice-app.axwaycloud.com">
          <content>
@@ -52,6 +52,16 @@
          </content>
       </deployment>
       <deployment name="INH_To_X12_865_4010_MF_M_INH_To_" id="0f41518a-c27e-4711-a66d-5ab90c8cbfd9" port="443" date="06/02/2019 18:30:48 +0530" user="ptiwari (Prakhar)" projectType="DML-2.1" version="4" from="ITEM-70720" host="dev-lattice-app.axwaycloud.com">
+         <content>
+            <mapping>Mapping Flows/MF_M_INH_To_X12_865_4010_Future.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="Sentinel_INH_To_X12_865_4010_MF_" id="c8922768-02a7-43b4-984d-358591e6f6b3" port="443" date="08/02/2019 16:02:32 +0530" user="ptiwari (Prakhar)" projectType="DML-2.1" version="1" from="ITEM-70720" host="dev-lattice-app.axwaycloud.com">
+         <content>
+            <mapping>Mapping Flows/MF_M_INH_To_X12_865_4010_Future.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="Sentinel_INH_To_X12_865_4010_MF_" id="0afbc631-9008-4c51-b452-37af403c6e15" port="443" date="14/02/2019 14:45:19 +0530" user="ptiwari (Prakhar)" projectType="DML-2.1" version="2" from="ITEM-70720" host="dev-lattice-app.axwaycloud.com">
          <content>
             <mapping>Mapping Flows/MF_M_INH_To_X12_865_4010_Future.dmlflw</mapping>
          </content>

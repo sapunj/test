@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project xmlns="http://www.axway.com/mappingServices/project" createdBy="hkaur" lastModifiedBy="ptiwari" checksumTest="true" creationDate="06/11/2018 14:57:15 +0530" engineType="DML" lastModifiedDate="12/12/2018 16:04:28 +0530" engineVersion="2.1">
+<project xmlns="http://www.axway.com/mappingServices/project" createdBy="hkaur" lastModifiedBy="ptiwari" checksumTest="true" creationDate="06/11/2018 14:57:15 +0530" engineType="DML" lastModifiedDate="14/02/2019 14:48:18 +0530" engineVersion="2.1">
    <deploymentInformation>
       <deployment name="INH_To_X12_865_3010_Arrow_US_M_M" id="824180bb-2554-43d8-9e16-c470a6cfdc4a" port="443" date="21/11/2018 10:33:10 +0530" user="ptiwari (dipbhatnagar)" projectType="DML-2.1" version="1" from="ITEM-70720" host="dev-lattice-app.axwaycloud.com">
          <content>
@@ -67,6 +67,16 @@
          </content>
       </deployment>
       <deployment name="INH_To_X12_865_3010_Arrow_US_M_M" id="08759f31-122d-4a23-ad00-723b813d03bb" port="443" date="12/12/2018 16:04:28 +0530" user="ptiwari (dipbhatnagar)" projectType="DML-2.1" version="14" from="ITEM-70720" host="dev-lattice-app.axwaycloud.com">
+         <content>
+            <mapping>Mapping Flows/Sentinel_MF_IH_3010_ArrowUS.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="Sentinel_INH_To_X12_865_3010_Arr" id="bae1cb5f-96f3-4d4d-bae5-c07502897d54" port="443" date="08/02/2019 19:12:38 +0530" user="ptiwari (Prakhar)" projectType="DML-2.1" version="1" from="ITEM-70720" host="dev-lattice-app.axwaycloud.com">
+         <content>
+            <mapping>Mapping Flows/Sentinel_MF_IH_3010_ArrowUS.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="Sentinel_INH_To_X12_865_3010_Arr" id="66e52a93-55b0-4fb0-928b-196c61ff575e" port="443" date="14/02/2019 14:48:18 +0530" user="ptiwari (Prakhar)" projectType="DML-2.1" version="2" from="ITEM-70720" host="dev-lattice-app.axwaycloud.com">
          <content>
             <mapping>Mapping Flows/Sentinel_MF_IH_3010_ArrowUS.dmlflw</mapping>
          </content>

@@ -89,7 +89,7 @@
       <graphNode factoryType="GraphicalInstructionBlock" name="Main_Block_M_MF_IH_To_X12_3010_ArrowUS2" nameDisplayed="true" hash="6d3befd2-c8d7-49a3-86ca-dd31d2401760">
          <bounds x="501" height="123" width="168" y="258"/>
          <intructions>
-            <instruction factoryType="GraphicalInstructionMap" name="M_DML_IH_To_X12_3010_ArrowUS" nameDisplayed="true" mapName="~/Maps/M_DML_IH_To_X12_3010_ArrowUS.mdm" hash="aac876fb-c8e5-47a8-9a73-a0fc0c5e9122">
+            <instruction factoryType="GraphicalInstructionMap" name="M_DML_IH_To_X12_3010_ArrowUS" nameDisplayed="true" mapName="~/Maps/M_DML_IH_To_X12_3010.mdm" hash="aac876fb-c8e5-47a8-9a73-a0fc0c5e9122">
                <bounds x="50" height="40" width="90" y="43"/>
             </instruction>
          </intructions>
