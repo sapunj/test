@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<variable xmlns="http://www.axway.com/mappingServices/variable" dmlClass="S" id="7f9c3460-c253-44b2-95b9-4a182e01acc3">
+   <dmlExpression><![CDATA[""]]></dmlExpression>
+   <signature appVersion="3.1.2" lastUpdatedOn="14/11/2018 13:10:47 +0530"/>
+</variable>

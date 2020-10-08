@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<customFunction xmlns="http://www.axway.com/mappingServices/javaCustomFunction" methodName="Get_Data" className="com.axway.myfunction.Get_Data_Lookup_table" channel="NONE" category="JAVA" dmlClassReturn="S" id="1b630278-5069-4bbe-bb27-9a9c83a23dab">
+   <signature appVersion="3.1.2" lastUpdatedOn="31/07/2018 20:12:14 +0530"/>
+   <parameters>
+      <parameter dmlClass="S" name="param0" description="label param0"/>
+      <parameter dmlClass="S" name="param1" description="label param1"/>
+      <parameter dmlClass="S" name="param2" description="label param2"/>
+      <parameter dmlClass="S" name="param3" description="label param3"/>
+   </parameters>
+</customFunction>

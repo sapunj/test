@@ -1,0 +1,1299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<businessDocument xmlns="http://www.axway.com/mappingServices/flatFileBusinessDocument" keepInputNumberFractionDigits="true" encodingBD="iso8859" keepPlusSign="true" keepDecimalSeparator="true" id="01569b82-62a0-44bf-9f87-bff7b72e8c30" keepDecimalSeparatorCharacter="true" keepInputNumberDateDigits="true" keepIntegerPlusSign="true">
+   <signature appVersion="3.1.2" lastUpdatedOn="08/02/2019 20:09:37 +0530"/>
+   <childElements>
+      <childElement factoryType="FlatFileParent" order="1" name="CTL_850_REC" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="2021535585">
+         <cardinality maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" paddingCharElement=" " name="CTL_REC_KEY_1A_MAILBOX_ID" paddingPosElement="1" order="2" keepDecimalSeparator="true" encodingElement="iso8859" hash="2026499798" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="CTL_REC_KEY1B_DOCUMENT_ID" order="3" keepDecimalSeparator="true" encodingElement="iso8859" hash="-855633170" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="CTL_REC_KEY2_USE_AT_LINE_LEVEL" order="4" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1321321088" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="CTL_REC_KEY3_FUTURE_USE" order="5" keepDecimalSeparator="true" encodingElement="iso8859" hash="1032106332" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLandMark" definition="9" typeId="10" name="CTL_REC_ID" defaultValue="0010CTCTL" order="6" keepDecimalSeparator="true" encodingElement="iso8859" hash="1017815712" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="2" typeId="10" name="CTL_REC_TRANS_METHOD" order="7" keepDecimalSeparator="true" encodingElement="iso8859" hash="702293128" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="1" typeId="10" name="CTL_REC_TEST_FLAG" order="8" keepDecimalSeparator="true" encodingElement="iso8859" hash="-225751244" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="6" typeId="10" name="CTL_REC_DOC_ID" order="9" keepDecimalSeparator="true" encodingElement="iso8859" hash="-312112333" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="5" typeId="10" name="CTL_REC_DOC_TYPE" order="10" keepDecimalSeparator="true" encodingElement="iso8859" hash="2040944915" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="2" typeId="10" name="CTL_REC_DOC_PURPOSE_CODE" order="11" keepDecimalSeparator="true" encodingElement="iso8859" hash="-317359607" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="35" typeId="10" name="CTL_REC_DOC_CODE" order="12" keepDecimalSeparator="true" encodingElement="iso8859" hash="2023337039" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="CTL_REC_TP_PARTNER_CODE" order="13" keepDecimalSeparator="true" encodingElement="iso8859" hash="-2086540469" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="35" typeId="10" name="CTL_REC_TP_LOCATION_CODE" order="14" keepDecimalSeparator="true" encodingElement="iso8859" hash="2086922753" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="74" typeId="10" name="CTL_REC_TP_DESCRIPTION" order="15" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1118828334" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="CTL_REC_TP_REF_EXT1" order="16" keepDecimalSeparator="true" encodingElement="iso8859" hash="10677426" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="CTL_REC_TP_REF_EXT2" order="17" keepDecimalSeparator="true" encodingElement="iso8859" hash="-641224679" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="15" typeId="10" name="CTL_REC_TRANSACTION_DT" order="18" keepDecimalSeparator="true" encodingElement="iso8859" hash="2079274424" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="15" typeId="10" name="CTL_REC_TRANSACTION_RUN_ID" order="19" keepDecimalSeparator="true" encodingElement="iso8859" hash="139792817" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="CTL_REC_MESSAGE_STANDARD" order="20" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1475980171" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="15" typeId="10" name="CTL_REC_ORD_ID" order="21" keepDecimalSeparator="true" encodingElement="iso8859" hash="1830066977" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="CTL_REC_CONTROL1" order="22" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1940133196" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="CTL_REC_CONTROL2" order="23" keepDecimalSeparator="true" encodingElement="iso8859" hash="1948466415" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="CTL_REC_CONTROL3" order="24" keepDecimalSeparator="true" encodingElement="iso8859" hash="1752990025" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="25" name="PO1_1000_REC" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="1001827063">
+         <cardinality maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="PO1_1000_REC_KEY_1A_MAILBOX_ID" order="26" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1536897614" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="PO1_1000_REC_KEY1B_DOCUMENT_ID" order="27" keepDecimalSeparator="true" encodingElement="iso8859" hash="1522455842" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="PO1_1000_REC_KEY2_USE_AT_LINE_LEVEL" order="28" keepDecimalSeparator="true" encodingElement="iso8859" hash="1784143591" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="PO1_1000_REC_KEY3_FUTURE_USE" order="29" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1651873032" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLandMark" definition="9" typeId="10" name="PO1_1000_REC_ID" defaultValue="1000POPO1" order="30" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1128419385" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="1" typeId="10" name="PO1_1000_REC_PARTIAL_SHIP_ALLOWED" order="31" keepDecimalSeparator="true" encodingElement="iso8859" hash="797984565" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="1" typeId="10" name="PO1_1000_REC_DROP_SHIP_FLAG" order="32" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1961909811" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="PO1_REC_1000_OPERATION_CODE" order="33" keepDecimalSeparator="true" encodingElement="iso8859" hash="1651266400" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="5" typeId="10" name="PO1_REC_1000_OPERATIONS_CODE_EXT1" order="34" keepDecimalSeparator="true" encodingElement="iso8859" hash="1882428654" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="50" typeId="10" name="PO1_1000_REC_PO_Number" order="35" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1946823019" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="15" typeId="10" name="PO1_1000_REC_PO_DATE" order="36" keepDecimalSeparator="true" encodingElement="iso8859" hash="434429249" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="PO1_1000_REC_VERSION_NUM" order="37" keepDecimalSeparator="true" encodingElement="iso8859" hash="1412558608" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="PO1_1000_REC_ORDER_TYPE" order="38" keepDecimalSeparator="true" encodingElement="iso8859" hash="-2078478104" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="PO1_1000_REC_ORDER_TYPE_EXT1" order="39" keepDecimalSeparator="true" encodingElement="iso8859" hash="1026509582" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="PO1_1000_REC_ORDER_CATAGORY" order="40" keepDecimalSeparator="true" encodingElement="iso8859" hash="-988401710" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="PO1_1000_REC_ORDER_CATEGORY_EXT1" order="41" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1049194311" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="50" typeId="10" name="PO1_1000_REC_ORIG_SYS_DOC_REF" order="42" keepDecimalSeparator="true" encodingElement="iso8859" hash="616577102" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="PO1_1000_REC_ORDERS_TYPE_DT_CODE" order="43" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1885961585" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="PO1_1000_REC_ORDER_TYPE_CD_EXT1" order="44" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1984217621" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="PO1_1000_REC_AGREEMENT" order="45" keepDecimalSeparator="true" encodingElement="iso8859" hash="623787966" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="PO1_1000_REC_AGREEMENT_EXT1" order="46" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1363309859" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="PO1_1000_REC_SALES_AGREEMENT_NUM" order="47" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1790428440" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="48" name="PY_1060_REC" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="1922688214">
+         <cardinality maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="PY_1060_REC_KEY_1A_MAILBOX_ID" order="49" keepDecimalSeparator="true" encodingElement="iso8859" hash="1686137139" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="PY_1060_REC_KEY1B_DOCUMENT_ID" order="50" keepDecimalSeparator="true" encodingElement="iso8859" hash="1502818812" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="PY_1060_REC_KEY2_USE_AT_LINE_LEVEL" order="51" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1671536365" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="PY_1060_REC_KEY3_FUTURE_USE" order="52" keepDecimalSeparator="true" encodingElement="iso8859" hash="846449056" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLandMark" definition="9" typeId="10" name="PY_1060_REC_ID" defaultValue="1060PYCUR" order="53" keepDecimalSeparator="true" encodingElement="iso8859" hash="-2082255267" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="3" typeId="10" name="PY_1060_REC_TRANS_CURRENCY_CODE" order="54" keepDecimalSeparator="true" encodingElement="iso8859" hash="2027321833" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="3" typeId="10" name="PY_1060_REC_TRANS_CURRENCY_CODE_EXT1" order="55" keepDecimalSeparator="true" encodingElement="iso8859" hash="1265818645" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="15" typeId="10" name="PY_1060_REC_CONVERSION_RATE_DT" order="56" keepDecimalSeparator="true" encodingElement="iso8859" hash="1867294096" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="PY_1060_REC_CONVERSION_RATE" order="57" keepDecimalSeparator="true" encodingElement="iso8859" hash="1437515643" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="29" typeId="10" name="PY_1060_REC_TRANS_CURRENCY" order="58" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1397349866" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="PY_1060_REC_CONVERSION_TYPE_CD" order="59" keepDecimalSeparator="true" encodingElement="iso8859" hash="1894232665" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="PY_1060_REC_CONVERSION_TYPE_CD_EXT1" order="60" keepDecimalSeparator="true" encodingElement="iso8859" hash="600246635" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="PY_1060_REC_PAYMENT_AMT" order="61" keepDecimalSeparator="true" encodingElement="iso8859" hash="1537465154" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="PY_1060_REC_PAYMENT_TYPE_CODE" order="62" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1897803979" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="20" typeId="10" name="PY_1060_REC_PAYMENT_TYPE_CODE_EXT1" order="63" keepDecimalSeparator="true" encodingElement="iso8859" hash="-737772933" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="PY_1060_REC_CREDIT_CARD_CODE" order="64" keepDecimalSeparator="true" encodingElement="iso8859" hash="-184614396" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="PY_1060_REC_CREDIT_CARD_CODE_EXT1" order="65" keepDecimalSeparator="true" encodingElement="iso8859" hash="1713880006" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="PY_1060_REC_CREDIT_CARD_NUM" order="66" keepDecimalSeparator="true" encodingElement="iso8859" hash="330648119" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="15" typeId="10" name="PY_1060_REC_CREDIT_CARD_EXP_DATE" order="67" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1943155358" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="15" typeId="10" name="PY_1060_REC_CREDIT_CARD_APPRV_DT" order="68" keepDecimalSeparator="true" encodingElement="iso8859" hash="429822777" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="PY_1060_REC_CREDIT_CARD_HOLDER_NAME" order="69" keepDecimalSeparator="true" encodingElement="iso8859" hash="1696541368" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="50" typeId="10" name="PY_1060_REC_CHECK_NUMBER" order="70" keepDecimalSeparator="true" encodingElement="iso8859" hash="-294724581" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="71" name="PY_1070_REC" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="-1856972033">
+         <cardinality maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="PY_1070_REC_KEY_1A_MAILBOX_ID" order="72" keepDecimalSeparator="true" encodingElement="iso8859" hash="-677903209" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="PY_1070_REC_KEY_1B_DOCUMENT_ID" order="73" keepDecimalSeparator="true" encodingElement="iso8859" hash="-309925596" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="PY_1070_REC_KEY2_USE_AT_LINE_LEVEL" order="74" keepDecimalSeparator="true" encodingElement="iso8859" hash="781426491" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="PY_1070_REC_KEY3_FUTURE_USE" order="75" keepDecimalSeparator="true" encodingElement="iso8859" hash="89771872" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="9" typeId="10" name="PY_1070_REC_ID" order="76" keepDecimalSeparator="true" encodingElement="iso8859" hash="993307237" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="PY_1070_REC_PO_HDR_PAY_TERMS" order="77" keepDecimalSeparator="true" encodingElement="iso8859" hash="506474775" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="PY_1070_REC_PO_HDR_PAY_TERMS_EXT1" order="78" keepDecimalSeparator="true" encodingElement="iso8859" hash="402786140" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="PY_1070_REC_PO_HDR_PAY_TERMS_EXT2" order="79" keepDecimalSeparator="true" encodingElement="iso8859" hash="-975962279" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="PY_1070_REC_PO_HDR_PAY_TERMS_EXT3" order="80" keepDecimalSeparator="true" encodingElement="iso8859" hash="1569415193" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="PY_1070_REC_PO_HDR_PAY_TERMS_EXT4" order="81" keepDecimalSeparator="true" encodingElement="iso8859" hash="336531194" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="PY_1070_REC_PO_HDR_PAY_TERMS_EXT5" order="82" keepDecimalSeparator="true" encodingElement="iso8859" hash="324364482" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="1" typeId="10" name="PY_1070_REC_TAX_EXEMPT_FLAG" order="83" keepDecimalSeparator="true" encodingElement="iso8859" hash="1051632277" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="50" typeId="10" name="PY_1070_REC_TAX_EXEMPT_NUMBER" order="84" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1988340467" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="PY_1070_REC_TAX_EXEMPT_REASON" order="85" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1638885971" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="PY_1070_REC_TAX_EXEMPT_REASON_CODE" order="86" keepDecimalSeparator="true" encodingElement="iso8859" hash="2139115665" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="PY_1070_REC_TAX_EXEMPT_REASON_CODE_EXT1" order="87" keepDecimalSeparator="true" encodingElement="iso8859" hash="1829907380" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="PY_1070_REC_TAX_POINT" order="88" keepDecimalSeparator="true" encodingElement="iso8859" hash="426711831" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="PY_1070_REC_TAX_POINT_CODE" order="89" keepDecimalSeparator="true" encodingElement="iso8859" hash="1183219585" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="PY_1070_REC_TAX_POINT_CODE_EXT1" order="90" keepDecimalSeparator="true" encodingElement="iso8859" hash="40145155" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="PY_1070_REC_PRICE_LIST" order="91" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1890797562" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="PY_1070_REC_PRICE_LIST_EXT1" order="92" keepDecimalSeparator="true" encodingElement="iso8859" hash="-98477756" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="93" name="FB_1090_REC" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="80501543">
+         <cardinality maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="FB_1090_REC_KEY_1A_MAILBOX_ID" order="94" keepDecimalSeparator="true" encodingElement="iso8859" hash="-640127089" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="FB_1090_REC_KEY1B_DOCUMENT_ID" order="95" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1771502942" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="FB_1090_REC_KEY2_USE_AT_LINE_LEVEL" order="96" keepDecimalSeparator="true" encodingElement="iso8859" hash="-701961594" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="FB_1090_REC_KEY3_FUTURE_USE" order="97" keepDecimalSeparator="true" encodingElement="iso8859" hash="-92247322" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="9" typeId="10" name="FB_1090_REC_ID" order="98" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1550770767" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="FB_1090_REC_FOB_POINT" order="99" keepDecimalSeparator="true" encodingElement="iso8859" hash="-350439530" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="FB_1090_REC_FOB_POINT_CODE" order="100" keepDecimalSeparator="true" encodingElement="iso8859" hash="-969774333" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="20" typeId="10" name="FB_1090_REC_FOB_POINT_CODE_EXT1" order="101" keepDecimalSeparator="true" encodingElement="iso8859" hash="-967462214" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="FB_1090_REC_FREIGHT_TERMS" order="102" keepDecimalSeparator="true" encodingElement="iso8859" hash="-750344086" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="FB_1090_REC_FREIGHT_TERMS_CODE" order="103" keepDecimalSeparator="true" encodingElement="iso8859" hash="277973848" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="FB_1090_REC_FREIGHT_TERMS_CODE_EXT1" order="104" keepDecimalSeparator="true" encodingElement="iso8859" hash="1273370386" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="FB_1090_REC_FREIGHT_TERMS_CODE_EXT2" order="105" keepDecimalSeparator="true" encodingElement="iso8859" hash="960860107" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="FB_1090_REC_FREIGHT_TERMS_CODE_EXT3" order="106" keepDecimalSeparator="true" encodingElement="iso8859" hash="-688200953" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="FB_1090_REC_FREIGHT_TERMS_CODE_EXT4" order="107" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1191255352" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="FB_1090_REC_FREIGHT_TERMS_CODE_EXT5" order="108" keepDecimalSeparator="true" encodingElement="iso8859" hash="1162751940" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="FB_1090_REC_SHIPMENT_PRIORITY" order="109" keepDecimalSeparator="true" encodingElement="iso8859" hash="-50724426" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="FB_1090_REC_SHIPMENT_PRIORITY_CODE" order="110" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1213369930" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="20" typeId="10" name="FB_1090_REC_SHIPMENT_PRIORITY_CODE_EXT1" order="111" keepDecimalSeparator="true" encodingElement="iso8859" hash="1670001180" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="FB_1090_REC_FREIGHT_CARRIER_CODE" order="112" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1749464330" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="FB_1090_REC_FREIGHT_CARRIER_CODE_EXT1" order="113" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1576498536" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="FB_1090_REC_FREIGHT_CARRIER_CODE_EXT2" order="114" keepDecimalSeparator="true" encodingElement="iso8859" hash="689946877" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="FB_1090_REC_SHIPPING_METHOD_CODE" order="115" keepDecimalSeparator="true" encodingElement="iso8859" hash="943205026" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="FB_1090_REC_SHIPPING_METHOD_CODE_EXT1" order="116" keepDecimalSeparator="true" encodingElement="iso8859" hash="845009965" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="FB_1090_REC_SHIPPING_METHOD_CODE_EXT2" order="117" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1937800203" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="FB_1090_REC_SHIP_TOLERANCE_ABOVE" order="118" keepDecimalSeparator="true" encodingElement="iso8859" hash="-501207592" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="FB_1090_REC_SHIP_TOLERANCE_BELOW" order="119" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1472706489" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="120" name="NT_1100_REC" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="1811059956">
+         <cardinality maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="NT_1100_REC_KEY_1A_MAILBOX_ID" order="121" keepDecimalSeparator="true" encodingElement="iso8859" hash="258483268" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="NT_1100_REC_KEY_1B_DOCUMENT_ID" order="122" keepDecimalSeparator="true" encodingElement="iso8859" hash="2018636503" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="NT_1100_REC_KEY2_USE_AT_LINE_LEVEL" order="123" keepDecimalSeparator="true" encodingElement="iso8859" hash="2048460080" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="NT_1100_REC_KEY3_FUTURE_USE" order="124" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1560271721" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="9" typeId="10" name="NT_1100_REC_ID" order="125" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1680022723" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="400" typeId="10" name="NT_1100_REC_SHIPPING_TEXT_A" order="126" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1067240881" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="400" typeId="10" name="NT_1100_REC_SHIPPING_TEXT_B" order="127" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1294022881" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="128" name="A2_1230_REC" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="200835169">
+         <cardinality maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="A2_1230_REC_KEY_1A_MAILBOX_ID" order="129" keepDecimalSeparator="true" encodingElement="iso8859" hash="586683046" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A2_1230_REC_KEY1B_DOCUMENT_ID" order="130" keepDecimalSeparator="true" encodingElement="iso8859" hash="1873105852" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A2_1230_REC_KEY2_USE_AT_LINE_LEVEL" order="131" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1668346133" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A2_1230_REC_KEY3_FUTURE_USE" order="132" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1985307844" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="9" typeId="10" name="A2_1230_REC_ID" order="133" keepDecimalSeparator="true" encodingElement="iso8859" hash="1917810168" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_1230_REC_ATTR_15" order="134" keepDecimalSeparator="true" encodingElement="iso8859" hash="584795109" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_1230_REC_ATTR_16" order="135" keepDecimalSeparator="true" encodingElement="iso8859" hash="2098571598" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_1230_REC_ATTR_17" order="136" keepDecimalSeparator="true" encodingElement="iso8859" hash="964983483" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_1230_REC_ATTR_18" order="137" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1678512179" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_1230_REC_ATTR_19" order="138" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1356765446" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="240" typeId="10" name="A2_1230_REC_ATTR_20" order="139" keepDecimalSeparator="true" encodingElement="iso8859" hash="-160423123" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="140" name="A1_1240_REC_PO_ATTRIBUTE_REC_1_Generic_STORE_FIELDS" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="814412804">
+         <cardinality maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="A1_1240_REC_KEY_1A_MAILBOX_ID_Partner_Ship_To_Code" order="141" keepDecimalSeparator="true" encodingElement="iso8859" hash="-260766500" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A1_1240_REC_KEY1B_DOCUMENT_ID_PO_Number" order="142" keepDecimalSeparator="true" encodingElement="iso8859" hash="-665709436" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A1_1240_REC_KEY2_USE_AT_LINE_LEVEL" order="143" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1697656124" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A1_1240_REC_KEY3_FUTURE_USE" order="144" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1138577333" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="9" typeId="10" name="A1_1240_REC_ID" order="145" keepDecimalSeparator="true" encodingElement="iso8859" hash="470337074" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="A1_1240_REC_HDR_PO_CONTEXT_Not_Used" order="146" keepDecimalSeparator="true" encodingElement="iso8859" hash="1003876998" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A1_1240_REC_PO_HDR_ATTR_1_HDR_Store_Field_1" order="147" keepDecimalSeparator="true" encodingElement="iso8859" hash="1216660125" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A1_1240_REC_PO_HDR_ATTR_2_HDR_Store_Field_1" order="148" keepDecimalSeparator="true" encodingElement="iso8859" hash="306145283" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A1_1240_REC_PO_HDR_ATTR_3_HDR_Store_Field_3" order="149" keepDecimalSeparator="true" encodingElement="iso8859" hash="140049230" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A1_1240_REC_PO_HDR_ATTR_4_HDR_STORE_FIELD_4" order="150" keepDecimalSeparator="true" encodingElement="iso8859" hash="101128171" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="151" name="A2_1250_REC_PO_ATTRIBUTE_REC2_Generic_STORE_FIELDS" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="-726588229">
+         <cardinality maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="A2_1250_REC_KEY_1A_MAILBOX_ID_Partner_Ship_to_Code" order="152" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1611710309" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A2_1250_REC_KEY1B_DOCUMENT_ID_PO_Number" order="153" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1248769869" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A2_1250_REC_KEY2_USE_AT_LINE_LEVEL" order="154" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1545181223" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A2_1250_REC_KEY3_FUTURE_USE" order="155" keepDecimalSeparator="true" encodingElement="iso8859" hash="-371759528" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="9" typeId="10" name="A2_1250_REC_ID" order="156" keepDecimalSeparator="true" encodingElement="iso8859" hash="-632504791" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_1250_REC_PO_HDR_ATTR_5_HDR_CONTRACT_NUMBER" order="157" keepDecimalSeparator="true" encodingElement="iso8859" hash="-401944689" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_1250_REC_PO_HDR_ATTR_6_RN_MITI_NUM" order="158" keepDecimalSeparator="true" encodingElement="iso8859" hash="-2014590438" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_1250_REC_PO_HDR_ATTR_7_RosettaNet_Only_3A4_3A8_Orig_DUNS_DT_TM_Stamp" order="159" keepDecimalSeparator="true" encodingElement="iso8859" hash="1746075935" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_1250_REC_PO_HDR_ATTR_8_RN_PIP_INSTANCE_ID" order="160" keepDecimalSeparator="true" encodingElement="iso8859" hash="549170766" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_1250_REC_PO_HDR_ATTR_9_PRICE_QUOTE_NUM" order="161" keepDecimalSeparator="true" encodingElement="iso8859" hash="-689755168" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="162" name="A3_1260_REC_ATTRIBUTE_11_WORK" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="1171444972">
+         <cardinality maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="35" typeId="10" name="A3_1260_REC_ATTRIBUTE_11_WORK_DP" order="163" keepDecimalSeparator="true" encodingElement="iso8859" hash="7773715" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="35" typeId="10" name="A3_1260_REC_ATTRIBUTE_11_WORK_SE" order="164" keepDecimalSeparator="true" encodingElement="iso8859" hash="1587864032" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="35" typeId="10" name="A3_1260_REC_ATTRIBUTE_11_WORK_BY" order="165" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1218891286" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="35" typeId="10" name="A3_1260_REC_ATTRIBUTE_11_WORK_BT" order="166" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1792861768" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="167" name="A3_1260_REC" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="-930164982">
+         <cardinality maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="A3_1260_REC_KEY_1A_MAILBOX_ID" order="168" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1588486059" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A3_1260_REC_KEY_1B_DOCUMENT_ID" order="169" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1396719176" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A3_1260_REC_KEY2_USE_AT_LINE_LEVEL" order="170" keepDecimalSeparator="true" encodingElement="iso8859" hash="1377522137" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A3_1260_REC_KEY3_FUTURE_USE" order="171" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1075992331" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLandMark" definition="9" typeId="10" name="A3_1260_REC_ID" defaultValue="1260A3PO3" order="172" keepDecimalSeparator="true" encodingElement="iso8859" hash="-946042692" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A3_1260_REC_PO_ATTRIBUTE_10" order="173" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1782446201" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A3_1260_REC_PO_ATTRIBUTE_11" order="174" keepDecimalSeparator="true" encodingElement="iso8859" hash="54823497" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A3_1260_REC_PO_ATTRIBUTE_12" order="175" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1253971575" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A3_1260_REC_PO_ATTRIBUTE_13" order="176" keepDecimalSeparator="true" encodingElement="iso8859" hash="579661605" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A3_1260_REC_PO_ATTRIBUTE_14" order="177" keepDecimalSeparator="true" encodingElement="iso8859" hash="829907272" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="178" name="A4_1270_REC" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="9984074">
+         <cardinality maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="A4_1270_REC_KEY_1A_MAILBOX_ID" order="179" keepDecimalSeparator="true" encodingElement="iso8859" hash="-677543628" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A4_1270_REC_KEY_1B_DOCUMENT_ID" order="180" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1417294899" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A4_1270_REC_KEY2_USE_AT_LINE_LEVEL" order="181" keepDecimalSeparator="true" encodingElement="iso8859" hash="-95825987" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A4_1270_REC_KEY_FUTURE_USE" order="182" keepDecimalSeparator="true" encodingElement="iso8859" hash="483122415" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="9" typeId="10" name="A4_1270_REC_ID" order="183" keepDecimalSeparator="true" encodingElement="iso8859" hash="-851486723" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="240" typeId="10" name="A4_1270_REC_ATTRIBUTE_15" order="184" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1607667103" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="185" name="AD_1400_REC" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="1389429984">
+         <cardinality maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="AD_1400_REC_KEY_1A_MAILBOX_ID" order="186" keepDecimalSeparator="true" encodingElement="iso8859" hash="1547956391" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="AD_1400_REC_KEY1B_DOCUMENT_ID" order="187" keepDecimalSeparator="true" encodingElement="iso8859" hash="-791563127" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="AD_1400_REC_KEY2_USE_AT_LINE_LEVEL" order="188" keepDecimalSeparator="true" encodingElement="iso8859" hash="-783777762" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="AD_1400_REC_KEY3_FUTURE_USE" order="189" keepDecimalSeparator="true" encodingElement="iso8859" hash="159143706" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLandMark" definition="9" typeId="10" name="AD_1400_REC_ID" defaultValue="1400ADSLD" order="190" keepDecimalSeparator="true" encodingElement="iso8859" hash="1921699721" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="60" typeId="10" name="AD_1400_REC_SOLD_TO_ADDR_CODE" order="191" keepDecimalSeparator="true" encodingElement="iso8859" hash="1079458045" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="35" typeId="10" name="AD_1400_REC_SOLD_TO_EDI_CODE" order="192" keepDecimalSeparator="true" encodingElement="iso8859" hash="-25263096" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="60" typeId="10" name="AD_1400_REC_SOLD_TO_ADDR_NAME" order="193" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1950441575" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="35" typeId="10" name="AD_1400_REC_SOLD_TO_ADDR_1" order="194" keepDecimalSeparator="true" encodingElement="iso8859" hash="344224423" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="35" typeId="10" name="AD_1400_REC_SOLD_TO_ADDR_2" order="195" keepDecimalSeparator="true" encodingElement="iso8859" hash="1163749333" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="35" typeId="10" name="AD_1400_REC_SOLD_TO_ADDR_3" order="196" keepDecimalSeparator="true" encodingElement="iso8859" hash="-2055675748" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="35" typeId="10" name="AD_1400_REC_SOLD_TO_ADDR_4" order="197" keepDecimalSeparator="true" encodingElement="iso8859" hash="-981089584" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="AD_1400_REC_SOLD_TO_CITY" order="198" keepDecimalSeparator="true" encodingElement="iso8859" hash="-2093307578" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="15" typeId="10" name="AD_1400_REC_SOLD_TO_POSTAL_CODE" order="199" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1029237701" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="20" typeId="10" name="AD_1400_REC_SOLD_TO_COUNTRY_INT" order="200" keepDecimalSeparator="true" encodingElement="iso8859" hash="-228521000" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="3" typeId="10" name="AD_1400_REC_SOLD_TO_COUNTRY_EXT1" order="201" keepDecimalSeparator="true" encodingElement="iso8859" hash="22590782" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="20" typeId="10" name="AD_1400_REC_SOLD_TO_STATE_INT" order="202" keepDecimalSeparator="true" encodingElement="iso8859" hash="1526025545" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="AD_1400_REC_SOLD_TO_STATE_EXT1" order="203" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1515248722" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="20" typeId="10" name="AD_1400_REC_SOLD_TO_PROVINCE_INT" order="204" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1000272096" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="AD_1400_REC_SOLD_TO_PROVINCE_EXT1" order="205" keepDecimalSeparator="true" encodingElement="iso8859" hash="-627392035" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="AD_1400_REC_SOLD_TO_COUNTY" order="206" keepDecimalSeparator="true" encodingElement="iso8859" hash="1011387437" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="AD_1400_REC_SOLD_TO_ORG" order="207" keepDecimalSeparator="true" encodingElement="iso8859" hash="-863762856" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="208" name="AD_1500_REC" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="314099259">
+         <cardinality maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="AD_1500_REC_KEY_1A_MAILBOX_ID" order="209" keepDecimalSeparator="true" encodingElement="iso8859" hash="887222559" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="AD_1500_REC_KEY_1B_DOCUMENT_ID" order="210" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1898328502" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="AD_1500_REC_KEY2_USE_AT_LINE_LEVEL" order="211" keepDecimalSeparator="true" encodingElement="iso8859" hash="1361232235" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="AD_1500_REC_KEY3_FUTURE_USE" order="212" keepDecimalSeparator="true" encodingElement="iso8859" hash="1031062280" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="9" typeId="10" name="AD_1500_REC_ID" order="213" keepDecimalSeparator="true" encodingElement="iso8859" hash="221285335" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="60" typeId="10" name="AD_1500_REC_SHIP_TO_ADDR_CODE" order="214" keepDecimalSeparator="true" encodingElement="iso8859" hash="204539811" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="35" typeId="10" name="AD_1500_REC_SHIP_TO_EDI_CODE" order="215" keepDecimalSeparator="true" encodingElement="iso8859" hash="1260692022" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="60" typeId="10" name="AD_1500_REC_SHIP_TO_ADDR_NAME" order="216" keepDecimalSeparator="true" encodingElement="iso8859" hash="-715396222" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="35" typeId="10" name="AD_1500_REC_SHIP_TO_ADDR_1" order="217" keepDecimalSeparator="true" encodingElement="iso8859" hash="866798592" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="35" typeId="10" name="AD_1500_REC_SHIP_TO_ADDR_2" order="218" keepDecimalSeparator="true" encodingElement="iso8859" hash="33479155" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="35" typeId="10" name="AD_1500_REC_SHIP_TO_ADDR_3" order="219" keepDecimalSeparator="true" encodingElement="iso8859" hash="-922563830" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="35" typeId="10" name="AD_1500_REC_SHIP_TO_ADDR_4" order="220" keepDecimalSeparator="true" encodingElement="iso8859" hash="154984625" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="AD_1500_REC_SHIP_TO_CITY" order="221" keepDecimalSeparator="true" encodingElement="iso8859" hash="420704169" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="15" typeId="10" name="AD_1500_REC_SHIP_TO_POSTAL_CODE" order="222" keepDecimalSeparator="true" encodingElement="iso8859" hash="-790282442" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="20" typeId="10" name="AD_1500_REC_SHIP_TO_COUNTRY_INT" order="223" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1383245682" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="3" typeId="10" name="AD_1500_REC_SHIP_TO_COUNTRY_EXT1" order="224" keepDecimalSeparator="true" encodingElement="iso8859" hash="-491497249" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="20" typeId="10" name="AD_1500_REC_SHIP_TO_STATE_INT" order="225" keepDecimalSeparator="true" encodingElement="iso8859" hash="601115121" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="AD_1500_REC_SHIP_TO_STATE_EXT_1" order="226" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1605795809" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="20" typeId="10" name="AD_1500_REC_SHIP_TO_PROVINCE_INT" order="227" keepDecimalSeparator="true" encodingElement="iso8859" hash="1047504956" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="AD_1500_REC_SHIP_TO_PROVINCE_EXT1" order="228" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1329273553" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="AD_1500_REC_SHIP_TO_COUNTY" order="229" keepDecimalSeparator="true" encodingElement="iso8859" hash="-461537261" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="AD_1500_REC_SHIP_TO_ORG" order="230" keepDecimalSeparator="true" encodingElement="iso8859" hash="122780479" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="231" name="G1" parentDelimiterElement="3" hash="918421859">
+         <cardinality/>
+         <childElements>
+            <childElement factoryType="FlatFileParent" order="232" name="G2" parentDelimiterElement="3" hash="-1863487927">
+               <cardinality/>
+               <childElements>
+                  <childElement factoryType="FlatFileParent" order="233" name="IT_2000_REC" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="1991571895">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="IT_2000_REC_KEY_1A_MAILBOX_ID" order="234" keepDecimalSeparator="true" encodingElement="iso8859" hash="997146989" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="IT_2000_REC_KEY_1B_DOCUMENT_ID" order="235" keepDecimalSeparator="true" encodingElement="iso8859" hash="1503779069" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="AT_2000_REC_KEY2_USE_AT_LINE_LEVEL" order="236" keepDecimalSeparator="true" encodingElement="iso8859" hash="528436183" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="IT_2000_REC_KEY3_FUTURE_USE" order="237" keepDecimalSeparator="true" encodingElement="iso8859" hash="999336642" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="9" typeId="10" name="IT_2000_REC_ID" order="238" keepDecimalSeparator="true" encodingElement="iso8859" hash="-198005369" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="20" typeId="10" name="IT_2000_REC_CUSTOMER_LINE_NUM" order="239" keepDecimalSeparator="true" encodingElement="iso8859" hash="1596687454" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="IT_2000_REC_EBS_LINE_NUM" order="240" keepDecimalSeparator="true" encodingElement="iso8859" hash="690545007" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="50" typeId="10" name="IT_2000_REC_INVENTORY_ITEM" order="241" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1411685124" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="3" typeId="10" name="IT_2000_REC_ITEM_REVISION" order="242" keepDecimalSeparator="true" encodingElement="iso8859" hash="-2085338010" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="50" typeId="10" name="IT_2000_REC_CUSTOMER_ITEM_NAME" order="243" keepDecimalSeparator="true" encodingElement="iso8859" hash="530383916" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="50" typeId="10" name="IT_2000_REC_CUSTOMER_ITEM_REVISION" order="244" keepDecimalSeparator="true" encodingElement="iso8859" hash="-836298160" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="IT_2000_REC_CUSTOMER_ITEM_ID_TYPE" order="245" keepDecimalSeparator="true" encodingElement="iso8859" hash="2145829991" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="IT_2000_REC_CUSTOMER_ITEM_ID_TYPE_EXT1" order="246" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1863400358" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="50" typeId="10" name="IT_2000_REC_ORIG_SYS_DOC_REF" order="247" keepDecimalSeparator="true" encodingElement="iso8859" hash="-959999837" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="50" typeId="10" name="IT_2000_REC_ORIG_SYS_LINE_REF" order="248" keepDecimalSeparator="true" encodingElement="iso8859" hash="705328147" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="T_2000_REC_ITEM_TYPE_CODE" order="249" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1994664836" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="IT_2000_REC_ITEM_TYPE_CODE_EXT1" order="250" keepDecimalSeparator="true" encodingElement="iso8859" hash="643308123" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="IT_2000_REC_LINE_TYPE" order="251" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1724384730" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="IT_2000_REC_SALES_AGREEMENT_NUM" order="252" keepDecimalSeparator="true" encodingElement="iso8859" hash="974374556" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="50" typeId="10" name="IT_2000_REC_SPLIT_FROM_LINE_REF" order="253" keepDecimalSeparator="true" encodingElement="iso8859" hash="178177560" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="FlatFileParent" order="254" name="LN_3000_REC_PRICING_Line_Pricing_Record" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="2018689028">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="LN_3000_REC_KEY_1A_MAILBOX_ID_Use_EBS_Partners" order="255" keepDecimalSeparator="true" encodingElement="iso8859" hash="1332342412" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="LN_3000_REC_KEY1B_DOCUMENT_ID_PO_Number" order="256" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1213544285" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="LN_3000_REC_KEY2_USE_AT_LINE_LEVEL_Line_Num" order="257" keepDecimalSeparator="true" encodingElement="iso8859" hash="-2087830899" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="LN_3000_REC_KEY3_FUTURE_USE" order="258" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1681739741" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="9" typeId="10" name="LN_3000_REC_ID" order="259" keepDecimalSeparator="true" encodingElement="iso8859" hash="1394861850" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="1" typeId="10" name="LN_3000_REC_CALC_PRICE_FLAG_Not_Used" order="260" keepDecimalSeparator="true" encodingElement="iso8859" hash="46036884" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="LN_3000_REC_PRICING_QTY_Not_Used" order="261" keepDecimalSeparator="true" encodingElement="iso8859" hash="1229581668" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="3" typeId="10" name="LN_3000_REC_PRICING_QTY_UOM_Not_Used" order="262" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1200561093" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="LN_3000_REC_PRICING_QTY_UOM_EXT1" order="263" keepDecimalSeparator="true" encodingElement="iso8859" hash="1727136233" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="LN_3000_REC_CUSTOMER_ITEM_NET_PRICE_Unit_Price" order="264" keepDecimalSeparator="true" encodingElement="iso8859" hash="534445138" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="LN_3000_REC_UNIT_LIST_PRICE_Not_Used" order="265" keepDecimalSeparator="true" encodingElement="iso8859" hash="1689048838" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="LN_3000_REC_UNIT_SELLING_PRICE_Not_Used" order="266" keepDecimalSeparator="true" encodingElement="iso8859" hash="500397759" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="LN_3000_REC_UNIT_PERCENT_BASE_PRICE_Not_Use" order="267" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1476945339" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="LN_3000_REC_UNIT_SELLING_PERCENT_Not_Used" order="268" keepDecimalSeparator="true" encodingElement="iso8859" hash="224625119" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="LN_3000_REC_UNIT_LIST_PERCENT_Not_Used" order="269" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1312779019" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="15" typeId="10" name="LN_3000_REC_PRICING_DATE_Not_Used" order="270" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1915466555" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="LN_3000_REC_PRICE_LIST_Not_Used" order="271" keepDecimalSeparator="true" encodingElement="iso8859" hash="-952850707" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="LN_3000_REC_PRICE_LIST_EXT1_Not_Used" order="272" keepDecimalSeparator="true" encodingElement="iso8859" hash="565857681" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="LN_3000_REC_AGREEMENT_Not_Used" order="273" keepDecimalSeparator="true" encodingElement="iso8859" hash="-595872234" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="ELN_3000_REC_END_ITEM_UNIT_NUMBER_Not_Used" order="274" keepDecimalSeparator="true" encodingElement="iso8859" hash="229864869" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="LN_3000_REC_SOURCE_TYPE_CODE_Not_Used" order="275" keepDecimalSeparator="true" encodingElement="iso8859" hash="1860895394" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="1" typeId="10" name="LN_3000_REC_OPTION_FLAG" order="276" keepDecimalSeparator="true" encodingElement="iso8859" hash="667774801" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="50" typeId="10" name="LN_3000_REC_TOP_MODEL_LINE_REF" order="277" keepDecimalSeparator="true" encodingElement="iso8859" hash="-130930894" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="50" typeId="10" name="LN_3000_REC_LINK_TO_LINE_REF" order="278" keepDecimalSeparator="true" encodingElement="iso8859" hash="-912818722" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="LN_3000_REC_MODEL_GROUP_NUMBER" order="279" keepDecimalSeparator="true" encodingElement="iso8859" hash="779028012" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="LN_3000_REC_OPTION_NUMBER" order="280" keepDecimalSeparator="true" encodingElement="iso8859" hash="-760614397" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="50" typeId="10" name="LN_3000_REC_COMPONENT_CODE" order="281" keepDecimalSeparator="true" encodingElement="iso8859" hash="1547924642" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="240" typeId="10" name="LN_3000_REC_SORT_ORDER" order="282" keepDecimalSeparator="true" encodingElement="iso8859" hash="453070032" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="FlatFileParent" order="283" name="DT_4000_REC_DATES" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="-106632826">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="DT_4000_REC_KEY_1A_MAILBOX_ID" order="284" keepDecimalSeparator="true" encodingElement="iso8859" hash="-722526452" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="DT_4000_REC_KEY_1B_DOCUMENT_ID" order="285" keepDecimalSeparator="true" encodingElement="iso8859" hash="915662669" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="DT_4000_REC_KEY2_USE_AT_LINE_LEVEL" order="286" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1614280283" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="DT_4000_REC_KEY3_FUTURE_USE" order="287" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1194359594" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="9" typeId="10" name="DT_4000_REC_ID" order="288" keepDecimalSeparator="true" encodingElement="iso8859" hash="-934552511" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="1" typeId="10" name="DT_4000_REC_SHIP_MODLE_COMPLTE_FLG" order="289" keepDecimalSeparator="true" encodingElement="iso8859" hash="854296931" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="1" typeId="10" name="DT_4000_REC_AUTH_TO_SHIP_FLAG" order="290" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1756928580" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="DT_4000_REC_SHIPMENT_NUMBER" order="291" keepDecimalSeparator="true" encodingElement="iso8859" hash="-2108034363" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="DT_4000_REC_CUSTOMER_SHIPMENT_NUMBER" order="292" keepDecimalSeparator="true" encodingElement="iso8859" hash="-258795978" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="50" typeId="10" name="DT_4000_REC_ORIG_SYS_SHIPMENT_REF" order="293" keepDecimalSeparator="true" encodingElement="iso8859" hash="-217774986" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="15" typeId="10" name="DT_4000_REC_REQUEST_DATE" order="294" keepDecimalSeparator="true" encodingElement="iso8859" hash="-622302409" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="15" typeId="10" name="DT_4000_REC_SCHEDULE_DATE" order="295" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1077572206" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="15" typeId="10" name="DT_4000_REC_SCHEDULE_SHIP_DATE" order="296" keepDecimalSeparator="true" encodingElement="iso8859" hash="-313169937" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="15" typeId="10" name="DT_4000_REC_PROMISE_DATE" order="297" keepDecimalSeparator="true" encodingElement="iso8859" hash="-408556659" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="DT_4000_REC_ORDERED_QTY" order="298" keepDecimalSeparator="true" encodingElement="iso8859" hash="398739432" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="3" typeId="10" name="DT_4000_REC_ORDERED_QTY_UOM" order="299" keepDecimalSeparator="true" encodingElement="iso8859" hash="-811171433" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="DT_4000_REC_ORDERED_QTY_UOM_EXT1" order="300" keepDecimalSeparator="true" encodingElement="iso8859" hash="576380583" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="15" typeId="10" name="DT_4000_REC_ORDERED_QTY2" order="301" keepDecimalSeparator="true" encodingElement="iso8859" hash="-981602680" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="3" typeId="10" name="DT_4000_REC_ORDERED_QTY2_UOM" order="302" keepDecimalSeparator="true" encodingElement="iso8859" hash="-850675749" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="DT_4000_REC_ORDERED_QTY2_UOM_EXT1" order="303" keepDecimalSeparator="true" encodingElement="iso8859" hash="-759986019" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="DT_4000_REC_SHIPPED_QTY" order="304" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1742580780" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="DT_4000_REC_SHIPPED_QTY_2" order="305" keepDecimalSeparator="true" encodingElement="iso8859" hash="697216753" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="DT_4000_REC_REF_HEADER" order="306" keepDecimalSeparator="true" encodingElement="iso8859" hash="140472661" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="DT_4000_REC_REFERENCE_LINE" order="307" keepDecimalSeparator="true" encodingElement="iso8859" hash="-110479635" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="DT_4000_REC_REFERENCE_TYPE" order="308" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1866956021" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="50" typeId="10" name="DT_4000_REC_CUST_MODEL_SERIAL_NUM" order="309" keepDecimalSeparator="true" encodingElement="iso8859" hash="1485563261" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="DT_4000_REC_SALESREP" order="310" keepDecimalSeparator="true" encodingElement="iso8859" hash="125183188" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="DT_4000_REC_OPERATION_CODE" order="311" keepDecimalSeparator="true" encodingElement="iso8859" hash="-409064783" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="5" typeId="10" name="DT_4000_REC_OPERATION_CODE_EXT1" order="312" keepDecimalSeparator="true" encodingElement="iso8859" hash="-335747440" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="DT_4000_REC_SALES_AGREEMENT_LINE_NUMBER" order="313" keepDecimalSeparator="true" encodingElement="iso8859" hash="-583570088" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="DT_4000_REC_ARRIVAL_SET_NAME" order="314" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1738241461" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="15" typeId="10" name="DT_4000_REC_SCHEDULE_ARRIVAL_DT" order="315" keepDecimalSeparator="true" encodingElement="iso8859" hash="-588363337" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="FlatFileParent" order="316" name="NT_4010_REC" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="765273180">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="NT_4010_REC_KEY_1A_MAILBOX_ID" order="317" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1889939766" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="NT_4010_REC_KEY_1B_DOCUMENT_ID" order="318" keepDecimalSeparator="true" encodingElement="iso8859" hash="1380402886" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="NT_4010_REC_KEY2_USE_AT_LINE_LEVEL" order="319" keepDecimalSeparator="true" encodingElement="iso8859" hash="309595018" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="NT_4010_REC_KEY3_FUTURE_USE" order="320" keepDecimalSeparator="true" encodingElement="iso8859" hash="1164028157" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="9" typeId="10" name="NT_4010_REC_ID" order="321" keepDecimalSeparator="true" encodingElement="iso8859" hash="-906543258" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="400" typeId="10" name="NT_4010_REC_SHIPPING_INSTRUCTIONS_A" order="322" keepDecimalSeparator="true" encodingElement="iso8859" hash="-664218563" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="400" typeId="10" name="NT_4010_REC_SHIPPING_INSTRUCTIONS_B" order="323" keepDecimalSeparator="true" encodingElement="iso8859" hash="1547567556" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="FlatFileParent" order="324" name="A1_4200_REC" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="376064795">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="A1_4200_REC_KEY_1A_MAILBOX_ID" order="325" keepDecimalSeparator="true" encodingElement="iso8859" hash="140718057" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A1_4200_REC_KEY1B_DOCUMENT_ID" order="326" keepDecimalSeparator="true" encodingElement="iso8859" hash="552021899" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A1_4200_REC_KEY2_USE_AT_LINE_LEVEL" order="327" keepDecimalSeparator="true" encodingElement="iso8859" hash="824598516" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A1_4200_REC_KEY3_FUTURE_USE" order="328" keepDecimalSeparator="true" encodingElement="iso8859" hash="2036835897" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="9" typeId="10" name="A1_4200_REC_ID" order="329" keepDecimalSeparator="true" encodingElement="iso8859" hash="1081704107" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="A1_4200_REC_CONTEXT" order="330" keepDecimalSeparator="true" encodingElement="iso8859" hash="-919819690" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A1_4200_REC_ATTRIBUTE_1" order="331" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1044241080" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A1_4200_REC_ATTRIBUTE_2" order="332" keepDecimalSeparator="true" encodingElement="iso8859" hash="877014117" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A1_4200_REC_ATTRIBUTE_3" order="333" keepDecimalSeparator="true" encodingElement="iso8859" hash="-993932371" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A1_4200_REC_ATTRIBUTE_4" order="334" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1185993727" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="FlatFileParent" order="335" name="A2_4230_REC_ATTRIBUTE_20_WORK" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="-259868887">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="FlatFileLeaf" definition="70" typeId="10" name="A2_4230_ATTRIBUTE_20_WORK_1" order="336" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1987076099" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="70" typeId="10" name="A2_4230_ATTRIBUTE_20_WORK_2" order="337" keepDecimalSeparator="true" encodingElement="iso8859" hash="-2009054772" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="70" typeId="10" name="A2_4230_ATTRIBUTE_20_WORK_3" order="338" keepDecimalSeparator="true" encodingElement="iso8859" hash="1995628054" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="A2_4230_ATTRIBUTE_20_WORK_4" order="339" keepDecimalSeparator="true" encodingElement="iso8859" hash="801850922" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="FlatFileParent" order="340" name="A2_4230_REC" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="1347655510">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" paddingCharElement=" " name="A2_4230_REC_KEY_1A_MAILBOX_ID" paddingPosElement="1" order="341" keepDecimalSeparator="true" encodingElement="iso8859" hash="1412121691" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A2_4230_REC_KEY1B_DOCUMENT_ID" order="342" keepDecimalSeparator="true" encodingElement="iso8859" hash="882673546" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A2_4230_REC_KEY2_USE_AT_LINE_LEVEL" order="343" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1855049783" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A2_4230_REC_KEY3_FUTURE_USE" order="344" keepDecimalSeparator="true" encodingElement="iso8859" hash="1183988328" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="9" typeId="10" name="A2_4230_REC_ID" order="345" keepDecimalSeparator="true" encodingElement="iso8859" hash="1010295550" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_4230_REC_ATTR_15" order="346" keepDecimalSeparator="true" encodingElement="iso8859" hash="465337739" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_4230_REC_ATTR_16" order="347" keepDecimalSeparator="true" encodingElement="iso8859" hash="73697726" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_4230_REC_ATTR_17" order="348" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1826873786" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_4230_REC_ATTR_18" order="349" keepDecimalSeparator="true" encodingElement="iso8859" hash="1410847723" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_4230_REC_ATTR_19" order="350" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1268428962" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="240" typeId="10" name="A2_4230_REC_ATTR_20" order="351" keepDecimalSeparator="true" encodingElement="iso8859" hash="77230382" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="FlatFileParent" order="352" name="AD_4800_REC_SCH_SHIP_TO_ADDR" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="-1168406946">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="AD_4800_REC_KEY_1A_MAILBOX_ID" order="353" keepDecimalSeparator="true" encodingElement="iso8859" hash="2060888434" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="AD_4800_REC_KEY1B_DOCUMENT_ID" order="354" keepDecimalSeparator="true" encodingElement="iso8859" hash="-771461035" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="AD_4800_REC_KEY2_USE_AT_LINE_LEVEL" order="355" keepDecimalSeparator="true" encodingElement="iso8859" hash="-2310064" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="AD_4800_REC_KEY3_FUTURE_USE" order="356" keepDecimalSeparator="true" encodingElement="iso8859" hash="-988326231" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="9" typeId="10" name="AD_4800_REC_ID" order="357" keepDecimalSeparator="true" encodingElement="iso8859" hash="982678955" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="60" typeId="10" name="AD_4800_REC_SHIP_TO_ADDR_CODE" order="358" keepDecimalSeparator="true" encodingElement="iso8859" hash="877792699" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="35" typeId="10" name="AD_4800_REC_SHIP_TO_EDI_LOCATION_CODE" order="359" keepDecimalSeparator="true" encodingElement="iso8859" hash="1638921998" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="60" typeId="10" name="AD_4800_REC_SHIP_TO_ADDRESS_NAME" order="360" keepDecimalSeparator="true" encodingElement="iso8859" hash="-177701323" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="35" typeId="10" name="AD_4800_REC_SHIP_TO_ADDR1" order="361" keepDecimalSeparator="true" encodingElement="iso8859" hash="908953296" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="35" typeId="10" name="AD_4800_REC_SHIP_TO_ADDR2" order="362" keepDecimalSeparator="true" encodingElement="iso8859" hash="94551923" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="35" typeId="10" name="AD_4800_REC_SHIP_TO_ADDR3" order="363" keepDecimalSeparator="true" encodingElement="iso8859" hash="317156277" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="35" typeId="10" name="AD_4800_REC_SHIP_TO_ADDR4" order="364" keepDecimalSeparator="true" encodingElement="iso8859" hash="-538426536" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="AD_4800_REC_SHIP_TO_CITY" order="365" keepDecimalSeparator="true" encodingElement="iso8859" hash="1717959454" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="15" typeId="10" name="AD_4800_REC_SHIP_TO_POSTAL_CODE" order="366" keepDecimalSeparator="true" encodingElement="iso8859" hash="-711927287" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="20" typeId="10" name="AD_4800_REC_SHIP_TO_COUNTRY_INT" order="367" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1916983420" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="3" typeId="10" name="AD_4800_REC_SHIP_TO_COUNTRY_EXT1" order="368" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1107602867" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="20" typeId="10" name="AD_4800_REC_SHIP_TO_STATE_INT" order="369" keepDecimalSeparator="true" encodingElement="iso8859" hash="1916280070" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="AD_4800_REC_SHIP_TO_STATE_EXT1" order="370" keepDecimalSeparator="true" encodingElement="iso8859" hash="1047246566" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="20" typeId="10" name="AD_4800_REC_SHIP_TO_PROVINCE_INT" order="371" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1907113573" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" name="AD_4800_REC_SHIP_TO_PROVINCE_EXT1" order="372" keepDecimalSeparator="true" encodingElement="iso8859" hash="1913948448" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="AD_4800_REC_SHIP_TO_COUNTY" order="373" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1951139682" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="AD_4800_REC_SHIP_TO_ORG" order="374" keepDecimalSeparator="true" encodingElement="iso8859" hash="1573397286" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="AD_4800_REC_CUSTOMER_DOCK" order="375" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1065130222" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="AD_4800_REC_CUSTOMER_DOCK_INT" order="376" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1263395588" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="15" typeId="10" name="AD_4800_REC_CUSTOMER_DOCK_EXT1" order="377" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1747068870" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="AD_4800_REC_LOAD_SEQ_NUMBER" order="378" keepDecimalSeparator="true" encodingElement="iso8859" hash="1497779180" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="AD_4800_REC_CUSTOMER_PRODUCTION_LINE" order="379" keepDecimalSeparator="true" encodingElement="iso8859" hash="1623359260" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="AD_4800_REC_CUSTOMER_PRODUCTION_SEQ_NUM" order="380" keepDecimalSeparator="true" encodingElement="iso8859" hash="-204892907" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="FlatFileParent" order="381" name="A1_4830_REC" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="1171193067">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="A1_4830_REC_KEY_1A_MAILBOX_ID" order="382" keepDecimalSeparator="true" encodingElement="iso8859" hash="369191794" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A1_4830_REC_KEY1B_DOCUMENT_ID" order="383" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1498238931" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A1_4830_REC_KEY2_USE_AT_LINE_LEVEL" order="384" keepDecimalSeparator="true" encodingElement="iso8859" hash="1880835271" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A1_4830_REC_KEY3_FUTURE_USE" order="385" keepDecimalSeparator="true" encodingElement="iso8859" hash="-82475097" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="9" typeId="10" name="A1_4830_REC_ID" order="386" keepDecimalSeparator="true" encodingElement="iso8859" hash="-151701690" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" name="A1_4830_REC_TP_CONTEXT" order="387" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1520897415" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A1_4830_REC_TP_ATTRIBUTE_1" order="388" keepDecimalSeparator="true" encodingElement="iso8859" hash="-13441739" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A1_4830_REC_TP_ATTRIBUTE_2" order="389" keepDecimalSeparator="true" encodingElement="iso8859" hash="-414539838" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A1_4830_REC_TP_ATTRIBUTE_3" order="390" keepDecimalSeparator="true" encodingElement="iso8859" hash="1367220828" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A1_4830_REC_TP_ATTRIBUTE_4" order="391" keepDecimalSeparator="true" encodingElement="iso8859" hash="-163379518" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="FlatFileParent" order="392" name="A2_4840_REC" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="1191218314">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="A2_4840_REC_KEY_1A_MAILBOX_ID" order="393" keepDecimalSeparator="true" encodingElement="iso8859" hash="-2022848369" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A2_4840_REC_KEY1B_DOCUMENT_ID" order="394" keepDecimalSeparator="true" encodingElement="iso8859" hash="748770104" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A2_4840_REC_KEY2_USE_AT_LINE_LEVEL" order="395" keepDecimalSeparator="true" encodingElement="iso8859" hash="1532450083" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A2_4840_REC_KEY3_FUTURE_USE" order="396" keepDecimalSeparator="true" encodingElement="iso8859" hash="408110336" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="9" typeId="10" name="A2_4840_REC_ID" order="397" keepDecimalSeparator="true" encodingElement="iso8859" hash="-167659981" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_4840_REC_TP_ATTRIBUTE_5" order="398" keepDecimalSeparator="true" encodingElement="iso8859" hash="857519618" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_4840_REC_TP_ATTRIBUTE_6" order="399" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1714411863" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_4840_REC_TP_ATTRIBUTE_7" order="400" keepDecimalSeparator="true" encodingElement="iso8859" hash="-643950682" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_4840_REC_TP_ATTRIBUTE_8" order="401" keepDecimalSeparator="true" encodingElement="iso8859" hash="1760743266" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_4840_REC_TP_ATTRIBUTE_9" order="402" keepDecimalSeparator="true" encodingElement="iso8859" hash="362917995" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="FlatFileParent" order="403" name="A2_4850_REC" parentDelimiterElementValue="0x0a" parentDelimiterElement="2" hash="-1204680327">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" name="A2_4850_REC_KEY_1A_MAILBOX_ID" order="404" keepDecimalSeparator="true" encodingElement="iso8859" hash="1299076067" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A2_4850_REC_KEY1B_DOCUMENT_ID" order="405" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1142237061" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A2_4850_REC_KEY2_USE_AT_LINE_LEVEL" order="406" keepDecimalSeparator="true" encodingElement="iso8859" hash="1512657190" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="22" typeId="10" name="A2_4850_REC_KEY3_FUTURE_USE" order="407" keepDecimalSeparator="true" encodingElement="iso8859" hash="-128594181" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="9" typeId="10" name="A2_4850_REC_ID" order="408" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1728661749" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_4850_REC_TP_ATTRIBUTE_10" order="409" keepDecimalSeparator="true" encodingElement="iso8859" hash="1005503677" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_4850_REC_TP_ATTRIBUTE_11" order="410" keepDecimalSeparator="true" encodingElement="iso8859" hash="-269172788" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_4850_REC_TP_ATTRIBUTE_12" order="411" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1508160537" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_4850_REC_TP_ATTRIBUTE_13" order="412" keepDecimalSeparator="true" encodingElement="iso8859" hash="-224952183" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="80" typeId="10" name="A2_4850_REC_TP_ATTRIBUTE_14" order="413" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1662368472" allowDistortion="true">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+               </childElements>
+            </childElement>
+         </childElements>
+      </childElement>
+   </childElements>
+</businessDocument>

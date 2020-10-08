@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<businessDocument xmlns="http://www.axway.com/mappingServices/trackingObject" objectVersion="1" keepInputNumberFractionDigits="true" saveMode="true" publicName="TO_LATTICE_TRANS" bufferSize="100" encodingBD="iso8859" usedByDataSources="true" storageManagement="Both" keepPlusSign="true" keepDecimalSeparator="true" nullManagement="Default" keepPreviousRecords="true" id="0f698fba-042b-4db1-ae6f-5f2577ae9657" keepDecimalSeparatorCharacter="true" keepInputNumberDateDigits="true" keepIntegerPlusSign="true" usedByCorrelationRules="true" exportSentinelFormat="true">
+   <signature appVersion="3.1.2" lastUpdatedOn="20/09/2018 13:25:21 +0530"/>
+   <childElements>
+      <childElement factoryType="SystemAttributeElement" hash="305711406" typeId="11" definition="255" allowDistortion="true" label="AgentIPAddr" keepDecimalSeparator="true" name="AgentIPAddr">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="-616812757" typeId="20" definition="4" allowDistortion="true" label="AgentIPPort" keepDecimalSeparator="true" order="1" name="AgentIPPort">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="-1699052388" typeId="11" definition="250" allowDistortion="true" label="CycleId" keepDecimalSeparator="true" order="2" name="CycleId">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="507155376" typeId="20" definition="4" allowDistortion="true" label="InternalState" keepDecimalSeparator="true" order="3" name="InternalState">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="-611669685" typeId="40" definition="8" allowDistortion="true" label="EventDate" keepDecimalSeparator="true" order="4" pattern="YYYY-MM-DD" name="EventDate">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="-654074585" typeId="20" definition="8" allowDistortion="true" label="EventId" keepDecimalSeparator="true" order="5" name="EventId">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="-978944163" typeId="41" definition="12" allowDistortion="true" label="EventTime" keepDecimalSeparator="true" order="6" pattern="hh:mm:ss" name="EventTime">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="-2101588366" typeId="20" definition="4" allowDistortion="true" label="GMTDiff" keepDecimalSeparator="true" order="7" name="GMTDiff">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="1352393503" typeId="20" definition="4" allowDistortion="true" label="IsAlert" keepDecimalSeparator="true" order="8" name="IsAlert">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="-2050634240" typeId="20" definition="4" allowDistortion="true" label="IsArchived" keepDecimalSeparator="true" order="9" name="IsArchived">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="-1407887836" typeId="20" definition="4" allowDistortion="true" label="IsEnd" keepDecimalSeparator="true" order="10" name="IsEnd">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="356426322" typeId="20" definition="4" allowDistortion="true" label="IsException" keepDecimalSeparator="true" order="11" name="IsException">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="-1681693401" typeId="20" definition="4" allowDistortion="true" label="ObjectId" keepDecimalSeparator="true" order="12" name="ObjectId">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="1927199653" typeId="11" definition="255" allowDistortion="true" label="ProductIPAddr" keepDecimalSeparator="true" order="13" name="ProductIPAddr">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="-430985727" typeId="11" definition="50" allowDistortion="true" label="ProductName" keepDecimalSeparator="true" order="14" name="ProductName">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="1445801680" typeId="11" definition="20" allowDistortion="true" label="ProductOS" keepDecimalSeparator="true" order="15" name="ProductOS">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="1092000302" typeId="11" definition="20" allowDistortion="true" label="ReturnCode" keepDecimalSeparator="true" order="16" name="ReturnCode">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="-867486573" typeId="11" definition="254" allowDistortion="true" label="ReturnMessage" keepDecimalSeparator="true" order="17" name="ReturnMessage">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="1303460793" typeId="20" definition="4" allowDistortion="true" label="Severity" keepDecimalSeparator="true" order="18" name="Severity">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="-1219069168" typeId="11" definition="20" allowDistortion="true" label="State" keepDecimalSeparator="true" order="19" name="State">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="-1484152867" typeId="11" definition="50" allowDistortion="true" label="TestLabel" keepDecimalSeparator="true" order="20" name="TestLabel">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="-26682425" typeId="11" definition="250" allowDistortion="true" label="UserChildId" keepDecimalSeparator="true" order="21" name="UserChildId">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="-167314207" typeId="11" definition="20" allowDistortion="true" label="UserName" keepDecimalSeparator="true" order="22" name="UserName">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="1774555150" typeId="11" definition="250" allowDistortion="true" label="UserObjectId" keepDecimalSeparator="true" order="23" name="UserObjectId">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="366542962" typeId="11" definition="250" allowDistortion="true" label="UserParentId" keepDecimalSeparator="true" order="24" name="UserParentId">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="534709507" typeId="40" definition="8" allowDistortion="true" label="DateTia" keepDecimalSeparator="true" order="25" pattern="YYYY-MM-DD" name="DateTia">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="1671579790" typeId="41" definition="12" allowDistortion="true" label="TimeTia" keepDecimalSeparator="true" order="26" pattern="hh:mm:ss" name="TimeTia">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="-1753703979" typeId="11" definition="50" allowDistortion="true" label="UserTia" keepDecimalSeparator="true" order="27" name="UserTia">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="2048604569" typeId="40" definition="8" allowDistortion="true" label="DateAck" keepDecimalSeparator="true" order="28" pattern="YYYY-MM-DD" name="DateAck">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="2043862094" typeId="41" definition="12" allowDistortion="true" label="TimeAck" keepDecimalSeparator="true" order="29" pattern="hh:mm:ss" name="TimeAck">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="-1671885795" typeId="11" definition="50" allowDistortion="true" label="UserAck" keepDecimalSeparator="true" order="30" name="UserAck">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="-510857038" typeId="11" definition="512" allowDistortion="true" label="CommentAck" keepDecimalSeparator="true" order="31" name="CommentAck">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="1940743347" typeId="20" definition="4" allowDistortion="true" label="DstEventId" keepDecimalSeparator="true" order="32" name="DstEventId">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="SystemAttributeElement" hash="1551395826" typeId="11" definition="250" allowDistortion="true" label="UpdateLabel" keepDecimalSeparator="true" order="33" name="UpdateLabel">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="752576549" typeId="11" definition="50" allowDistortion="true" label="TPname" keepDecimalSeparator="true" order="34" name="TPname">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-1728571522" typeId="11" definition="15" allowDistortion="true" label="InterchangeRef" keepDecimalSeparator="true" order="35" name="InterchangeRef">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-458645859" typeId="11" definition="15" allowDistortion="true" label="GroupRef" keepDecimalSeparator="true" order="36" name="GroupRef">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-528190155" typeId="11" definition="15" allowDistortion="true" label="InterchangeCnl" keepDecimalSeparator="true" order="37" name="InterchangeCnl">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-1556225269" typeId="11" definition="15" allowDistortion="true" label="GroupCnl" keepDecimalSeparator="true" order="38" name="GroupCnl">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="984534050" typeId="11" definition="15" allowDistortion="true" label="Format" keepDecimalSeparator="true" order="39" name="Format">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="1413112397" typeId="11" definition="10" allowDistortion="true" label="DocVersion" keepDecimalSeparator="true" order="40" name="DocVersion">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-2111388527" typeId="11" definition="10" allowDistortion="true" label="DocType" keepDecimalSeparator="true" order="41" name="DocType">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-192379390" typeId="11" definition="10" allowDistortion="true" label="Direction" keepDecimalSeparator="true" order="42" name="Direction">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-382814024" typeId="11" definition="15" allowDistortion="true" label="Backend" keepDecimalSeparator="true" order="43" name="Backend">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="1662953124" typeId="11" definition="80" allowDistortion="true" label="OrgFileName" keepDecimalSeparator="true" order="44" name="OrgFileName">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="648303054" typeId="20" definition="10" allowDistortion="true" label="DocumentCount" keepDecimalSeparator="true" order="45" name="DocumentCount">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-699138206" typeId="30" definition="25" allowDistortion="true" label="DocumentValue" keepDecimalSeparator="true" order="46" name="DocumentValue">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-190158173" typeId="11" definition="3" allowDistortion="true" label="DocumentCurrency" keepDecimalSeparator="true" order="47" name="DocumentCurrency">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="991187892" typeId="20" definition="10" allowDistortion="true" label="DocumentQuantity" keepDecimalSeparator="true" order="48" name="DocumentQuantity">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="1272929499" typeId="11" definition="100" allowDistortion="true" label="B2BiRootCoreID" keepDecimalSeparator="true" order="49" name="B2BiRootCoreID">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="436251945" typeId="11" definition="100" allowDistortion="true" label="Distributor" keepDecimalSeparator="true" order="50" name="Distributor">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="930272647" typeId="11" definition="100" allowDistortion="true" label="DPANumber" keepDecimalSeparator="true" order="51" name="DPANumber">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-1521285927" typeId="11" definition="160" allowDistortion="true" label="EndCustomer" keepDecimalSeparator="true" order="52" name="EndCustomer">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="1826947234" typeId="11" definition="100" allowDistortion="true" label="PartNumber" keepDecimalSeparator="true" order="53" name="PartNumber">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="1396624770" typeId="20" definition="10" allowDistortion="true" label="Quantity" keepDecimalSeparator="true" order="54" name="Quantity">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="303201710" typeId="11" definition="100" allowDistortion="true" label="DocumentDate" keepDecimalSeparator="true" order="55" name="DocumentDate">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="1896612244" typeId="30" definition="25" allowDistortion="true" label="DistiCost" keepDecimalSeparator="true" order="56" name="DistiCost">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-1966457381" typeId="11" definition="100" allowDistortion="true" label="DistiInvoiceNumber" keepDecimalSeparator="true" order="57" name="DistiInvoiceNumber">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="1255040353" typeId="11" definition="100" allowDistortion="true" label="InvoiceLineSublineNumer" keepDecimalSeparator="true" order="58" name="InvoiceLineSublineNumer">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-3252874" typeId="11" definition="100" allowDistortion="true" label="DPAClaimNumber" keepDecimalSeparator="true" order="59" name="DPAClaimNumber">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="1616395620" typeId="11" definition="30" allowDistortion="true" label="BusinessDocumentUserName1" keepDecimalSeparator="true" order="60" name="BusinessDocumentUserName1">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-1471061140" typeId="11" definition="100" allowDistortion="true" label="BusinessDocumentUserValue1" keepDecimalSeparator="true" order="61" name="BusinessDocumentUserValue1">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="1151884150" typeId="11" definition="30" allowDistortion="true" label="BusinessDocumentUserName2" keepDecimalSeparator="true" order="62" name="BusinessDocumentUserName2">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-708675162" typeId="11" definition="100" allowDistortion="true" label="BusinessDocumentUserValue2" keepDecimalSeparator="true" order="63" name="BusinessDocumentUserValue2">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-1421020944" typeId="11" definition="30" allowDistortion="true" label="BusinessDocumentUserName3" keepDecimalSeparator="true" order="64" name="BusinessDocumentUserName3">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-2073270616" typeId="11" definition="100" allowDistortion="true" label="BusinessDocumentUserValue3" keepDecimalSeparator="true" order="65" name="BusinessDocumentUserValue3">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-1744961932" typeId="11" definition="30" allowDistortion="true" label="BusinessDocumentUserName4" keepDecimalSeparator="true" order="66" name="BusinessDocumentUserName4">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="188451425" typeId="11" definition="100" allowDistortion="true" label="BusinessDocumentUserValue4" keepDecimalSeparator="true" order="67" name="BusinessDocumentUserValue4">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="1842642880" typeId="11" definition="30" allowDistortion="true" label="BusinessDocumentUserName5" keepDecimalSeparator="true" order="68" name="BusinessDocumentUserName5">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-1127649509" typeId="11" definition="100" allowDistortion="true" label="BusinessDocumentUserValue5" keepDecimalSeparator="true" order="69" name="BusinessDocumentUserValue5">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="1647738709" typeId="11" definition="30" allowDistortion="true" label="BusinessDocumentUserName6" keepDecimalSeparator="true" order="70" name="BusinessDocumentUserName6">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="771801602" typeId="11" definition="100" allowDistortion="true" label="BusinessDocumentUserValue6" keepDecimalSeparator="true" order="71" name="BusinessDocumentUserValue6">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="1011986807" typeId="11" definition="30" allowDistortion="true" label="BusinessDocumentUserName7" keepDecimalSeparator="true" order="72" name="BusinessDocumentUserName7">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-666228695" typeId="11" definition="100" allowDistortion="true" label="BusinessDocumentUserValue7" keepDecimalSeparator="true" order="73" name="BusinessDocumentUserValue7">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="1843446407" typeId="11" definition="30" allowDistortion="true" label="BusinessDocumentUserName8" keepDecimalSeparator="true" order="74" name="BusinessDocumentUserName8">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-1342966791" typeId="11" definition="100" allowDistortion="true" label="BusinessDocumentUserValue8" keepDecimalSeparator="true" order="75" name="BusinessDocumentUserValue8">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="1877672950" typeId="11" definition="30" allowDistortion="true" label="BusinessDocumentUserName9" keepDecimalSeparator="true" order="76" name="BusinessDocumentUserName9">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="1743240974" typeId="11" definition="100" allowDistortion="true" label="BusinessDocumentUserValue9" keepDecimalSeparator="true" order="77" name="BusinessDocumentUserValue9">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-43537706" typeId="11" definition="30" allowDistortion="true" label="BusinessDocumentUserName10" keepDecimalSeparator="true" order="78" name="BusinessDocumentUserName10">
+         <cardinality maximum="1"/>
+      </childElement>
+      <childElement factoryType="UserAttributeElement" hash="-318851680" typeId="11" definition="100" allowDistortion="true" label="BusinessDocumentUserValue10" keepDecimalSeparator="true" order="79" name="BusinessDocumentUserValue10">
+         <cardinality maximum="1"/>
+      </childElement>
+   </childElements>
+</businessDocument>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="8e81f867-e624-40f6-a8b1-0d7e837f5b06">
+   <signature appVersion="3.1.2" lastUpdatedOn="08/02/2019 13:08:44 +0530"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/X12_3010_865.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/IH_Source.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="748387189" elementPath="/TRANSACTION/ST/e02_0329/">
+         <dmlExpression><![CDATA["0001"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1671848159" elementPath="/TRANSACTION/BCA/e01_0353/">
+         <dmlExpression><![CDATA["00"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2121594339" elementPath="/TRANSACTION/G3/G5/ACK/e05_0373/">
+         <dmlExpression><![CDATA[%str_value:= "";
+if trimString ( this\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT01_AK01_Line_Sch_level_code )= "ID" or trimString ( this\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT01_AK01_Line_Sch_level_code ) = "IR" then
+	{
+		%str_value:= ""
+	}
+else if this\!A1_865_4100_REC-Line_Sch_Level_EDI_Store_Fields!\!A1_OE_TP_LINE_ATTRIBUTE_1-Dock-or-Ship-Date-Qualifier-DA_SA! = "DA" then
+	{
+		%str_value:= getSubString ( this\DT_865_3000_REC\DT_REC_SCHEDULE_ARRIVAL_DATE, 3, 6 ) 
+	}
+else
+{
+	%str_value:= getSubString ( this\DT_865_3000_REC\DT_REC_SCHEDULE_SHIP_DATE, 3, 6 )
+};
+convertToD ( %str_value, "YYMMDD" ) ]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1098546023" elementPath="/TRANSACTION/SE/e02_0329/">
+         <dmlExpression><![CDATA["0001"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1137966643" elementPath="/TRANSACTION/G3/POC/e09_0234/">
+         <dmlExpression><![CDATA[this\IT_865_2010_REC__Device_Item\IT_REC_INVENTORY_ITEM_LSCC_db_id]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1731077093" elementPath="/TRANSACTION/G3/POC/e08_0235/">
+         <dmlExpression><![CDATA["VP"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1227347909" elementPath="/TRANSACTION/G3/POC/e04_0671/">
+         <dmlExpression><![CDATA[if this\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT01_AK01_Line_Sch_level_code = "ID" then
+convertToR ( 0 )
+else if  this\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT03_PO_LINE_QTY_total="0" then
+convertToR ( 0 )
+else {
+convertToR ( this\DT_865_3000_REC\DT_REC_ORDERED_QTY ) 
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1615787839" elementPath="/TRANSACTION/G3/POC/e06_0212/">
+         <dmlExpression><![CDATA[convertToR ( this\DT_865_3000_REC\DT_REC_UNIT_SELLING_PRICE)]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-734928339" elementPath="/TRANSACTION/SE/e01_0096/">
+         <dmlExpression><![CDATA[-999]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1208122583" elementPath="/TRANSACTION/G3/G5/ACK/e03_0355/">
+         <dmlExpression><![CDATA["EA"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-570745636" elementPath="/TRANSACTION/CTT/e01_0354/">
+         <dmlExpression><![CDATA[%i_Count]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="372353478" elementPath="/TRANSACTION/BCA/e03_0324/">
+         <dmlExpression><![CDATA[getStringLeft ( in:\PO_865_1000_REC_Header_865_Record\PO_REC_CUST_PO_NUMBER,22 )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1447032308" elementPath="/TRANSACTION/G3/G5/ACK/e01_0668/">
+         <dmlExpression><![CDATA[%s_ACK01:= "";
+ if  this\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT01_AK01_Line_Sch_level_code <> null then 
+  {
+ 	%s_ACK01:=Get_Value("EDI","/Cloud/data/b2bi/shared/local/db_location","ACK_TABLE" ,"TRANS_TYPE," + "855" + ",ORACLE_VALUE,"+ trimString (this\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT01_AK01_Line_Sch_level_code))
+  }
+else if this\IT_865_2000_REC_PO_Line_855_Record\IT_REC_FIRST_ACK_CODE_EXT1 <> null then
+  {
+ 	%s_ACK01:=Get_Value("EDI","/Cloud/data/b2bi/shared/local/db_location","ACK_TABLE" ,"TRANS_TYPE," + "855" + ",ORACLE_VALUE,"+ trimString (  this\IT_865_2000_REC_PO_Line_855_Record\IT_REC_FIRST_ACK_CODE_EXT1 ))
+  };
+%s_ACK01
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1203601238" elementPath="/TRANSACTION/G3/POC/">
+         <dmlExpression><![CDATA[if this\IT_865_2000_REC_PO_Line_855_Record\IT_REC_LINE_NUMBER<> null then
+%i_Count:= %i_Count+1]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1139088816" elementPath="/TRANSACTION/G3/G5/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1794119039" elementPath="/TRANSACTION/G3/G5/ACK/e02_0380/">
+         <dmlExpression><![CDATA[if this\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT01_AK01_Line_Sch_level_code = "ID" then
+convertToR ( 0 )
+else if  this\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT03_PO_LINE_QTY_total="0" then
+convertToR ( 0 )
+else {
+convertToR ( this\DT_865_3000_REC\DT_REC_ORDERED_QTY ) 
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-769502459" elementPath="/TRANSACTION/G3/G5/ACK/e04_0374/">
+         <dmlExpression><![CDATA[if %s_ACK01 <> "ID" or %s_ACK01 <> "SP" or %s_ACK01 <> "RJ" then "067"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-879394638" elementPath="/TRANSACTION/G3/POC/e05_0355/">
+         <dmlExpression><![CDATA["EA"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-508350610" elementPath="/TRANSACTION/G3/G5/DTM/e01_0374/">
+         <dmlExpression><![CDATA[if trimString ( this\!A1_865_4100_REC-Line_Sch_Level_EDI_Store_Fields!\!A1_OE_TP_LINE_ATTRIBUTE_1-Dock-or-Ship-Date-Qualifier-DA_SA! ) = "DA" then
+ {
+ 	"002"
+ }
+else  "010"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1183932943" elementPath="/TRANSACTION/BCA/e06_0323/">
+         <dmlExpression><![CDATA[convertToD ( getSubString ( in:\PO_865_1000_REC_Header_865_Record\PO_REC_ORDERED_DATE, 3, 6 ) , "YYMMDD" ) ]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1122953470" elementPath="/TRANSACTION/ST/e01_0143/">
+         <dmlExpression><![CDATA["865"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-92397411" elementPath="/TRANSACTION/G3/">
+         <dmlExpression><![CDATA[for each in:\Root]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-232583843" elementPath="/TRANSACTION/G3/POC/e02_0670/">
+         <dmlExpression><![CDATA[%str_value:= "";
+if trimString ( this\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT04_PO_LINE_ACK01_code ) = "ID" then
+ {
+ 	%str_value:="DI"
+  }
+ else if trimString ( this\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT04_PO_LINE_ACK01_code ) = "RJ" then
+ 	{
+ 		%str_value:= "NC"
+ 	}
+ else 
+ {
+ 	%str_value:= "MU"
+ 		
+ 	};
+%str_value ]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="177485695" elementPath="/TRANSACTION/G3/POC/e01_0350/">
+         <dmlExpression><![CDATA[if this\!A1_865_4100_REC-Line_Sch_Level_EDI_Store_Fields!\!A1_OE_TP_LINE_ATTRIBUTE_3-Customer-PO-Line-Item-Number! <> null then
+{
+	this\!A1_865_4100_REC-Line_Sch_Level_EDI_Store_Fields!\!A1_OE_TP_LINE_ATTRIBUTE_3-Customer-PO-Line-Item-Number!
+}
+else if this\IT_865_2000_REC_PO_Line_855_Record\IT_REC_LINE_NUMBER <> null then
+{
+	this\IT_865_2000_REC_PO_Line_855_Record\IT_REC_LINE_NUMBER
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-251801370" elementPath="/TRANSACTION/G3/G5/DTM/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-117050164" elementPath="/TRANSACTION/BCA/e09_0127/">
+         <dmlExpression><![CDATA[in:\PO_865_1000_REC_Header_865_Record\PO_REC_ORDER_NUMBER]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-616543123" elementPath="/TRANSACTION/G3/POC/e03_0330/">
+         <dmlExpression><![CDATA[if this\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT01_AK01_Line_Sch_level_code = "ID" then
+convertToR ( 0 )
+else if  this\POAO_LEVO_EXTO_REC_ACK01_Code_and_new_PO_Line_Flag\IT_POCAO_LEV02_EXT03_PO_LINE_QTY_total="0" then
+convertToR ( 0 )
+else {
+convertToR ( this\DT_865_3000_REC\DT_REC_ORDERED_QTY ) 
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1296661116" elementPath="/TRANSACTION/G3/G5/DTM/e02_0373/">
+         <dmlExpression><![CDATA[convertToD ( getSubString ( this\DT_865_3000_REC\DT_REC_REQUEST_DATE, 3, 6 ) , "YYMMDD" )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-512000295" elementPath="/TRANSACTION/">
+         <dmlExpression><![CDATA[%i_Count:=0]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-144158976" elementPath="/TRANSACTION/BCA/e02_0587/">
+         <dmlExpression><![CDATA["AC"]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

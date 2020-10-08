@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.axway.ms.dml.simulation.ui.MDSimulationLaunchConfigurationType">
+<booleanAttribute key=".noDeploy" value="false"/>
+<booleanAttribute key=".noRepositoryContent" value="false"/>
+<booleanAttribute key=".openOutputCheckbox" value="true"/>
+<booleanAttribute key=".useDebugMode" value="true"/>
+<booleanAttribute key="checkInputCheckConstraints" value="false"/>
+<booleanAttribute key="checkInputFacet" value="true"/>
+<booleanAttribute key="checkOutputCheckConstraints" value="false"/>
+<booleanAttribute key="checkOutputFacet" value="true"/>
+<mapAttribute key="com.axway.ms.dml.simulation.ui.attributeVariables">
+<mapEntry key="0#ACCEPT_INPUT_DOCUMENTS_WITH_ERRORS#" value="0"/>
+<mapEntry key="1#ACCEPT_OUTPUT_DOCUMENTS_WITH_ERRORS#" value="0"/>
+</mapAttribute>
+<stringAttribute key="com.axway.ms.dml.simulation.ui.bdocInputFilePath" value="C:\LATTICE_SVN\B2Bi\maps_DML\Phase2-Oracle\Orders\04_Input_Data\Arrow_CEU\Source Arrow_CEU EDI_ORDERS_1"/>
+<mapAttribute key="com.axway.ms.dml.simulation.ui.bdocOutputFilePath">
+<mapEntry key="out1" value="/Sentinel_EDIFACT_to_INH_ORDERS_D97A/Testdata/out1"/>
+</mapAttribute>
+<mapAttribute key="com.axway.ms.dml.simulation.ui.channels"/>
+<mapAttribute key="com.axway.ms.dml.simulation.ui.communications"/>
+<stringAttribute key="com.axway.ms.dml.simulation.ui.errorMapWorkspacePath" value=""/>
+<booleanAttribute key="com.axway.ms.dml.simulation.ui.handleErrorMap" value="false"/>
+<stringAttribute key="com.axway.ms.dml.simulation.ui.objectWorkspacePath" value="/Sentinel_EDIFACT_to_INH_ORDERS_D97A/Mapping Flows/Sentinel_MF_EDIFAC_to_INH_ORDERS.dmlflw"/>
+<stringAttribute key="com.axway.ms.dml.simulation.ui.simulationTimeout" value="240000"/>
+<booleanAttribute key="com.axway.ms.dml.simulation.ui.useDefaultErrorMapWorkspacePath" value="true"/>
+<booleanAttribute key="continueMessageProcessingOnError" value="false"/>
+<booleanAttribute key="groupAllResultingInstances" value="true"/>
+<booleanAttribute key="keepExactValue" value="true"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Sentinel_EDIFACT_to_INH_ORDERS_D97A/Mapping Flows/Sentinel_MF_EDIFAC_to_INH_ORDERS.dmlflw"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="stopOnFirstInputCheckConstraintsError" value="true"/>
+<booleanAttribute key="stopOnFirstInputFacetCheckError" value="true"/>
+<booleanAttribute key="stopOnFirstOutputCheckConstraintsError" value="true"/>
+<booleanAttribute key="stopOnFirstOutputFacetCheckError" value="false"/>
+</launchConfiguration>

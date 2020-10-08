@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="b4244a58-c43c-4111-b31e-0eea89fb3b8c">
+   <signature appVersion="3.1.2" lastUpdatedOn="23/11/2018 10:47:50 +0530"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/INH_Target.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/D97A_ORDERS.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="-167659981" elementPath="/G0/G1/A2_4840_REC/A2_4840_REC_ID/">
+         <dmlExpression><![CDATA["4840A2TP2"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-622302409" elementPath="/G1/DT_4000_REC_DATES/DT_4000_REC_REQUEST_DATE/">
+         <dmlExpression><![CDATA[formatString(convertToD( this\G54\DTM[where item\C507\D2005 ="10" or item\C507\D2005 ="2"]\C507\D2380[ 1 ],"YYYYMMDD"),"YYYYMMDD")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-163379518" elementPath="/G1/A1_4830_REC/A1_4830_REC_TP_ATTRIBUTE_4/">
+         <dmlExpression><![CDATA[if defined in:\MESSAGE\G1\RFF[where item\C506\D1153 ="PR"]and %Alt_Edi_id ="TECHSTARJP"  then
+getSubString( in:\MESSAGE\G1\RFF[where item\C506\D1153 ="PR"]\C506\D1154[ 1 ], 1, index(  in:\MESSAGE\G1\RFF[where item\C506\D1153 ="PR"]\C506\D1154[ 1 ],"=" )-1) 
+else if defined in:\MESSAGE\G1\RFF[where item\C506\D1153 ="PR"]\C506\D1154 then
+in:\MESSAGE\G1\RFF[where item\C506\D1153 ="PR"]\C506\D1154[ 1 ] 
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="534445138" elementPath="/G1/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_CUSTOMER_ITEM_NET_PRICE_Unit_Price/">
+         <dmlExpression><![CDATA[formatString(convertToR(this\..\G32\PRI\C509\D5118[1] ) / convertToR(this\..\G32\PRI\C509\D5284[1]), "#######0D0000000000")
+
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2087830899" elementPath="/G1/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_KEY2_USE_AT_LINE_LEVEL_Line_Num/">
+         <dmlExpression><![CDATA[if defined this\..\G33\RFF[where item\C506\D1153 ="LI"] then
+this\..\G33\RFF[where item\C506\D1153 ="LI"]\C506\D1156[ 1 ]
+ else
+this\..\LIN\D1082]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1686137139" elementPath="/PY_1060_REC/PY_1060_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[%CTL_REC_KEY_1A_MAILBOX_ID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1081704107" elementPath="/G1/A1_4200_REC/A1_4200_REC_ID/">
+         <dmlExpression><![CDATA[ "4200A1IT1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="140718057" elementPath="/G1/A1_4200_REC/A1_4200_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[%CTL_REC_KEY_1A_MAILBOX_ID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2040944915" elementPath="/CTL_850_REC/CTL_REC_DOC_TYPE/">
+         <dmlExpression><![CDATA[ "POI"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1475980171" elementPath="/CTL_850_REC/CTL_REC_MESSAGE_STANDARD/">
+         <dmlExpression><![CDATA[ "EDIFACT"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1873105852" elementPath="/A2_1230_REC/A2_1230_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[in:\MESSAGE\BGM\C106\D1004]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1260692022" elementPath="/AD_1500_REC/AD_1500_REC_SHIP_TO_EDI_CODE/">
+         <dmlExpression><![CDATA[%CTL_REC_LOC]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1614280283" elementPath="/G1/DT_4000_REC_DATES/DT_4000_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[if defined this\..\G33\RFF[where item\C506\D1153 ="LI"] then
+ this\..\G33\RFF[where item\C506\D1153 ="LI"]\C506\D1156[ 1 ]
+ else
+this\..\LIN\D1082]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1532450083" elementPath="/G0/G1/A2_4840_REC/A2_4840_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[%IT_2000_REC_USE_AT_LINE_LEVEL]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-13441739" elementPath="/G1/A1_4830_REC/A1_4830_REC_TP_ATTRIBUTE_1/">
+         <dmlExpression><![CDATA[if defined this\G54\DTM[where item\C507\D2005 ="10"] then
+"SA"
+
+else if  defined this\G54\DTM[where item\C507\D2005 ="2"] then
+"DA"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-312112333" elementPath="/CTL_850_REC/CTL_REC_DOC_ID/">
+         <dmlExpression><![CDATA[ "POI"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="200835169" elementPath="/A2_1230_REC/">
+         <dmlExpression><![CDATA[{#
+%int_1230_REC :=0;
+if %alt_edi=  "PREMFARNUK" then
+%int_1230_REC :=%int_1230_REC +1;
+%int_1230_REC times
+#}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1347655510" elementPath="/G1/A2_4230_REC/">
+         <dmlExpression><![CDATA[%int_4230_REC :=0;
+if %alt_edi =   "EDOMHK" or %alt_edi= "TELEDEVJP" or %alt_edi= "ARROWDE" or %alt_edi= "TECHSTARJP" then
+%int_4230_REC := %int_4230_REC+1;
+%int_4230_REC times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1502818812" elementPath="/PY_1060_REC/PY_1060_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[in:\MESSAGE\BGM\C106\D1004]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1503779069" elementPath="/G1/IT_2000_REC/IT_2000_REC_KEY_1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[in:\MESSAGE\BGM\C106\D1004]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1536897614" elementPath="/PO1_1000_REC/PO1_1000_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[%CTL_REC_KEY_1A_MAILBOX_ID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1001827063" elementPath="/PO1_1000_REC/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1588486059" elementPath="/A3_1260_REC/A3_1260_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[%CTL_REC_KEY_1A_MAILBOX_ID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="528436183" elementPath="/G1/IT_2000_REC/AT_2000_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[if defined this\..\G33\RFF[where item\C506\D1153 ="LI"] then
+ %IT_2000_REC_USE_AT_LINE_LEVEL:= this\..\G33\RFF[where item\C506\D1153 ="LI"]\C506\D1156[ 1 ]
+ else
+ %IT_2000_REC_USE_AT_LINE_LEVEL:=this\..\LIN\D1082;
+
+ %IT_2000_REC_USE_AT_LINE_LEVEL]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2026499798" elementPath="/CTL_850_REC/CTL_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[{#
+if %Flag_Oracle_BT ="N" then
+%CTL_REC_KEY_1A_MAILBOX_ID:=%Dist_Name
+else if %Flag_Oracle_BT="Y" then
+{%NAD0201 :=in:\MESSAGE\G2\NAD[where item\D3035 ="BT"]\C082\D3039[1];
+	%NAD_Table := Get_Value("NAD0201","/Cloud/data/b2bi/shared/local/db_location","NAD0201_BT_Match " ,"NAD0201,"+ %NAD0201 ) ;
+	%NAD_BT_MATCH :=Get_Value("Oracle_BT","/Cloud/data/b2bi/shared/local/db_location","NAD0201_BT_Match " ,"NAD0201,"+ %NAD0201 );
+		
+	if%NAD_Table =%NAD0201 then
+	%CTL_REC_KEY_1A_MAILBOX_ID:=%NAD_BT_MATCH	
+};
+%CTL_REC_KEY_1A_MAILBOX_ID
+#}
+addTrace ( "INFO", "inside CTL_REC_mailbox1") ;
+if %Flag_Oracle_BT ="N" then
+%CTL_REC_KEY_1A_MAILBOX_ID:=%Dist_Name
+else if %Flag_Oracle_BT="Y" then
+{%NAD0201 :=in:\MESSAGE\G2\NAD[where item\D3035 ="BY"]\C082\D3039[1];
+	%NAD0201:=trimString (%NAD0201 ) ;
+	
+	addTrace ( "INFO","%NAD0201"+%NAD0201 ) ;
+	%NAD_Table := Get_Value("NAD0201","/Cloud/data/b2bi/shared/local/db_location","NAD0201_BT_Match" ,"NAD0201,"+ %NAD0201 ) ;
+	addTrace ( "INFO", "inside CTL_REC_mailbox2") ;
+	%NAD_BT_MATCH :=Get_Value("Oracle_BT","/Cloud/data/b2bi/shared/local/db_location","NAD0201_BT_Match" ,"NAD0201,"+ %NAD0201 );
+			addTrace ( "INFO", "inside CTL_REC_mailbox3") ;
+	if%NAD_Table =%NAD0201 then
+	%CTL_REC_KEY_1A_MAILBOX_ID:=%NAD_BT_MATCH	
+};
+%CTL_REC_KEY_1A_MAILBOX_ID
+
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1921699721" elementPath="/AD_1400_REC/AD_1400_REC_ID/">
+         <dmlExpression><![CDATA[ "1400ADSLD"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1961909811" elementPath="/PO1_1000_REC/PO1_1000_REC_DROP_SHIP_FLAG/">
+         <dmlExpression><![CDATA[ "N"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1522455842" elementPath="/PO1_1000_REC/PO1_1000_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[in:\MESSAGE\BGM\C106\D1004]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2079274424" elementPath="/CTL_850_REC/CTL_REC_TRANSACTION_DT/">
+         <dmlExpression><![CDATA[formatString(getDateAndTime (  ),"YYYYMMDD") ]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="616577102" elementPath="/PO1_1000_REC/PO1_1000_REC_ORIG_SYS_DOC_REF/">
+         <dmlExpression><![CDATA["ECG" +"-"+%CTL_REC_KEY_1A_MAILBOX_ID +"-"+in:\MESSAGE\BGM\C106\D1004]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2086540469" elementPath="/CTL_850_REC/CTL_REC_TP_PARTNER_CODE/">
+         <dmlExpression><![CDATA[%CTL_REC_KEY_1A_MAILBOX_ID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1855049783" elementPath="/G1/A2_4230_REC/A2_4230_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[if defined this\..\G33\RFF[where item\C506\D1153 ="LI"] then
+this\..\G33\RFF[where item\C506\D1153 ="LI"]\C506\D1156[ 1 ]
+ else
+this\..\LIN\D1082]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2018689028" elementPath="/G1/LN_3000_REC_PRICING_Line_Pricing_Record/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="77230382" elementPath="/G1/A2_4230_REC/A2_4230_REC_ATTR_20/">
+         <dmlExpression><![CDATA[if %alt_edi = "EDOMHK" then
+{ 
+		if defined this\..\..\FTX[where item\D4451 ="GEN" ] then
+	{
+		
+	if defined this\..\..\FTX[where item\C108\D4440_1<>0] and  defined this\..\..\FTX[where item\C108\D4440_2<>0 ] and  defined this\..\..\FTX[where item\C108\D4440_3<>0]  then
+	{	 
+         {#getStringLeft(this\..\..\FTX[where item\C108\D4440_1<>0]\C108\D4440_1[ 1] +this\..\..\FTX[where item\C108\D4440_2<>0]\C108\D4440_2[ 1 ] +this\..\..\FTX[where item\C108\D4440_3<>0]\C108\D4440_3[ 1 ] +  this\..\..\FTX[where item\C108\D4440_4<>0]\C108\D4440_4[ 1 ],70)#}
+       this\..\..\FTX[where item\C108\D4440_1<>null ]\C108\D4440_1[ 1] +this\..\..\FTX[where item\C108\D4440_2<>null ]\C108\D4440_2[ 1 ] +this\..\..\FTX[where item\C108\D4440_3<>null ]\C108\D4440_3[ 1 ] +  this\..\..\FTX[where item\C108\D4440_4<>null ]\C108\D4440_4[ 1 ]
+	}
+	
+	}	
+else if defined this\..\..\FTX\C108\D4440_1<>0 and  defined this\..\..\FTX\C108\D4440_2<>0 and  defined this\..\..\FTX\C108\D4440_3<>0 and defined this\..\..\FTX\C108\D4440_4<>0 then
+	{
+         getStringLeft(this\..\..\FTX[where item\C108\D4440_1<>0]\C108\D4440_1[ 1] +this\..\..\FTX[where item\C108\D4440_2<>0]\C108\D4440_2[ 1 ] +this\..\..\FTX[where item\C108\D4440_3<>0]\C108\D4440_3[ 1 ] +  this\..\..\FTX[where item\C108\D4440_4<>0]\C108\D4440_4[ 1 ],70)
+	}
+else if defined this\..\..\FTX\C108\D4440_1<>0 and  defined this\..\..\FTX\C108\D4440_2<>0 and  defined this\..\..\FTX\C108\D4440_3<>0 then
+{
+       getStringLeft(this\..\..\FTX[where item\C108\D4440_1<>0]\C108\D4440_1[ 1] +this\..\..\FTX[where item\C108\D4440_2<>0]\C108\D4440_2[ 1 ] +this\..\..\FTX[where item\C108\D4440_3<>0]\C108\D4440_3[ 1 ],70)
+}
+
+else if defined this\..\..\FTX\C108\D4440_1<>0 and  defined this\..\..\FTX\C108\D4440_2<>0 then
+
+	{
+         getStringLeft(this\..\..\FTX[where item\C108\D4440_1<>0]\C108\D4440_1[ 1] +this\..\..\FTX[where item\C108\D4440_2<>0]\C108\D4440_2[ 1 ],70)
+	}
+
+else if defined this\..\..\FTX\C108\D4440_1<>0 then
+
+	{
+           getStringLeft(this\..\..\FTX[where item\C108\D4440_1<>0]\C108\D4440_1[ 1],70)
+	}
+	
+}
+{#
+else if  %alt_edi =  "ARROWDE" then
+{	if defined this\..\..\FTX\D4451 ="LIN" then
+	{
+		this\..\..\FTX[where item\D4451 ="LIN"]\C108\D4440_1[ 1 ]
+	}
+
+}
+#}
+else if  %alt_edi =  "ARROWDE" then
+{	
+	
+	this\..\FTX[where item\D4451 ="LIN"]\C108\D4440_1[ 1 ]
+
+}
+else if   %alt_edi ="TELEDEVJP" then
+{
+	this\..\FTX\C108\D4440_1[ 1]
+}
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1332342412" elementPath="/G1/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_KEY_1A_MAILBOX_ID_Use_EBS_Partners/">
+         <dmlExpression><![CDATA[%CTL_REC_KEY_1A_MAILBOX_ID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="314099259" elementPath="/AD_1500_REC/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1394861850" elementPath="/G1/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_ID/">
+         <dmlExpression><![CDATA["3000LNLN1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1128419385" elementPath="/PO1_1000_REC/PO1_1000_REC_ID/">
+         <dmlExpression><![CDATA["1000POPO1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="586683046" elementPath="/A2_1230_REC/A2_1230_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[%CTL_REC_KEY_1A_MAILBOX_ID
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-959999837" elementPath="/G1/IT_2000_REC/IT_2000_REC_ORIG_SYS_DOC_REF/">
+         <dmlExpression><![CDATA["ECG" +"-"+%CTL_REC_KEY_1A_MAILBOX_ID +"-"+in:\MESSAGE\BGM\C106\D1004
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="376064795" elementPath="/G1/A1_4200_REC/">
+         <dmlExpression><![CDATA[%int_4200_REC :=0;
+if %alt_edi =  "TELEDEVJP" or %alt_edi= "TECHSTARJP" then
+%int_4200_REC := %int_4200_REC+1;
+%int_4200_REC times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-151701690" elementPath="/G1/A1_4830_REC/A1_4830_REC_ID/">
+         <dmlExpression><![CDATA[ "4830A1TP1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1017815712" elementPath="/CTL_850_REC/CTL_REC_ID/">
+         <dmlExpression><![CDATA["0010CTCTL"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-317359607" elementPath="/CTL_850_REC/CTL_REC_DOC_PURPOSE_CODE/">
+         <dmlExpression><![CDATA[ "OR"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="824598516" elementPath="/G1/A1_4200_REC/A1_4200_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[if defined this\..\G33\RFF[where item\C506\D1153 ="LI"] then
+this\..\G33\RFF[where item\C506\D1153 ="LI"]\C506\D1156[ 1 ]
+ else
+this\..\LIN\D1082]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1991571895" elementPath="/G1/IT_2000_REC/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1714411863" elementPath="/G0/G1/A2_4840_REC/A2_4840_REC_TP_ATTRIBUTE_6/">
+         <dmlExpression><![CDATA[{#if defined in:\MESSAGE\G28\PIA[where item\C212_1\D7143 = "VP" ] then
+in:\MESSAGE\G28\PIA[where item\C212_1\D7143 = "VP" ]\C212_1\D7140[ 1 ]
+#}
+if defined in:\MESSAGE\G28\PIA[where item\C212_1\D7143 = "VP" ] then
+in:\MESSAGE\G28\PIA[where item\C212_1\D7143 = "VP" ]\C212_1\D7140[ 1 ]
+else if defined this\..\LIN[where item\C212\D7143 ="VP"] then
+this\..\LIN[where item\C212\D7143 ="VP" ]\C212\D7140[ 1 ]]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="705328147" elementPath="/G1/IT_2000_REC/IT_2000_REC_ORIG_SYS_LINE_REF/">
+         <dmlExpression><![CDATA[if defined this\..\G33\RFF[where item\C506\D1153 ="LI"] then
+ this\..\G33\RFF[where item\C506\D1153 ="LI"]\C506\D1156[ 1 ]
+ else
+this\..\LIN\D1082]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1547956391" elementPath="/AD_1400_REC/AD_1400_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[%CTL_REC_KEY_1A_MAILBOX_ID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-160423123" elementPath="/A2_1230_REC/A2_1230_REC_ATTR_20/">
+         <dmlExpression><![CDATA[if defined  in:\MESSAGE\FTX[where item\D4451 ="CUS"] then
+in:\MESSAGE\FTX[where item\D4451 ="CUS"]\C108\D4440_1[ 1 ] +"   "+in:\MESSAGE\FTX[where item\D4451 ="CUS"]\C108\D4440_2[ 1 ]
+else
+in:\MESSAGE\FTX\C108\D4440_1[ 1 ]]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2082255267" elementPath="/PY_1060_REC/PY_1060_REC_ID/">
+         <dmlExpression><![CDATA[ "1060PYCUR"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="576380583" elementPath="/G1/DT_4000_REC_DATES/DT_4000_REC_ORDERED_QTY_UOM_EXT1/">
+         <dmlExpression><![CDATA["PCE"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-930164982" elementPath="/A3_1260_REC/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1880835271" elementPath="/G1/A1_4830_REC/A1_4830_REC_KEY2_USE_AT_LINE_LEVEL/">
+         <dmlExpression><![CDATA[if defined this\..\G33\RFF[where item\C506\D1153 ="LI"] then
+this\..\G33\RFF[where item\C506\D1153 ="LI"]\C506\D1156[ 1 ]
+ else
+this\..\LIN\D1082]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="882673546" elementPath="/G1/A2_4230_REC/A2_4230_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[in:\MESSAGE\BGM\C106\D1004]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1596687454" elementPath="/G1/IT_2000_REC/IT_2000_REC_CUSTOMER_LINE_NUM/">
+         <dmlExpression><![CDATA[if defined this\..\G33\RFF[where item\C506\D1153 ="LI"] then
+ this\..\G33\RFF[where item\C506\D1153 ="LI"]\C506\D1156[ 1 ]
+ else
+{
+	this\..\LIN\D1082
+} 
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="221285335" elementPath="/AD_1500_REC/AD_1500_REC_ID/">
+         <dmlExpression><![CDATA["1500ADST1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1727136233" elementPath="/G1/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_PRICING_QTY_UOM_EXT1/">
+         <dmlExpression><![CDATA[ "PCE" ]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-106632826" elementPath="/G1/DT_4000_REC_DATES/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1171193067" elementPath="/G1/A1_4830_REC/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1651266400" elementPath="/PO1_1000_REC/PO1_REC_1000_OPERATION_CODE/">
+         <dmlExpression><![CDATA["INSERT"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1411685124" elementPath="/G1/IT_2000_REC/IT_2000_REC_INVENTORY_ITEM/">
+         <dmlExpression><![CDATA[{#
+if defined this\..\LIN[where item\C212\D7143 ="VP"  or   item\C212\D7143 ="BP"] then
+this\..\LIN[where item\C212\D7143 ="VP"  or   item\C212\D7143 ="BP"]\C212\D7140[ 1 ]
+#}
+if defined this\..\LIN[where item\C212\D7143 ="VP"] then
+this\..\LIN[where item\C212\D7143 ="VP" ]\C212\D7140[ 1 ]]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2021535585" elementPath="/CTL_850_REC/">
+         <dmlExpression><![CDATA[{#%NAD0201 :=in:\MESSAGE\G2\NAD[where item\D3035 ="BT"]\C082\D3039[1];#}
+%alt_edi:=getInboundUserAttribute("alt_edi_id","Sender" );
+addTrace ( "INFO", "inside CTL_REC1") ;
+%Dist_Name:=Get_Value("ORACLE_BT_NUMBER","/Cloud/data/b2bi/shared/local/db_location","ORACLE_xref" ,"alt_edi_id,"+getInboundUserAttribute("alt_edi_id","Sender" )+ ",test_or_prod,"+getInboundUserAttribute("test_or_prod","Sender" ) );
+addTrace ( "INFO", "inside CTL_REC2") ;
+%Flag_Oracle_BT := Get_Value("Flag_for_N104_Oracle_BT","/Cloud/data/b2bi/shared/local/db_location","ORACLE_xref" ,"alt_edi_id,"+getInboundUserAttribute("alt_edi_id","Sender" ) );
+addTrace ( "INFO", "inside CTL_REC3") ;
+%Alt_Edi_id:=getInboundUserAttribute("alt_edi_id","Sender" );
+%alt_edi:=%Alt_Edi_id;
+1 times
+
+
+
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-198005369" elementPath="/G1/IT_2000_REC/IT_2000_REC_ID/">
+         <dmlExpression><![CDATA["2000ITITM" ]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1412121691" elementPath="/G1/A2_4230_REC/A2_4230_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[%CTL_REC_KEY_1A_MAILBOX_ID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1922688214" elementPath="/PY_1060_REC/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="690545007" elementPath="/G1/IT_2000_REC/IT_2000_REC_EBS_LINE_NUM/">
+         <dmlExpression><![CDATA[if defined this\..\G33\RFF[where item\C506\D1153 ="LI"] then
+  this\..\G33\RFF[where item\C506\D1153 ="LI"]\C506\D1156[ 1 ]
+ else
+{
+	
+	this\..\LIN\D1082
+	
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="997146989" elementPath="/G1/IT_2000_REC/IT_2000_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[%CTL_REC_KEY_1A_MAILBOX_ID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1396719176" elementPath="/A3_1260_REC/A3_1260_REC_KEY_1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[in:\MESSAGE\BGM\C106\D1004]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2086922753" elementPath="/CTL_850_REC/CTL_REC_TP_LOCATION_CODE/">
+         <dmlExpression><![CDATA[%CTL_REC_LOC:="";
+{#	if %Flag_Oracle_BT = "N" then
+%CTL_REC_LOC := %Dist_Name +"-"+in:\MESSAGE\G2\NAD [where item\D3035 ="ST"]\C082\D3039[1]
+else if  %Flag_Oracle_BT= "Y" then
+{if%NAD_Table =%NAD0201 then
+%CTL_REC_LOC :=%NAD_BT_MATCH+"-"+in:\MESSAGE\G2\NAD [where item\D3035 ="ST"]\C082\D3039[1]};%CTL_REC_LOC
+#}
+if defined in:\MESSAGE\G2\NAD [where item\D3035 ="ST"]\C082\D3039 then
+%CTL_REC_LOC:=%CTL_REC_KEY_1A_MAILBOX_ID+"-"+in:\MESSAGE\G2\NAD [where item\D3035 ="ST"]\C082\D3039[1]
+else if defined in:\MESSAGE\G2\NAD [where item\D3035 ="DP"]\C082\D3039[1] then
+%CTL_REC_LOC:=%CTL_REC_KEY_1A_MAILBOX_ID+"-"+in:\MESSAGE\G2\NAD [where item\D3035 ="DP"]\C082\D3039[1]
+else
+%CTL_REC_LOC:=%CTL_REC_KEY_1A_MAILBOX_ID+"-"+in:\MESSAGE\G2\NAD [where item\D3035 ="BY"]\C082\D3039[1];
+	
+
+%CTL_REC_LOC
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1010295550" elementPath="/G1/A2_4230_REC/A2_4230_REC_ID/">
+         <dmlExpression><![CDATA["4230A2IT4"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="702293128" elementPath="/CTL_850_REC/CTL_REC_TRANS_METHOD/">
+         <dmlExpression><![CDATA["ED"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-225751244" elementPath="/CTL_850_REC/CTL_REC_TEST_FLAG/">
+         <dmlExpression><![CDATA["P" ]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-217774986" elementPath="/G1/DT_4000_REC_DATES/DT_4000_REC_ORIG_SYS_SHIPMENT_REF/">
+         <dmlExpression><![CDATA[if defined this\SCC\D4017 then
+%int_count :=%int_count + 1;
+%int_count
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="324396714" elementPath="/G0/">
+         <dmlExpression><![CDATA[for each in:\MESSAGE\G28]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1265818645" elementPath="/PY_1060_REC/PY_1060_REC_TRANS_CURRENCY_CODE_EXT1/">
+         <dmlExpression><![CDATA[in:\MESSAGE\G7\CUX[where item \C504_1\D6343  ="9"]\C504_1\D6345[ 1 ]
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1367220828" elementPath="/G1/A1_4830_REC/A1_4830_REC_TP_ATTRIBUTE_3/">
+         <dmlExpression><![CDATA[if defined this\..\G33\RFF[where item\C506\D1153 ="LI"] then
+this\..\G33\RFF[where item\C506\D1153 ="LI"]\C506\D1156[ 1 ]
+ else
+this\..\LIN\D1082]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="887222559" elementPath="/AD_1500_REC/AD_1500_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[%CTL_REC_KEY_1A_MAILBOX_ID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="552021899" elementPath="/G1/A1_4200_REC/A1_4200_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[in:\MESSAGE\BGM\C106\D1004]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="139792817" elementPath="/CTL_850_REC/CTL_REC_TRANSACTION_RUN_ID/">
+         <dmlExpression><![CDATA[formatString(getDateAndTime (  ),"YYMMDDhhmmss")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-855633170" elementPath="/CTL_850_REC/CTL_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[%CTL_REC_KEY1B_DOCUMENT_ID:=in:\MESSAGE\BGM\C106\D1004;
+%CTL_REC_KEY1B_DOCUMENT_ID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-934552511" elementPath="/G1/DT_4000_REC_DATES/DT_4000_REC_ID/">
+         <dmlExpression><![CDATA[ "4000DTQTY"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1213544285" elementPath="/G1/LN_3000_REC_PRICING_Line_Pricing_Record/LN_3000_REC_KEY1B_DOCUMENT_ID_PO_Number/">
+         <dmlExpression><![CDATA[in:\MESSAGE\BGM\C106\D1004]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-722526452" elementPath="/G1/DT_4000_REC_DATES/DT_4000_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[%CTL_REC_KEY_1A_MAILBOX_ID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-993932371" elementPath="/G1/A1_4200_REC/A1_4200_REC_ATTRIBUTE_3/">
+         <dmlExpression><![CDATA[%A1_4200_REC_ATTRIBUTE_3:="";
+if %alt_edi ="TECHSTARJP" then{
+ %A1_4200_REC_ATTRIBUTE_3:= in:\MESSAGE\G1\RFF[where item\C506\D1153 ="PR"]\C506\D1154[ 1 ];
+ addTrace ( "INFO", "CHAHAT" + getSubString( %A1_4200_REC_ATTRIBUTE_3, 1, index( %A1_4200_REC_ATTRIBUTE_3,"=" )-1))  ; 
+ %A1_4200_REC_ATTRIBUTE_3:=  getSubString( %A1_4200_REC_ATTRIBUTE_3, 1, index( %A1_4200_REC_ATTRIBUTE_3,"=" )-1) 
+}
+ else
+ {
+ 	%A1_4200_REC_ATTRIBUTE_3:=in:\MESSAGE\G1\RFF[where item\C506\D1153 ="PR"]\C506\D1154[ 1 ]
+ };
+addTrace ( "INFO", "CHAHAT22" & %A1_4200_REC_ATTRIBUTE_3);
+addTrace ( "INFO", "Alt_Edi_id" & %Alt_Edi_id);
+  %A1_4200_REC_ATTRIBUTE_3
+  
+
+ 
+ ]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="530383916" elementPath="/G0/G1/IT_2000_REC/IT_2000_REC_CUSTOMER_ITEM_NAME/">
+         <dmlExpression><![CDATA[if defined this\..\LIN[where item\C212\D7143 ="BP"] then
+this\..\LIN[where item\C212\D7143 ="BP" ]\C212\D7140[ 1 ]
+else if defined this\..\PIA[where item\C212_1\D7143 ="BP"] then
+this\..\PIA[where item\C212_1\D7143 ="BP"]\C212_1\D7140 [1]
+
+
+
+
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="398739432" elementPath="/G1/DT_4000_REC_DATES/DT_4000_REC_ORDERED_QTY/">
+         <dmlExpression><![CDATA[{#this\..\QTY\C186\D6060[ 1 ]#}
+
+this\G54[1]\QTY\C186\D6060]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1389429984" elementPath="/AD_1400_REC/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="434429249" elementPath="/PO1_1000_REC/PO1_1000_REC_PO_DATE/">
+         <dmlExpression><![CDATA[if defined in:\MESSAGE\DTM[where item\C507\D2005 ="137"] then
+formatString(convertToD(in:\MESSAGE\DTM[where item\C507\D2005 ="137"]\C507\D2380[1],"YYYYMMDD"),"YYYYMMDD")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1410847723" elementPath="/G0/G1/A2_4230_REC/A2_4230_REC_ATTR_18/">
+         <dmlExpression><![CDATA[%str_Value:="Customer-";
+%str_Leaf:=this\..\..\FTX[where item\D4451  ="GEN" ]\C108\D4440_2[ 1 ];
+%int_length_value:=length(this\..\..\G1\RFF[where item\C506\D1153 ="PR"]\C506\D1154[ 1 ]);
+%int_index_value:=index( this\..\..\G1\RFF[where item\C506\D1153 ="PR"]\C506\D1154[ 1 ],"=");
+
+addTrace ( "INFO","Test_chahat" &  %str_Leaf+"Test_chahat_index_value"+%int_index_value+"int_test_value"+%int_length_value) ;
+if defined this\..\FTX[where item\D4451 ="LIN" ]  and %Alt_Edi_id="ARROWDE" then
+this\..\FTX[where item\D4451 ="LIN" ]\C108\D4440_1[ 1 ]
+else if defined this\..\..\FTX[where item\D4451 ="GEN" ]  and %Alt_Edi_id="EDOMHK" then{
+getSubString(%str_Leaf, index( %str_Leaf,%str_Value )+length(%str_Value) ,length(%str_Leaf)-index( %str_Leaf,%str_Value ))+this\..\..\FTX[where item\D4451  ="GEN" ]\C108\D4440_3[ 1 ]
+
+}
+else if defined  this\..\..\G1\RFF[where item\C506\D1153 ="PR"] and %Alt_Edi_id="TECHSTARJP"  then
+{		addTrace ( "INFO","Test_chahat2" & getSubString( this\..\..\G1\RFF[where item\C506\D1153 ="PR"]\C506\D1154[ 1 ],%int_index_value+1,%int_length_value-%int_index_value)) ;
+	getSubString( this\..\..\G1\RFF[where item\C506\D1153 ="PR"]\C506\D1154[ 1 ],%int_index_value+1,%int_length_value-%int_index_value)
+	} 
+else if defined this\..\FTX[where item\D4451 ="GEN" ]  and %Alt_Edi_id= "TELEDEVJP" then{
+addTrace ( "INFO","4230A2IT4" & this\..\FTX[where item\D4451 ="GEN" ]\C108\D4440_1[ 1 ] ) ;
+this\..\FTX[where item\D4451 ="GEN" ]\C108\D4440_1[ 1 ]
+}
+
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1863487927" elementPath="/G1/">
+         <dmlExpression><![CDATA[%int_count :=0;
+for each this\G53
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="369191794" elementPath="/G1/A1_4830_REC/A1_4830_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[%CTL_REC_KEY_1A_MAILBOX_ID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2022848369" elementPath="/G0/G1/A2_4840_REC/A2_4840_REC_KEY_1A_MAILBOX_ID/">
+         <dmlExpression><![CDATA[%CTL_REC_KEY_1A_MAILBOX_ID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1898328502" elementPath="/AD_1500_REC/AD_1500_REC_KEY_1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[in:\MESSAGE\BGM\C106\D1004]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-25263096" elementPath="/AD_1400_REC/AD_1400_REC_SOLD_TO_EDI_CODE/">
+         <dmlExpression><![CDATA[%CTL_REC_LOC]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2023337039" elementPath="/CTL_850_REC/CTL_REC_DOC_CODE/">
+         <dmlExpression><![CDATA[in:\MESSAGE\BGM\C106\D1004]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1917810168" elementPath="/A2_1230_REC/A2_1230_REC_ID/">
+         <dmlExpression><![CDATA["1230A2HD4"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1946823019" elementPath="/PO1_1000_REC/PO1_1000_REC_PO_Number/">
+         <dmlExpression><![CDATA[in:\MESSAGE\BGM\C106\D1004]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-946042692" elementPath="/A3_1260_REC/A3_1260_REC_ID/">
+         <dmlExpression><![CDATA["1260A3PO3"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="54823497" elementPath="/A3_1260_REC/A3_1260_REC_PO_ATTRIBUTE_11/">
+         <dmlExpression><![CDATA[in:\MESSAGE\G2\NAD[where item\D3035 ="ST" or item\D3035 ="DP" ]\C082\D3039[ 1] + "~" +in:\MESSAGE\G2\NAD[where item\D3035 ="SE"]\C082\D3039[ 1] + "~" +in:\MESSAGE\G2\NAD[where item\D3035 ="BY"]\C082\D3039[ 1] + "~" +in:\MESSAGE\G2\NAD[where item\D3035 ="BT"]\C082\D3039[ 1]]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="915662669" elementPath="/G1/DT_4000_REC_DATES/DT_4000_REC_KEY_1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[in:\MESSAGE\BGM\C106\D1004]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1191218314" elementPath="/G0/G1/A2_4840_REC/">
+         <dmlExpression><![CDATA[if %alt_edi="ARROWNE" then
+%occurs:=1
+else
+%occurs:=0;
+
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="748770104" elementPath="/G0/G1/A2_4840_REC/A2_4840_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[%CTL_REC_KEY1B_DOCUMENT_ID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1498238931" elementPath="/G1/A1_4830_REC/A1_4830_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[in:\MESSAGE\BGM\C106\D1004]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-791563127" elementPath="/AD_1400_REC/AD_1400_REC_KEY1B_DOCUMENT_ID/">
+         <dmlExpression><![CDATA[in:\MESSAGE\BGM\C106\D1004]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="829907272" elementPath="/A3_1260_REC/A3_1260_REC_PO_ATTRIBUTE_14/">
+         <dmlExpression><![CDATA["REG" ]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>
